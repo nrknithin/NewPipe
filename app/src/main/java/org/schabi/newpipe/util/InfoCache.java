@@ -115,7 +115,7 @@ public final class InfoCache {
             Log.d(TAG, "putInfo() called with: info = [" + info + "]");
         }
 
-        final long expirationMillis = ServiceHelper.getCacheExpirationMillis(info.getServiceId());
+        final long expirationMillis = ServiceHelper.getCacheExpirationMillis();
         synchronized (LRU_CACHE) {
             final CacheData data = new CacheData(info, expirationMillis);
             LRU_CACHE.put(keyOf(serviceId, url, cacheType), data);

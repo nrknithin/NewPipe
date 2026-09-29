@@ -48,7 +48,6 @@ import org.schabi.newpipe.local.subscription.item.Header
 import org.schabi.newpipe.local.subscription.item.ImportSubscriptionsHintPlaceholderItem
 import org.schabi.newpipe.util.NavigationHelper
 import org.schabi.newpipe.util.OnClickGesture
-import org.schabi.newpipe.util.ServiceHelper
 import org.schabi.newpipe.util.ThemeHelper.getGridSpanCountChannels
 import org.schabi.newpipe.util.external_communication.ShareUtils
 
@@ -129,17 +128,10 @@ class SubscriptionFragment : BaseStateFragment<SubscriptionState>() {
         addMenuItemToSubmenu(importSubMenu, R.string.previous_export) { importExportHelper.onImportPreviousSelected() }
             .setIcon(R.drawable.ic_backup)
 
-        for (service in ServiceList.all()) {
-            val subscriptionExtractor = service.subscriptionExtractor ?: continue
-
-            val supportedSources = subscriptionExtractor.supportedSources
-            if (supportedSources.isEmpty()) continue
-
-            addMenuItemToSubmenu(importSubMenu, service.serviceInfo.name) {
-                onImportFromServiceSelected(service.serviceId)
-            }
-                .setIcon(ServiceHelper.getIcon(service.serviceId))
+        addMenuItemToSubmenu(importSubMenu, ServiceList.YouTube.serviceInfo.name) {
+            onImportFromServiceSelected(ServiceList.YouTube.serviceId)
         }
+            .setIcon(R.drawable.ic_smart_display)
 
         // -- Export --
         val exportSubMenu = menu.addSubMenu(R.string.export_to)

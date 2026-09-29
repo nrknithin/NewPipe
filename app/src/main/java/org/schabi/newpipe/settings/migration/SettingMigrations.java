@@ -1,7 +1,6 @@
 package org.schabi.newpipe.settings.migration;
 
 import static org.schabi.newpipe.MainActivity.DEBUG;
-import static org.schabi.newpipe.extractor.ServiceList.SoundCloud;
 import static org.schabi.newpipe.extractor.ServiceList.YouTube;
 
 import android.content.Context;
@@ -160,28 +159,29 @@ public final class SettingMigrations {
         }
     };
 
+    /**
+     * Remove every kiosk tab that does not belong to YouTube, the only supported service.
+     *
+     * @param context the context to use
+     */
+    private static void removeNonYouTubeKioskTabs(@NonNull final Context context) {
+        final TabsManager tabsManager = TabsManager.getManager(context);
+        final List<Tab> tabs = tabsManager.getTabs();
+        final List<Tab> cleanedTabs = tabs.stream()
+                .filter(tab -> !(tab instanceof Tab.KioskTab kioskTab
+                        && kioskTab.getKioskServiceId() != YouTube.getServiceId()))
+                .collect(Collectors.toUnmodifiableList());
+        if (tabs.size() != cleanedTabs.size()) {
+            tabsManager.saveTabs(cleanedTabs);
+        }
+    }
+
     private static final Migration MIGRATION_6_7 = new Migration(6, 7) {
         @Override
         protected void migrate(@NonNull final Context context) {
-            // The SoundCloud Top 50 Kiosk was removed in the extractor,
-            // so we remove the corresponding tab if it exists.
-            final TabsManager tabsManager = TabsManager.getManager(context);
-            final List<Tab> tabs = tabsManager.getTabs();
-            final List<Tab> cleanedTabs = tabs.stream()
-                    .filter(tab -> !(tab instanceof Tab.KioskTab kioskTab
-                            && kioskTab.getKioskServiceId() == SoundCloud.getServiceId()
-                            && kioskTab.getKioskId().equals("Top 50")))
-                    .collect(Collectors.toUnmodifiableList());
-            if (tabs.size() != cleanedTabs.size()) {
-                tabsManager.saveTabs(cleanedTabs);
-                // create an AlertDialog to inform the user about the change
-                MigrationManager.addMigrationInfo(uiContext ->
-                        MigrationManager.createMigrationInfoDialog(
-                                uiContext,
-                                uiContext.getString(R.string.migration_info_6_7_title),
-                                uiContext.getString(R.string.migration_info_6_7_message))
-                                .show());
-            }
+            // Originally removed a single discontinued third-party kiosk tab; every non-YouTube
+            // kiosk tab is removed now that YouTube is the only supported service.
+            removeNonYouTubeKioskTabs(context);
         }
     };
 
@@ -240,6 +240,16 @@ public final class SettingMigrations {
         }
     };
 
+    private static final Migration MIGRATION_9_10 = new Migration(9, 10) {
+        @Override
+        protected void migrate(@NonNull final Context context) {
+            // Support for every service other than YouTube was removed, so drop kiosk tabs
+            // of other services and the preference that stored the selected service.
+            removeNonYouTubeKioskTabs(context);
+            sp.edit().remove("service").apply();
+        }
+    };
+
     /**
      * List of all implemented migrations.
      * <p>
@@ -256,12 +266,13 @@ public final class SettingMigrations {
             MIGRATION_6_7,
             MIGRATION_7_8,
             MIGRATION_8_9,
+            MIGRATION_9_10,
     };
 
     /**
      * Version number for preferences. Must be incremented every time a migration is necessary.
      */
-    private static final int VERSION = 9;
+    private static final int VERSION = 10;
 
 
     static void runMigrationsIfNeeded(@NonNull final Context context) {

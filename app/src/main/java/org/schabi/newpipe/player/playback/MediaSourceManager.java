@@ -426,9 +426,8 @@ public class MediaSourceManager {
                         .<ManagedMediaSource>flatMap(source ->
                                 MediaItemTag.from(source.getMediaItem())
                                         .map(tag -> {
-                                            final int serviceId = streamInfo.getServiceId();
                                             final long expiration = System.currentTimeMillis()
-                                                    + getCacheExpirationMillis(serviceId);
+                                                    + getCacheExpirationMillis();
                                             return new LoadedMediaSource(source, tag, stream,
                                                     expiration);
                                         })

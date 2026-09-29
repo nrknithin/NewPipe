@@ -174,8 +174,6 @@
     <string name="no_channel_subscribed_yet">Još nema pretplata na nijedan kanal</string>
     <string name="select_a_kiosk">Odaberi jedan kiosk</string>
     <string name="trending">U trendu</string>
-    <string name="top_50">50 najboljih</string>
-    <string name="new_and_hot">Novi i popularni</string>
     <string name="play_queue_remove">Ukloni</string>
     <string name="play_queue_stream_detail">Detalji</string>
     <string name="play_queue_audio_settings">Postavke za audio snimke</string>
@@ -218,8 +216,6 @@
     <string name="metadata_cache_wipe_title">Izbriši metapodatke iz predmemorije</string>
     <string name="channels">Kanali</string>
     <string name="playlists">Playliste</string>
-    <string name="tracks">Snimke</string>
-    <string name="users">Korisnici</string>
     <string name="always">Uvijek</string>
     <string name="just_once">Samo jednom</string>
     <string name="file">Datoteka</string>
@@ -275,7 +271,6 @@
 \n5. Pritisni gumb „Preuzmi” nakon što se pojavi
 \n6. Dolje pritisni UVEZI DATOEKU i odaberi preuzetu .zip datoteku
 \n7. [Ako uvoz .zip datoteke ne uspije] izdvoji .csv datoteku (pod „YouTube and YouTube Music/subscriptions/subscriptions.json”), dolje pritisni UVEZI DATOTEKU i odaberi izdvojenu csv datoteku</string>
-    <string name="import_soundcloud_instructions_hint">tvojID, soundcloud.com/tvojid</string>
     <string name="import_network_expensive_warning">Ova operacija može prouzročiti veliku potrošnju mrežnog prometa.
 \n
 \nŽeliš li nastaviti\?</string>
@@ -295,7 +290,6 @@
     <string name="unsubscribe">Otkaži pretplatu</string>
     <string name="tab_choose">Odaberi karticu</string>
     <string name="settings_category_updates_title">Aktualiziranja</string>
-    <string name="events">Događaji</string>
     <string name="file_deleted">Datoteka obrisana</string>
     <string name="app_update_notification_channel_description">Obavijest za nove NewPipe verzije</string>
     <string name="clear_search_history_summary">Briše povijest ključnih riječi pretraživanja</string>
@@ -327,18 +321,11 @@
     <string name="subscribers_count_not_available">Broj pretplatnika nije dostupan</string>
     <string name="donation_encouragement">NewPipe razvijaju volonteri koji provode vrijeme kako bi doprinijeli najboljem korisničkom iskustvu. Doprinesi programerima kako bi poboljšali NewPipe dok uživaju u šalici kave.</string>
     <string name="main_page_content_summary">Koje su kartice prikazane na glavnoj stranici</string>
-    <string name="conferences">Konferencije</string>
     <string name="preferred_open_action_settings_title">Željena radnja za otvaranje</string>
     <string name="preferred_open_action_settings_summary">Zadana radnja pri otvaranju sadržaja — %s</string>
     <string name="caption_setting_title">Titlovi</string>
     <string name="caption_setting_description">Promijeni veličinu titlova i stilove pozadine playera. Zahtijeva ponovno pokretanje aplikacije</string>
     <string name="enable_disposed_exceptions_summary">Prisilno izvijesti o neisporučivim Rx iznimaka izvan fragmenta ili životnog ciklusa aktivnosti nakon odlaganja</string>
-    <string name="import_soundcloud_instructions">Uvezi SoundCloud profil upisom URL-a ili svog ID-a:
-\n
-\n1. Omogući „način rada na radnoj površini” u web-pregledniku (stranica nije dostupna na mobilnim uređajima)
-\n2. Idi na ovaj URL: %1$s
-\n3. Prijavi se
-\n4. Kopiraj URL profila na koji te se preusmjerava.</string>
     <string name="playback_tempo">Brzina</string>
     <string name="playback_pitch">Visina tona</string>
     <string name="unhook_checkbox">Odspoji (može prouzročiti izobličenje)</string>
@@ -403,9 +390,7 @@
     <string name="no_one_watching">Nitko ne gleda</string>
     <string name="no_one_listening">Nitko ne sluša</string>
     <string name="default_kiosk_page_summary">Standardni kiosk</string>
-    <string name="peertube_instance_add_https_only">Podržani su samo HTTP URL-ovi</string>
     <string name="local">Lokalni</string>
-    <string name="recently_added">Nedavno dodani</string>
     <string name="playlist_no_uploader">Automatski generirano (prenositelj nedefiniran)</string>
     <string name="clear_download_history">Očisti povijest preuzimanja</string>
     <string name="delete_downloaded_files">Izbriši preuzete datoteke</string>
@@ -422,7 +407,6 @@
     <string name="feed_use_dedicated_fetch_method_enable_button">Uključi brzi modus</string>
     <string name="feed_use_dedicated_fetch_method_disable_button">Isključi brzi modus</string>
     <string name="error_insufficient_storage_left">Memorija uređaja je popunjena</string>
-    <string name="most_liked">Najomiljeniji</string>
     <string name="subtitle_activity_recaptcha">Pritisni „Gotovo” kad je riješeno</string>
     <string name="done">Gotovo</string>
     <string name="infinite_videos">∞ videa</string>
@@ -502,7 +486,6 @@
     <string name="feed_oldest_subscription_update">Zadnje aktualiziranje feeda: %s</string>
     <string name="feed_groups_header_title">Grupe kanala</string>
     <string name="remove_watched_popup_partially_watched_streams">Da, i djelomično pogledana videa</string>
-    <string name="choose_instance_prompt">Odaberi jednu instancu</string>
     <string name="downloads_storage_ask_summary">Aplikacija će te pitati kamo spremati preuzimanja.
 \nUključi sustavksi birač mapa (SAF) ako želiš preuzeti na eksternu SD karticu</string>
     <string name="error_download_resource_gone">Nije moguće obnoviti ovo preuzimanje</string>
@@ -521,7 +504,6 @@
         <item quantity="few">%s gledatelja</item>
         <item quantity="other">%s gledatelja</item>
     </plurals>
-    <string name="drawer_header_description">Uključi/isključi uslugu, trenutačno odabrana:</string>
     <string name="copy_for_github">Kopiraj formatirani izveštaj</string>
     <string name="clear_cookie_summary">Izbriši kolačiće koje NewPipe sprema nakon rješavanja reCAPTCHA</string>
     <string name="recaptcha_cookies_cleared">reCAPTCHA kolačići su izbrisani</string>
@@ -532,13 +514,6 @@
     <string name="youtube_restricted_mode_enabled_summary">YouTube nudi postavku „Ograničeni način rada”, čime se skriva sadržaj za odrasle</string>
     <string name="youtube_restricted_mode_enabled_title">Uključi YouTube postavku „Ograničeni način rada”</string>
     <string name="show_age_restricted_content_summary">Prikaži sadržaj koji vjerojatno nije prikladan za djecu, jer je dobno ograničen (kategorija 18)</string>
-    <string name="peertube_instance_add_exists">Instanca već postoji</string>
-    <string name="peertube_instance_add_fail">Nije bilo moguće provjeriti instancu</string>
-    <string name="peertube_instance_add_help">Upiši URL instance</string>
-    <string name="peertube_instance_add_title">Dodaj instancu</string>
-    <string name="peertube_instance_url_help">Pronađi instance koje voliš na %s</string>
-    <string name="peertube_instance_url_summary">Odaberi svoje omiljene PeerTube instance</string>
-    <string name="peertube_instance_url_title">PeerTube instance</string>
     <string name="seek_duration_title">Vrijeme premotavanja prema naprijed ili natrag</string>
     <string name="notification_action_nothing">Ništa</string>
     <string name="notification_action_shuffle">Promiješaj</string>
@@ -571,7 +546,6 @@
     <string name="msg_calculating_hash">Izračunavanje šifre</string>
     <string name="hash_channel_name">Obavijest šifriranja videa</string>
     <string name="hash_channel_description">Obavijesti o napretku šifriranja videa</string>
-    <string name="recent">Nedavni</string>
     <string name="show_meta_info_summary">Isključi za skrivanje polja metapodataka s dodatnim podacima o autoru toka, sadržaju toka ili zahtjevu za pretraživanje</string>
     <string name="show_meta_info_title">Prikaži metapodatke</string>
     <string name="related_items_tab_description">Povezane stavke</string>
@@ -582,15 +556,12 @@
     <string name="show_description_summary">Isključi za skrivanje opisa videozapisa i dodatnih informacija</string>
     <string name="show_description_title">Prikaži opis</string>
     <string name="open_with">Otvori pomoću</string>
-    <string name="soundcloud_go_plus_content">Ovo je SoundCloud Go+ snimka (barem u tvojoj zemlji), stoga ga NewPipe ne može emitirati ili preuzeti.</string>
     <string name="restricted_video_no_stream">Ovaj je video dobno ograničen.
 \nZbog novih YouTube pravila za videa s dobnim ograničenjem, NewPipe ne može pristupiti nijednoj vlastitoj video emisiji i stoga je ne može reproducirati.</string>
     <string name="download_has_started">Preuzimanje je započeto</string>
     <string name="select_night_theme_toast">Dolje možete odabrati željenu noćnu temu</string>
     <string name="night_theme_summary">Odaberi željenu noćnu temu – %s</string>
     <string name="auto_device_theme_title">Automatski (tema uređaja)</string>
-    <string name="radio">Radio</string>
-    <string name="featured">Istaknuto</string>
     <string name="paid_content">Ovaj je sadržaj dostupan samo korisnicima koji su platili, stoga ga NewPipe ne može emitirati ili preuzeti.</string>
     <string name="youtube_music_premium_content">Ovaj je video dostupan samo za „YouTube Music Premium” članove, stoga ga NewPipe ne može emitirati ili preuzeti.</string>
     <string name="private_content">Ovaj sadržaj je privatan, stoga ga NewPipe ne može emitirati ili preuzeti.</string>
@@ -733,10 +704,8 @@
     <string name="select_audio_track_external_players">Odaberi audio snimku za eksterne playere</string>
     <string name="unknown_audio_track">Nepoznato</string>
     <string name="audio_track_name">%1$s %2$s</string>
-    <string name="no_streams">Nema prijenosa</string>
     <string name="main_tabs_position_title">Položaj glavnih kartica</string>
     <string name="main_tabs_position_summary">Premjesti glavni birač kartica dolje</string>
-    <string name="no_live_streams">Nema prijenosa uživo</string>
     <string name="msg_failed_to_copy">Neuspjelo kopiranje u međuspremnik</string>
     <string name="faq_title">Često postavljena pitanja</string>
     <string name="faq_description">Ako imaš problema s korištenjem aplikacije, pogledaj odgovore na česta pitanja!</string>
@@ -766,12 +735,10 @@
     <string name="audio_track_type_original">original</string>
     <string name="channel_tab_livestreams">Uživo</string>
     <string name="channel_tab_videos">Videa</string>
-    <string name="channel_tab_tracks">Snimke</string>
     <string name="channel_tab_shorts">Kratka videa</string>
     <string name="audio_track_type_dubbed">sinkronizirano</string>
     <string name="audio_track_type_descriptive">opisno</string>
     <string name="channel_tab_albums">Albumi</string>
-    <string name="channel_tab_channels">Kanali</string>
     <string name="channel_tab_playlists">Playliste</string>
     <string name="show_channel_tabs_summary">Kartice koje se prikazuju na stranici kanala</string>
     <string name="toggle_screen_orientation">Uključi/Isključi položaj ekrana</string>
@@ -841,11 +808,8 @@
     <string name="feed_group_page_summary">Stranica grupe kanala</string>
     <string name="account_terminated_service_provides_reason">Račun ukinut\n\n%1$s navodi ovaj razlog: %2$s</string>
     <string name="always_use_exoplayer_set_output_surface_workaround_summary">Ovo zaobilazno rješenje oslobađa i ponovno instancira video kodeke kada dođe do promjene površine, umjesto da se površina izravno postavlja na kodek. Već se koristi od strane ExoPlayera na nekim uređajima s ovim problemom, ova postavka ima učinak samo na Androidu 6 i novijim verzijama.\n\nOmogućavanje ove opcije može spriječiti pogreške reprodukcije prilikom prebacivanja trenutnog video playera ili prebacivanja na cijeli zaslon</string>
-    <string name="channel_tab_likes">Lajkovi</string>
     <string name="share_playlist_as_youtube_temporary_playlist">Podijeli kao privremenu playlistu na YouTubeu</string>
     <string name="import_settings_vulnerable_format">Postavke u izvozu koji se uvozi koriste ranjivi format koji je zastario od verzije NewPipe 0.27.0. Provjerite je li izvoz koji se uvozi iz pouzdanog izvora i u budućnosti radije koristite samo izvoze dobivene iz NewPipe 0.27.0 ili novije verzije. Podrška za uvoz postavki u ovom ranjivom formatu uskoro će biti potpuno uklonjena, a zatim stare verzije NewPipea više neće moći uvoziti postavke izvoza iz novih verzija.</string>
-    <string name="migration_info_6_7_title">Stranica SoundCloud Top 50 uklonjena</string>
-    <string name="migration_info_6_7_message">SoundCloud je ukinuo originalne Top 50 ljestvice. Odgovarajuća kartica je uklonjena s vaše glavne stranice.</string>
     <string name="migration_info_7_8_title">Uklonjeni kombinirani trendovi na YouTubeu</string>
     <string name="migration_info_7_8_message">YouTube je ukinuo kombiniranu stranicu s trendovima od 21. srpnja 2025. NewPipe je zamijenio zadanu stranicu s trendovima s trendovima prijenosa uživo.\n\nTakođer možete odabrati različite stranice s trendovima u \"Postavke &gt; Sadržaj &gt; Sadržaj glavne stranice\".</string>
     <string name="trending_gaming">Trendovi u igrama</string>

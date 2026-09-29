@@ -28,6 +28,7 @@ import com.google.android.exoplayer2.PlaybackParameters;
 
 import org.schabi.newpipe.R;
 import org.schabi.newpipe.databinding.ActivityPlayerQueueControlBinding;
+import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.fragments.OnScrollBelowItemsListener;
@@ -44,7 +45,6 @@ import org.schabi.newpipe.player.playqueue.PlayQueueItemTouchCallback;
 import org.schabi.newpipe.util.Localization;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.PermissionHelper;
-import org.schabi.newpipe.util.ServiceHelper;
 import org.schabi.newpipe.util.ThemeHelper;
 
 import java.util.List;
@@ -84,7 +84,7 @@ public final class PlayQueueActivity extends AppCompatActivity
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ThemeHelper.setTheme(this, ServiceHelper.getSelectedServiceId(this));
+        ThemeHelper.setTheme(this, ServiceList.YouTube.getServiceId());
 
         queueControlBinding = ActivityPlayerQueueControlBinding.inflate(getLayoutInflater());
         setContentView(queueControlBinding.getRoot());

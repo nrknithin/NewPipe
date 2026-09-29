@@ -136,11 +136,6 @@ class SubscriptionImportWorker(
     ): List<SubscriptionItem> {
         return withContext(Dispatchers.IO) {
             when (input) {
-                is SubscriptionImportInput.ChannelUrlMode ->
-                    NewPipe.getService(input.serviceId).subscriptionExtractor
-                        .fromChannelUrl(input.url)
-                        .map { SubscriptionItem(it.serviceId, it.url, it.name) }
-
                 is SubscriptionImportInput.InputStreamMode ->
                     StoredFileHelper(context, input.url.toUri(), DEFAULT_MIME).let { fileHelper ->
                         SharpInputStream(fileHelper.getStream()).use { stream ->
@@ -226,9 +221,6 @@ class SubscriptionImportWorker(
 
 sealed class SubscriptionImportInput : Parcelable {
     @Parcelize
-    data class ChannelUrlMode(val serviceId: Int, val url: String) : SubscriptionImportInput()
-
-    @Parcelize
     data class InputStreamMode(val serviceId: Int, val url: String) : SubscriptionImportInput()
 
     @Parcelize
@@ -236,7 +228,6 @@ sealed class SubscriptionImportInput : Parcelable {
 
     fun toData(): Data {
         val (mode, serviceId, url) = when (this) {
-            is ChannelUrlMode -> Triple(CHANNEL_URL_MODE, serviceId, url)
             is InputStreamMode -> Triple(INPUT_STREAM_MODE, serviceId, url)
             is PreviousExportMode -> Triple(PREVIOUS_EXPORT_MODE, null, url)
         }
@@ -245,21 +236,11 @@ sealed class SubscriptionImportInput : Parcelable {
 
     companion object {
 
-        private const val CHANNEL_URL_MODE = 0
         private const val INPUT_STREAM_MODE = 1
         private const val PREVIOUS_EXPORT_MODE = 2
 
         fun fromData(data: Data): SubscriptionImportInput {
             when (val mode = data.getInt("mode", PREVIOUS_EXPORT_MODE)) {
-                CHANNEL_URL_MODE -> {
-                    val serviceId = data.getInt("service_id", -1)
-                    if (serviceId == -1) {
-                        throw IllegalArgumentException("No service id provided")
-                    }
-                    val url = data.getString("url")!!
-                    return ChannelUrlMode(serviceId, url)
-                }
-
                 INPUT_STREAM_MODE -> {
                     val serviceId = data.getInt("service_id", -1)
                     if (serviceId == -1) {

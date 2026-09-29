@@ -11,6 +11,4 @@ object Constants {
     const val URL_WEBSITE = "https://newpipe.net/"
     const val URL_PRIVACY = "https://newpipe.net/legal/privacy/"
     const val URL_FAQ = "https://newpipe.net/FAQ/"
-
-    const val KEY_STREAMING_SERVICE = "service"
 }

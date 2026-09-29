@@ -16,6 +16,7 @@ import org.schabi.newpipe.error.ErrorInfo;
 import org.schabi.newpipe.error.ErrorUtil;
 import org.schabi.newpipe.error.UserAction;
 import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.schabi.newpipe.fragments.BlankFragment;
@@ -29,7 +30,6 @@ import org.schabi.newpipe.local.history.StatisticsPlaylistFragment;
 import org.schabi.newpipe.local.playlist.LocalPlaylistFragment;
 import org.schabi.newpipe.local.subscription.SubscriptionFragment;
 import org.schabi.newpipe.util.KioskTranslator;
-import org.schabi.newpipe.util.ServiceHelper;
 
 import java.util.Objects;
 
@@ -508,7 +508,7 @@ public abstract class Tab {
         }
 
         private String getDefaultKioskId(final Context context) {
-            final int kioskServiceId = ServiceHelper.getSelectedServiceId(context);
+            final int kioskServiceId = ServiceList.YouTube.getServiceId();
 
             String kioskId = "";
             try {

@@ -15,7 +15,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.schabi.newpipe.database.playlist.model.PlaylistEntity
 import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity
-import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.stream.StreamType
 
 @RunWith(AndroidJUnit4::class)
@@ -172,7 +171,7 @@ class DatabaseMigrationTest {
         val serviceId = DEFAULT_SERVICE_ID // YouTube
         // Use id different to YouTube because two searches with the same query
         // but different service are considered not equal.
-        val otherServiceId = ServiceList.SoundCloud.serviceId
+        val otherServiceId = serviceId + 1
 
         databaseInV7.run {
             insert(

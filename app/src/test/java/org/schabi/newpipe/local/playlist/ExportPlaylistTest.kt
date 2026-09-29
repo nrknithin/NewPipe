@@ -21,7 +21,7 @@ class ExportPlaylistTest {
     fun exportAsYouTubeTempPlaylist() {
         val playlist = asPlaylist(
             "https://www.youtube.com/watch?v=10000000000",
-            "https://soundcloud.com/cautious-clayofficial/cold-war-2", // non-Youtube URLs should be ignored
+            "https://example.com/watch?v=40000000000", // non-Youtube URLs should be ignored
             "https://www.youtube.com/watch?v=20000000000",
             "https://www.youtube.com/watch?v=30000000000"
         )

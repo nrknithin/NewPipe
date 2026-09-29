@@ -1,7 +1,5 @@
 package org.schabi.newpipe.local.subscription;
 
-import static org.schabi.newpipe.extractor.subscription.SubscriptionExtractor.ContentSource.CHANNEL_URL;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.result.ActivityResult;
@@ -57,7 +54,6 @@ public class SubscriptionsImportFragment extends BaseFragment {
     //////////////////////////////////////////////////////////////////////////*/
 
     private TextView infoTextView;
-    private EditText inputText;
     private Button inputButton;
 
     private final ActivityResultLauncher<Intent> requestImportFileLauncher =
@@ -115,19 +111,9 @@ public class SubscriptionsImportFragment extends BaseFragment {
         super.initViews(rootView, savedInstanceState);
 
         inputButton = rootView.findViewById(R.id.input_button);
-        inputText = rootView.findViewById(R.id.input_text);
+        inputButton.setText(R.string.import_file_title);
 
         infoTextView = rootView.findViewById(R.id.info_text_view);
-
-        // TODO: Support services that can import from more than one source
-        //  (show the option to the user)
-        if (supportedSources.contains(CHANNEL_URL)) {
-            inputButton.setText(R.string.import_title);
-            inputText.setVisibility(View.VISIBLE);
-            inputText.setHint(ServiceHelper.getImportInstructionsHint(currentServiceId));
-        } else {
-            inputButton.setText(R.string.import_file_title);
-        }
 
         if (instructionsString != 0) {
             if (TextUtils.isEmpty(relatedUrl)) {
@@ -149,23 +135,7 @@ public class SubscriptionsImportFragment extends BaseFragment {
     @Override
     protected void initListeners() {
         super.initListeners();
-        inputButton.setOnClickListener(v -> onImportClicked());
-    }
-
-    private void onImportClicked() {
-        if (inputText.getVisibility() == View.VISIBLE) {
-            final String value = inputText.getText().toString();
-            if (!value.isEmpty()) {
-                onImportUrl(value);
-            }
-        } else {
-            onImportFile();
-        }
-    }
-
-    public void onImportUrl(final String value) {
-        ImportConfirmationDialog.show(this,
-                new SubscriptionImportInput.ChannelUrlMode(currentServiceId, value));
+        inputButton.setOnClickListener(v -> onImportFile());
     }
 
     public void onImportFile() {

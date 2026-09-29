@@ -39,11 +39,11 @@ import org.schabi.newpipe.databinding.FragmentMainBinding;
 import org.schabi.newpipe.error.ErrorInfo;
 import org.schabi.newpipe.error.ErrorUtil;
 import org.schabi.newpipe.error.UserAction;
+import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.local.playlist.LocalPlaylistFragment;
 import org.schabi.newpipe.settings.tabs.Tab;
 import org.schabi.newpipe.settings.tabs.TabsManager;
 import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.ServiceHelper;
 import org.schabi.newpipe.util.ThemeHelper;
 import org.schabi.newpipe.views.ScrollableTabLayout;
 
@@ -172,7 +172,7 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
         if (item.getItemId() == R.id.action_search) {
             try {
                 NavigationHelper.openSearchFragment(getFM(),
-                        ServiceHelper.getSelectedServiceId(activity), "");
+                        ServiceList.YouTube.getServiceId(), "");
             } catch (final Exception e) {
                 ErrorUtil.showUiErrorSnackbar(this, "Opening search fragment", e);
             }

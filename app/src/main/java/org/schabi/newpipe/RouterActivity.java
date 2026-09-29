@@ -55,6 +55,7 @@ import org.schabi.newpipe.error.ReCaptchaActivity;
 import org.schabi.newpipe.error.UserAction;
 import org.schabi.newpipe.extractor.Info;
 import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.StreamingService.LinkType;
 import org.schabi.newpipe.extractor.channel.ChannelInfo;
@@ -227,6 +228,11 @@ public class RouterActivity extends AppCompatActivity {
                     try {
                         if (currentServiceId == -1) {
                             currentService = NewPipe.getServiceByUrl(url);
+                            if (currentService.getServiceId()
+                                    != ServiceList.YouTube.getServiceId()) {
+                                // only YouTube is supported
+                                return false;
+                            }
                             currentServiceId = currentService.getServiceId();
                             currentLinkType = currentService.getLinkTypeByUrl(url);
                             currentUrl = url;

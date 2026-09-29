@@ -14,7 +14,7 @@
         android:padding="16dp"
         android:scrollbars="vertical"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:text="@string/import_soundcloud_instructions" />
+        tools:text="@string/import_youtube_instructions" />
 
     <LinearLayout
         android:id="@+id/inputs_panel"
@@ -25,16 +25,6 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp">
-
-        <org.schabi.newpipe.views.NewPipeEditText
-            android:id="@+id/input_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:inputType="text"
-            android:visibility="gone"
-            tools:hint="@string/import_soundcloud_instructions_hint"
-            tools:visibility="visible" />
 
         <Button
             android:id="@+id/input_button"

@@ -206,7 +206,6 @@
     <string name="could_not_import_all_files">Avís: No s\'han pogut importar tots els fitxers.</string>
     <string name="override_current_data">Això sobreescriurà els paràmetres actuals.</string>
     <string name="trending">Tendències</string>
-    <string name="top_50">Els millors 50</string>
     <string name="drawer_open">Obre el calaix</string>
     <string name="drawer_close">Tanca el calaix</string>
     <string name="preferred_player_fetcher_notification_title">S\'està obtenint la informació…</string>
@@ -245,7 +244,6 @@
     <string name="donation_encouragement">El NewPipe està desenvolupat per voluntaris que fan servir el seu temps lliure per oferir-vos la millor experiència possible. Feu una aportació per assegurar que els nostres desenvolupadors puguin millorar encara més el NewPipe mentre fan un cafè.</string>
     <string name="give_back">Feu la vostra aportació</string>
     <string name="no_channel_subscribed_yet">Encara no us heu subscrit a cap canal</string>
-    <string name="new_and_hot">Novetats</string>
     <string name="hold_to_append">Manteniu premut per afegir a la cua</string>
     <string name="start_here_on_background">Comença a reproduir en rerefons</string>
     <string name="start_here_on_popup">Comença a reproduir en mode emergent</string>
@@ -275,13 +273,6 @@
     <string name="enable_disposed_exceptions_title">Informa d\'errors fora del cicle de vida</string>
     <string name="enable_disposed_exceptions_summary">Força l\'informe d\'excepcions Rx que no es puguin transmetre que tinguin lloc fora del cicle de vida d\'un fragment o activitat després de disposar-los</string>
     <string name="import_youtube_instructions">Importeu les vostres subscripcions de YouTube mitjançant la còpia de contingut de Google Takeout: \n \n1. Aneu a : %1$s \n2. Inicieu la sessió si se us demana \n3. Premeu \"Totes les dades incloses\", després \"Dessel·lecciona-ho tot\", llavors sel·leccioneu només \"Subscripcions\" i finalment premeu \"D\'acord\". \n4. Premeu \"Pas següent\" i llavors a \"Crea una exportació\" \n5. Premeu el botó \"Baixa\" un cop hagi aparegut \n6. Premeu a IMPORTA EL FITXER i sel·leccioneu el fitxer .zip descarregat \n7. [En cas que la importació del fitxer .zip hagi fallat] extreieu-ne el fitxer subscripcions.csv (es troba generalment a \"Takeout/YouTube i YouTube Music/subscripcions/subscripcions.csv\"), premeu a IMPORTA EL FITXER i sel·leccioneu el fitxer .csv extret</string>
-    <string name="import_soundcloud_instructions">Importeu un perfil del SoundCloud mitjançant l\'URL o l\'identificador del vostre perfil: 
-\n 
-\n1. Activeu el «Mode d\'ordinador» en un navegador (el lloc web no està disponible per a dispositius mòbils) 
-\n2. Aneu a: %1$s 
-\n3. Inicieu la sessió al vostre compte quan si us demani 
-\n4. Copieu l\'URL on si us ha redirigit.</string>
-    <string name="import_soundcloud_instructions_hint">identificador, soundcloud.com/identificador</string>
     <string name="import_network_expensive_warning">Tingueu en compte que això pot comportar un ús intensiu de la xarxa. 
 \n 
 \nVoleu continuar\?</string>
@@ -319,8 +310,6 @@
     <string name="playback_reset">Reinicia</string>
     <string name="channels">Canals</string>
     <string name="playlists">Llistes de reproducció</string>
-    <string name="tracks">Pistes</string>
-    <string name="users">Usuaris</string>
     <string name="tab_choose">Trieu una pestanya</string>
     <string name="settings_category_updates_title">Actualitzacions</string>
     <string name="file_deleted">S\'ha eliminat el fitxer</string>
@@ -341,11 +330,9 @@
     <string name="error_file_creation">No es pot crear el fitxer</string>
     <string name="error_path_creation">No es pot crear la carpeta de destinació</string>
     <string name="stop">Atura</string>
-    <string name="events">Esdeveniments</string>
     <string name="app_update_notification_channel_description">Notificacions de noves versions del NewPipe</string>
     <string name="subscribers_count_not_available">Nombre de subscriptors no disponible</string>
     <string name="main_page_content_summary">Quines pestanyes es mostren a la pàgina principal</string>
-    <string name="conferences">Conferències</string>
     <string name="list_view_mode">Mode de vista de llista</string>
     <string name="missions_header_finished">Finalitzades</string>
     <string name="post_processing">post-processament</string>
@@ -403,7 +390,6 @@
     <string name="clear_playback_states_title">Esborra les posicions de reproducció</string>
     <string name="clear_playback_states_summary">Esborra totes les posicions de reproducció</string>
     <string name="delete_playback_states_alert">Voleu suprimir tots els punts de reproducció\?</string>
-    <string name="drawer_header_description">In/Habilita el servei; selecció actual:</string>
     <string name="no_one_watching">Cap visualització</string>
     <plurals name="watching">
         <item quantity="one">%s visualització</item>
@@ -433,16 +419,7 @@
 \n
 \nSi desitgeu visualitzar-lo, activeu \"%1$s\" a paràmetres.</string>
     <string name="youtube_restricted_mode_enabled_title">Activa el \"mode restringit\" de YouTube</string>
-    <string name="peertube_instance_add_exists">La instància introduïda ja existeix</string>
-    <string name="peertube_instance_add_https_only">Només estàn soportades URLs HTTPS</string>
-    <string name="peertube_instance_add_fail">No ha estat possible validar la instància</string>
-    <string name="peertube_instance_add_help">Introdueix l\'enllaç d\'una instància</string>
-    <string name="peertube_instance_add_title">Afegeix-hi una instància</string>
-    <string name="peertube_instance_url_help">Troba les instàncies que t\'agraden en %s</string>
-    <string name="peertube_instance_url_summary">Selecciona les teves instàncies preferides del PeerTube</string>
-    <string name="peertube_instance_url_title">Instàncies del PeerTube</string>
     <string name="seek_duration_title">Avançar/-rebobinar duració cerca</string>
-    <string name="recent">Recents</string>
     <string name="show_thumbnail_summary">Estableix la miniatura com a fons de la pantalla de bloqueig i també de les notificacions</string>
     <string name="show_thumbnail_title">Mostra\'n la miniatura</string>
     <string name="playlist_page_summary">Pàgina de llistes de reproducció</string>
@@ -514,7 +491,6 @@
     <string name="remove_watched">Esborra els ja vistos</string>
     <string name="systems_language">Valors per defecte</string>
     <string name="app_language_title">Llengua de l\'aplicació</string>
-    <string name="choose_instance_prompt">Escolliu una instància</string>
     <string name="delete_downloaded_files">Esborrar els fitxers de baixades anteriors</string>
     <string name="clear_download_history">Esborra l\'historial de baixades</string>
     <string name="error_download_resource_gone">No s\'ha pogut recuperar aquesta baixada</string>
@@ -527,8 +503,6 @@
     <string name="enqueued">Ja a la cua</string>
     <string name="enqueue_stream">Afegeix a la cua</string>
     <string name="title_activity_play_queue">Cua de reproducció</string>
-    <string name="most_liked">Més m\'agrada</string>
-    <string name="recently_added">Afegits recentment</string>
     <string name="local">Local</string>
     <string name="no_playlist_bookmarked_yet">Encara no hi ha llistes de reproducció favorites</string>
     <string name="select_a_playlist">Sel·leccioneu una llista de reproducció</string>
@@ -572,12 +546,9 @@
     <string name="comments_tab_description">Comentaris</string>
     <string name="show_description_title">Mostra la descripció</string>
     <string name="open_with">Obre amb</string>
-    <string name="radio">Ràdio</string>
-    <string name="featured">Destacats</string>
     <string name="paid_content">Aquests contingut és només accessible per usuaris de pagament, així que no pot ésser ni reproduït ni baixat pel NewPipe.</string>
     <string name="youtube_music_premium_content">Aquest vídeo és només disponible pels usuaris subscriptors de YouTube Music Premium, així que no pot ésser ni reproduït ni baixat pel NewPipe.</string>
     <string name="private_content">Aquest contingut és privat, així que no pot ésser ni reproduït ni baixat amb el NewPipe.</string>
-    <string name="soundcloud_go_plus_content">Aquesta és una pista de SoundCloud Go+ des del territori on us trobeu, així que no pot ésser reproduïda o baixada pel NewPipe.</string>
     <string name="georestricted_content">Aquest contingut no és disponible al vostre territori.</string>
     <string name="no_app_to_open_intent">El vostre dispositiu no té cap aplicació capaç d\'obrir aquest tipus de contingut</string>
     <string name="crash_the_app">Força l\'aturada de l\'aplicació</string>
@@ -711,7 +682,6 @@
     <string name="msg_failed_to_copy">Ha fallat en copiar al porta-retalls</string>
     <string name="yes">Sí</string>
     <string name="settings_category_backup_restore_title">Còpia de seguretat i restauració</string>
-    <string name="no_live_streams">Cap retransmissió en directe</string>
     <string name="import_subscriptions_hint">Importa o exporta les subscripcions des del menú de 3 punts</string>
     <plurals name="new_streams">
         <item quantity="one">%s retransmissió nova</item>
@@ -721,7 +691,6 @@
     <string name="play_queue_audio_track">Àudio: %s</string>
     <string name="audio_track">Pista d\'àudio</string>
     <string name="no">No</string>
-    <string name="no_streams">Cap emissió</string>
     <string name="enable_streams_notifications_summary">Notifica sobre les noves retransmissions de les subscripcions</string>
     <string name="enable_streams_notifications_title">Noves notificacions de retransmissions</string>
     <string name="duplicate_in_playlist">Les llistes de reproducció que estan en gris ja contenen aquest element.</string>
@@ -809,21 +778,18 @@
     <string name="use_exoplayer_decoder_fallback_title">Usa la funció de suport de decodificació d\'ExoPlayer</string>
     <string name="use_exoplayer_decoder_fallback_summary">Habilita aquesta opció si tens problemes en iniciar el decodificador. S\'usaran decodificadors alternatius de baixa prioritat si falla el decodificador primari. Això pot provocar una disminució de la qualitat de la reproducció en relació a l\'ús del decodificador primari</string>
     <string name="always_use_exoplayer_set_output_surface_workaround_summary">Aquesta alternativa allibera i reinstancia els còdecs de vídeo si hi ha un canvi de màscara en lloc de configurar-la directament al còdec. ExoPlayer ja ho aplica en alguns dispositius amb aquest problema. Aquesta configuració només té efecte en Android 6 i posteriors\n\nHabilitar aquest opció pot prevenir errors de reproducció en canviar el reproductor actual o en passar a pantalla completa</string>
-    <string name="channel_tab_tracks">Pistes</string>
     <string name="channel_tab_shorts">Curts</string>
     <string name="toggle_fullscreen">Canvia a pantalla completa</string>
     <string name="question_mark">\?</string>
     <string name="share_playlist">Comparteix la llista de reproducció</string>
     <string name="show_less">Mostra menys</string>
     <string name="audio_track_type_secondary">secundària</string>
-    <string name="channel_tab_channels">Canals</string>
     <string name="no_feed_group_created_yet">Encara no s\'ha creat cap grup de continguts</string>
     <string name="select_a_feed_group">Tria un grup de continguts</string>
     <string name="feed_group_page_summary">Pàgina del grup de canals</string>
     <string name="search_with_service_name">Cercar %1$s</string>
     <string name="search_with_service_name_and_filter">Cercar %1$s (%2$s)</string>
     <string name="short_billion">%sB</string>
-    <string name="channel_tab_likes">M\'agrada</string>
     <string name="kao_dialog_more_info">Detalls</string>
     <string name="kao_solution">Solució</string>
     <string name="api23_requirement_dialog_blogpost">Article</string>
@@ -860,8 +826,6 @@
     <string name="import_subscriptions_summary">Importar subscripcions d\'una exportació .json anterior</string>
     <string name="export_subscriptions_summary">Exportar les vostres subscripcions a un fitxer .json</string>
     <string name="account_terminated_service_provides_reason">Compte cancel·lat %1$s proporciona aquest motiu: %2$s</string>
-    <string name="migration_info_6_7_title">Pàgina Top 50 de SoundCloud eliminada</string>
-    <string name="migration_info_6_7_message">SoundCloud ha descontinuat les llistes Top 50 originals. La pestanya corresponent s\'ha eliminat de la pàgina principal.</string>
     <string name="migration_info_7_8_message">YouTube va descontinuar la pàgina de tendències combinades a partir del 21 de juliol de 2025. NewPipe va reemplaçar la pàgina de tendències predeterminada amb les transmissions en viu de tendències.\n\nTambé podeu seleccionar diferents pàgines de tendències a \"Configuració &gt; Contingut &gt; Contingut de la pàgina principal\".</string>
     <string name="player_http_403">Error HTTP 403 rebut del servidor durant la reproducció, probablement causat per l\'expiració de la URL de transmissió o un bloqueig d\'IP.</string>
     <string name="player_http_invalid_status">Error HTTP %1$s rebut del servidor durant la reproducció</string>

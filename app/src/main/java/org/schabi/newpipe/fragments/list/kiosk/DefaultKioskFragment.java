@@ -4,11 +4,10 @@ import android.os.Bundle;
 
 import org.schabi.newpipe.error.ErrorInfo;
 import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.schabi.newpipe.extractor.kiosk.KioskList;
 import org.schabi.newpipe.util.KioskTranslator;
-import org.schabi.newpipe.util.ServiceHelper;
 
 public class DefaultKioskFragment extends KioskFragment {
 
@@ -21,24 +20,11 @@ public class DefaultKioskFragment extends KioskFragment {
         }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        if (serviceId != ServiceHelper.getSelectedServiceId(requireContext())) {
-            if (currentWorker != null) {
-                currentWorker.dispose();
-            }
-            updateSelectedDefaultKiosk();
-            reloadContent();
-        }
-    }
-
     private void updateSelectedDefaultKiosk() {
         try {
-            serviceId = ServiceHelper.getSelectedServiceId(requireContext());
+            serviceId = ServiceList.YouTube.getServiceId();
 
-            final KioskList kioskList = NewPipe.getService(serviceId).getKioskList();
+            final KioskList kioskList = ServiceList.YouTube.getKioskList();
             kioskId = kioskList.getDefaultKioskId();
             url = kioskList.getListLinkHandlerFactoryByType(kioskId).fromId(kioskId).getUrl();
 

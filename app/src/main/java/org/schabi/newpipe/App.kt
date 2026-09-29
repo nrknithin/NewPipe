@@ -35,7 +35,6 @@ import org.schabi.newpipe.ktx.hasAssignableCause
 import org.schabi.newpipe.settings.NewPipeSettings
 import org.schabi.newpipe.util.BridgeStateSaverInitializer
 import org.schabi.newpipe.util.Localization
-import org.schabi.newpipe.util.ServiceHelper
 import org.schabi.newpipe.util.StateSaver
 import org.schabi.newpipe.util.image.ImageStrategy
 import org.schabi.newpipe.util.image.PreferredImageQuality
@@ -106,8 +105,6 @@ open class App :
         BridgeStateSaverInitializer.init(this)
         StateSaver.init(this)
         initNotificationChannels()
-
-        ServiceHelper.initServices(this)
 
         // Initialize image loader
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)

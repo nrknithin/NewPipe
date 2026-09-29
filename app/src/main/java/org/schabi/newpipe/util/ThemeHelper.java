@@ -418,18 +418,6 @@ public final class ThemeHelper {
             case "LightTheme.YouTube" -> R.style.LightTheme_YouTube;
             case "DarkTheme.YouTube" -> R.style.DarkTheme_YouTube;
             case "BlackTheme.YouTube" -> R.style.BlackTheme_YouTube;
-            case "LightTheme.SoundCloud" -> R.style.LightTheme_SoundCloud;
-            case "DarkTheme.SoundCloud" -> R.style.DarkTheme_SoundCloud;
-            case "BlackTheme.SoundCloud" -> R.style.BlackTheme_SoundCloud;
-            case "LightTheme.PeerTube" -> R.style.LightTheme_PeerTube;
-            case "DarkTheme.PeerTube" -> R.style.DarkTheme_PeerTube;
-            case "BlackTheme.PeerTube" -> R.style.BlackTheme_PeerTube;
-            case "LightTheme.media.ccc.de" -> R.style.LightTheme_media_ccc_de;
-            case "DarkTheme.media.ccc.de" -> R.style.DarkTheme_media_ccc_de;
-            case "BlackTheme.media.ccc.de" -> R.style.BlackTheme_media_ccc_de;
-            case "LightTheme.Bandcamp" -> R.style.LightTheme_Bandcamp;
-            case "DarkTheme.Bandcamp" -> R.style.DarkTheme_Bandcamp;
-            case "BlackTheme.Bandcamp" -> R.style.BlackTheme_Bandcamp;
             default -> baseTheme;
         };
     }

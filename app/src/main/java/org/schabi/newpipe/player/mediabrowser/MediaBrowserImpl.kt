@@ -27,6 +27,7 @@ import org.schabi.newpipe.database.playlist.PlaylistStreamEntry
 import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity
 import org.schabi.newpipe.extractor.InfoItem
 import org.schabi.newpipe.extractor.InfoItem.InfoType
+import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.channel.ChannelInfoItem
 import org.schabi.newpipe.extractor.exceptions.ContentNotAvailableException
 import org.schabi.newpipe.extractor.playlist.PlaylistInfoItem
@@ -36,7 +37,6 @@ import org.schabi.newpipe.local.bookmark.MergedPlaylistManager
 import org.schabi.newpipe.local.playlist.LocalPlaylistManager
 import org.schabi.newpipe.local.playlist.RemotePlaylistManager
 import org.schabi.newpipe.util.ExtractorHelper
-import org.schabi.newpipe.util.ServiceHelper
 import org.schabi.newpipe.util.image.ImageStrategy
 
 /**
@@ -404,8 +404,7 @@ class MediaBrowserImpl(
     }
 
     private fun searchMusicBySongTitle(query: String?): Single<SearchInfo> {
-        val serviceId = ServiceHelper.getSelectedServiceId(context)
-        return ExtractorHelper.searchFor(serviceId, query, listOf(), "")
+        return ExtractorHelper.searchFor(ServiceList.YouTube.serviceId, query, listOf(), "")
     }
     //endregion
 
