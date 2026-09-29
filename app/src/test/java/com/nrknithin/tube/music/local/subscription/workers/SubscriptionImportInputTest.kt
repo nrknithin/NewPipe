@@ -1,11 +1,11 @@
-package org.schabi.newpipe.local.subscription.workers
+package com.nrknithin.tube.music.local.subscription.workers
 
 import androidx.work.Data
 import androidx.work.workDataOf
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionImportInput.InputStreamMode
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionImportInput.PreviousExportMode
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import org.schabi.newpipe.local.subscription.workers.SubscriptionImportInput.InputStreamMode
-import org.schabi.newpipe.local.subscription.workers.SubscriptionImportInput.PreviousExportMode
 
 class SubscriptionImportInputTest {
 

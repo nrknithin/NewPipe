@@ -1,7 +1,7 @@
-package org.schabi.newpipe.player.mediaitem;
+package com.nrknithin.tube.music.player.mediaitem;
 
 import org.schabi.newpipe.extractor.stream.StreamType;
-import org.schabi.newpipe.util.Constants;
+import com.nrknithin.tube.music.util.Constants;
 
 import java.util.Collections;
 import java.util.List;

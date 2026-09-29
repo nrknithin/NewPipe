@@ -1,11 +1,11 @@
-package org.schabi.newpipe.database.history.model
+package com.nrknithin.tube.music.database.history.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import java.time.OffsetDateTime
-import org.schabi.newpipe.database.stream.model.StreamEntity
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.util.image.ImageStrategy
 
 data class StreamHistoryEntry(
     @Embedded

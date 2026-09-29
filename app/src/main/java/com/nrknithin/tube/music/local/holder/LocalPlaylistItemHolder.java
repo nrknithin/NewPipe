@@ -1,15 +1,15 @@
-package org.schabi.newpipe.local.holder;
+package com.nrknithin.tube.music.local.holder;
 
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.schabi.newpipe.database.LocalItem;
-import org.schabi.newpipe.database.playlist.PlaylistDuplicatesEntry;
-import org.schabi.newpipe.database.playlist.PlaylistMetadataEntry;
-import org.schabi.newpipe.local.LocalItemBuilder;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.image.CoilHelper;
+import com.nrknithin.tube.music.database.LocalItem;
+import com.nrknithin.tube.music.database.playlist.PlaylistDuplicatesEntry;
+import com.nrknithin.tube.music.database.playlist.PlaylistMetadataEntry;
+import com.nrknithin.tube.music.local.LocalItemBuilder;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.image.CoilHelper;
 
 import java.time.format.DateTimeFormatter;
 

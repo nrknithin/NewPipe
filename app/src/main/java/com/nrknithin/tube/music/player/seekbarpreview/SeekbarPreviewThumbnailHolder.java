@@ -1,7 +1,7 @@
-package org.schabi.newpipe.player.seekbarpreview;
+package com.nrknithin.tube.music.player.seekbarpreview;
 
-import static org.schabi.newpipe.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType;
-import static org.schabi.newpipe.player.seekbarpreview.SeekbarPreviewThumbnailHelper.getSeekbarPreviewThumbnailType;
+import static com.nrknithin.tube.music.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType;
+import static com.nrknithin.tube.music.player.seekbarpreview.SeekbarPreviewThumbnailHelper.getSeekbarPreviewThumbnailType;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,9 +13,9 @@ import androidx.collection.SparseArrayCompat;
 
 import com.google.common.base.Stopwatch;
 
-import org.schabi.newpipe.App;
+import com.nrknithin.tube.music.App;
 import org.schabi.newpipe.extractor.stream.Frameset;
-import org.schabi.newpipe.util.image.CoilHelper;
+import com.nrknithin.tube.music.util.image.CoilHelper;
 
 import java.util.Comparator;
 import java.util.List;

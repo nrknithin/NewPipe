@@ -1,7 +1,11 @@
-package org.schabi.newpipe.settings
+package com.nrknithin.tube.music.settings
 
 import android.content.SharedPreferences
 import com.grack.nanojson.JsonParser
+import com.nrknithin.tube.music.giga.io.FileStream
+import com.nrknithin.tube.music.settings.export.BackupFileLocator
+import com.nrknithin.tube.music.settings.export.ImportExportManager
+import com.nrknithin.tube.music.streams.io.StoredFileHelper
 import java.io.File
 import java.io.ObjectInputStream
 import java.nio.file.Paths
@@ -30,10 +34,6 @@ import org.mockito.Mockito.verify
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.withSettings
 import org.mockito.junit.MockitoJUnitRunner
-import org.schabi.newpipe.settings.export.BackupFileLocator
-import org.schabi.newpipe.settings.export.ImportExportManager
-import org.schabi.newpipe.streams.io.StoredFileHelper
-import us.shandian.giga.io.FileStream
 
 @RunWith(MockitoJUnitRunner::class)
 class ImportExportManagerTest {

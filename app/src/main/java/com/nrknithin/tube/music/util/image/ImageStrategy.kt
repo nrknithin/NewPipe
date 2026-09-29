@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util.image
+package com.nrknithin.tube.music.util.image
 
 import kotlin.math.abs
 import org.schabi.newpipe.extractor.Image

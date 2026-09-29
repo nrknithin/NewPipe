@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.info_list
+package com.nrknithin.tube.music.info_list
 
 /**
  * Item view mode for streams & playlist listing screens.

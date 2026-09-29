@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments.detail;
+package com.nrknithin.tube.music.fragments.detail;
 
 import static com.google.android.exoplayer2.PlaybackException.ERROR_CODE_BEHIND_LIVE_WINDOW;
 import static com.google.android.exoplayer2.PlaybackException.ERROR_CODE_DECODING_FAILED;
@@ -22,11 +22,11 @@ import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.PlaybackException;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.ListRadioIconItemBinding;
-import org.schabi.newpipe.databinding.SingleChoiceDialogViewBinding;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.ListRadioIconItemBinding;
+import com.nrknithin.tube.music.databinding.SingleChoiceDialogViewBinding;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 import java.io.IOException;
 import java.util.List;

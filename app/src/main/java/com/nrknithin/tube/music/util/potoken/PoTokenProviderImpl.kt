@@ -1,16 +1,16 @@
-package org.schabi.newpipe.util.potoken
+package com.nrknithin.tube.music.util.potoken
 
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
-import org.schabi.newpipe.App
-import org.schabi.newpipe.BuildConfig
+import com.nrknithin.tube.music.App
+import com.nrknithin.tube.music.BuildConfig
+import com.nrknithin.tube.music.util.DeviceUtils
 import org.schabi.newpipe.extractor.NewPipe
 import org.schabi.newpipe.extractor.services.youtube.InnertubeClientRequestInfo
 import org.schabi.newpipe.extractor.services.youtube.PoTokenProvider
 import org.schabi.newpipe.extractor.services.youtube.PoTokenResult
 import org.schabi.newpipe.extractor.services.youtube.YoutubeParsingHelper
-import org.schabi.newpipe.util.DeviceUtils
 
 object PoTokenProviderImpl : PoTokenProvider {
     val TAG = PoTokenProviderImpl::class.simpleName

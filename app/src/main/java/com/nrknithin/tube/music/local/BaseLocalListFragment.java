@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local;
+package com.nrknithin.tube.music.local;
 
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -18,28 +18,28 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.PignateFooterBinding;
-import org.schabi.newpipe.fragments.BaseStateFragment;
-import org.schabi.newpipe.fragments.list.ListViewContract;
-import org.schabi.newpipe.info_list.ItemViewMode;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.PignateFooterBinding;
+import com.nrknithin.tube.music.fragments.BaseStateFragment;
+import com.nrknithin.tube.music.fragments.list.ListViewContract;
+import com.nrknithin.tube.music.info_list.ItemViewMode;
 
-import static org.schabi.newpipe.ktx.ViewUtils.animate;
-import static org.schabi.newpipe.ktx.ViewUtils.animateHideRecyclerViewAllowingScrolling;
-import static org.schabi.newpipe.util.ThemeHelper.getItemViewMode;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animate;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animateHideRecyclerViewAllowingScrolling;
+import static com.nrknithin.tube.music.util.ThemeHelper.getItemViewMode;
 
 import java.util.function.Supplier;
 
 /**
  * This fragment is design to be used with persistent data such as
- * {@link org.schabi.newpipe.database.LocalItem}, and does not cache the data contained
+ * {@link com.nrknithin.tube.music.database.LocalItem}, and does not cache the data contained
  * in the list adapter to avoid extra writes when the it exits or re-enters its lifecycle.
  * <p>
  * This fragment destroys its adapter and views when {@link Fragment#onDestroyView()} is
  * called and is memory efficient when in backstack.
  * </p>
  *
- * @param <I> List of {@link org.schabi.newpipe.database.LocalItem}s
+ * @param <I> List of {@link com.nrknithin.tube.music.database.LocalItem}s
  * @param <N> {@link Void}
  */
 public abstract class BaseLocalListFragment<I, N> extends BaseStateFragment<I>

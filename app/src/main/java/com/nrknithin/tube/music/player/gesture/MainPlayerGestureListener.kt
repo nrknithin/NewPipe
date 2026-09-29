@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.gesture
+package com.nrknithin.tube.music.player.gesture
 
 import android.util.Log
 import android.view.MotionEvent
@@ -8,16 +8,16 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.view.isVisible
+import com.nrknithin.tube.music.MainActivity
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.ktx.AnimationType
+import com.nrknithin.tube.music.ktx.animate
+import com.nrknithin.tube.music.player.Player
+import com.nrknithin.tube.music.player.helper.AudioReactor
+import com.nrknithin.tube.music.player.helper.PlayerHelper
+import com.nrknithin.tube.music.player.ui.MainPlayerUi
+import com.nrknithin.tube.music.util.ThemeHelper.getAndroidDimenPx
 import kotlin.math.abs
-import org.schabi.newpipe.MainActivity
-import org.schabi.newpipe.R
-import org.schabi.newpipe.ktx.AnimationType
-import org.schabi.newpipe.ktx.animate
-import org.schabi.newpipe.player.Player
-import org.schabi.newpipe.player.helper.AudioReactor
-import org.schabi.newpipe.player.helper.PlayerHelper
-import org.schabi.newpipe.player.ui.MainPlayerUi
-import org.schabi.newpipe.util.ThemeHelper.getAndroidDimenPx
 
 /**
  * GestureListener for the player

@@ -1,9 +1,9 @@
-package org.schabi.newpipe.info_list.holder;
+package com.nrknithin.tube.music.info_list.holder;
 
 import android.view.ViewGroup;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.info_list.InfoItemBuilder;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.info_list.InfoItemBuilder;
 
 public class PlaylistGridInfoItemHolder extends PlaylistMiniInfoItemHolder {
     public PlaylistGridInfoItemHolder(final InfoItemBuilder infoItemBuilder,

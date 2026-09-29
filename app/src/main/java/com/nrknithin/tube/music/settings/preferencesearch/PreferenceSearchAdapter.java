@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.preferencesearch;
+package com.nrknithin.tube.music.settings.preferencesearch;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.databinding.SettingsPreferencesearchListItemResultBinding;
+import com.nrknithin.tube.music.databinding.SettingsPreferencesearchListItemResultBinding;
 
 import java.util.function.Consumer;
 

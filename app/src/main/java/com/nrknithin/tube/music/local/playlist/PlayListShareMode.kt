@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.local.playlist
+package com.nrknithin.tube.music.local.playlist
 
 enum class PlayListShareMode {
     JUST_URLS,

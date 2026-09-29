@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.composable
+package com.nrknithin.tube.music.shared.composable
 
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material3.ListItem
@@ -15,7 +15,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
-import net.newpipe.app.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
 
 private const val DISABLED_ALPHA = 0.38f
 

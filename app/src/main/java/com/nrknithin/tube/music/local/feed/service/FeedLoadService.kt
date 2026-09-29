@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe.local.feed.service
+package com.nrknithin.tube.music.local.feed.service
 
 import android.app.Service
 import android.content.BroadcastReceiver
@@ -32,17 +32,17 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.PendingIntentCompat
 import androidx.core.app.ServiceCompat
 import androidx.core.content.ContextCompat
+import com.nrknithin.tube.music.App
+import com.nrknithin.tube.music.MainActivity.DEBUG
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager.Event.ErrorResultEvent
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager.postEvent
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.disposables.Disposable
 import io.reactivex.rxjava3.functions.Function
 import java.util.concurrent.TimeUnit
-import org.schabi.newpipe.App
-import org.schabi.newpipe.MainActivity.DEBUG
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.local.feed.service.FeedEventManager.Event.ErrorResultEvent
-import org.schabi.newpipe.local.feed.service.FeedEventManager.postEvent
 
 class FeedLoadService : Service() {
     companion object {

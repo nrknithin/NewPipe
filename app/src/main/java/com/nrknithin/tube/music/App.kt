@@ -1,4 +1,4 @@
-package org.schabi.newpipe
+package com.nrknithin.tube.music
 
 import android.app.ActivityManager
 import android.app.Application
@@ -15,6 +15,15 @@ import coil3.request.allowRgb565
 import coil3.request.crossfade
 import coil3.util.DebugLogger
 import com.jakewharton.processphoenix.ProcessPhoenix
+import com.nrknithin.tube.music.error.ReCaptchaActivity
+import com.nrknithin.tube.music.ktx.hasAssignableCause
+import com.nrknithin.tube.music.settings.NewPipeSettings
+import com.nrknithin.tube.music.util.BridgeStateSaverInitializer
+import com.nrknithin.tube.music.util.Localization
+import com.nrknithin.tube.music.util.StateSaver
+import com.nrknithin.tube.music.util.image.ImageStrategy
+import com.nrknithin.tube.music.util.image.PreferredImageQuality
+import com.nrknithin.tube.music.util.potoken.PoTokenProviderImpl
 import io.reactivex.rxjava3.exceptions.CompositeException
 import io.reactivex.rxjava3.exceptions.MissingBackpressureException
 import io.reactivex.rxjava3.exceptions.OnErrorNotImplementedException
@@ -27,18 +36,9 @@ import java.net.SocketException
 import org.acra.ACRA.init
 import org.acra.ACRA.isACRASenderServiceProcess
 import org.acra.config.CoreConfigurationBuilder
-import org.schabi.newpipe.error.ReCaptchaActivity
 import org.schabi.newpipe.extractor.NewPipe
 import org.schabi.newpipe.extractor.downloader.Downloader
 import org.schabi.newpipe.extractor.services.youtube.extractors.YoutubeStreamExtractor
-import org.schabi.newpipe.ktx.hasAssignableCause
-import org.schabi.newpipe.settings.NewPipeSettings
-import org.schabi.newpipe.util.BridgeStateSaverInitializer
-import org.schabi.newpipe.util.Localization
-import org.schabi.newpipe.util.StateSaver
-import org.schabi.newpipe.util.image.ImageStrategy
-import org.schabi.newpipe.util.image.PreferredImageQuality
-import org.schabi.newpipe.util.potoken.PoTokenProviderImpl
 
 /*
  * Copyright (C) Hans-Christoph Steiner 2016 <hans@eds.org>

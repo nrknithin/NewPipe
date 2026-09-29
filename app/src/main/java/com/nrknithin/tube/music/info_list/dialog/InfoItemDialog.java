@@ -1,6 +1,6 @@
-package org.schabi.newpipe.info_list.dialog;
+package com.nrknithin.tube.music.info_list.dialog;
 
-import static org.schabi.newpipe.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,17 +15,17 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.App;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.App;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.schabi.newpipe.extractor.stream.StreamType;
-import org.schabi.newpipe.player.helper.PlayerHolder;
-import org.schabi.newpipe.util.StreamTypeUtil;
-import org.schabi.newpipe.util.external_communication.KoreUtils;
+import com.nrknithin.tube.music.player.helper.PlayerHolder;
+import com.nrknithin.tube.music.util.StreamTypeUtil;
+import com.nrknithin.tube.music.util.external_communication.KoreUtils;
 
 import java.util.ArrayList;
 import java.util.List;

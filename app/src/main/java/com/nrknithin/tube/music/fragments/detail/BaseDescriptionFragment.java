@@ -1,7 +1,7 @@
-package org.schabi.newpipe.fragments.detail;
+package com.nrknithin.tube.music.fragments.detail;
 
 import static org.schabi.newpipe.extractor.utils.Utils.isBlank;
-import static org.schabi.newpipe.util.text.TextLinkifier.SET_LINK_MOVEMENT_METHOD;
+import static com.nrknithin.tube.music.util.text.TextLinkifier.SET_LINK_MOVEMENT_METHOD;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -23,18 +23,18 @@ import androidx.core.text.HtmlCompat;
 
 import com.google.android.material.chip.Chip;
 
-import org.schabi.newpipe.BaseFragment;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.FragmentDescriptionBinding;
-import org.schabi.newpipe.databinding.ItemMetadataBinding;
-import org.schabi.newpipe.databinding.ItemMetadataTagsBinding;
+import com.nrknithin.tube.music.BaseFragment;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.FragmentDescriptionBinding;
+import com.nrknithin.tube.music.databinding.ItemMetadataBinding;
+import com.nrknithin.tube.music.databinding.ItemMetadataTagsBinding;
 import org.schabi.newpipe.extractor.Image;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.stream.Description;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
-import org.schabi.newpipe.util.image.ImageStrategy;
-import org.schabi.newpipe.util.text.TextLinkifier;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.external_communication.ShareUtils;
+import com.nrknithin.tube.music.util.image.ImageStrategy;
+import com.nrknithin.tube.music.util.text.TextLinkifier;
 
 import java.util.List;
 

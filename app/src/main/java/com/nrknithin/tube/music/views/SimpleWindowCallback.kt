@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.views
+package com.nrknithin.tube.music.views
 
 import android.os.Build
 import android.view.KeyEvent

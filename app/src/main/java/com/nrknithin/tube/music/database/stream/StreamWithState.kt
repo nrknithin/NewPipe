@@ -1,9 +1,9 @@
-package org.schabi.newpipe.database.stream
+package com.nrknithin.tube.music.database.stream
 
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.stream.model.StreamStateEntity
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.stream.model.StreamStateEntity
 
 data class StreamWithState(
     @Embedded

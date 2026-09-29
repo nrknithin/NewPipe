@@ -1,16 +1,16 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.View
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.databinding.PickerSubscriptionItemBinding
+import com.nrknithin.tube.music.ktx.AnimationType
+import com.nrknithin.tube.music.ktx.animate
+import com.nrknithin.tube.music.util.image.CoilHelper
 import com.xwray.groupie.viewbinding.BindableItem
 import com.xwray.groupie.viewbinding.GroupieViewHolder
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
-import org.schabi.newpipe.databinding.PickerSubscriptionItemBinding
-import org.schabi.newpipe.ktx.AnimationType
-import org.schabi.newpipe.ktx.animate
-import org.schabi.newpipe.util.image.CoilHelper
 
 data class PickerSubscriptionItem(
     val subscriptionEntity: SubscriptionEntity,

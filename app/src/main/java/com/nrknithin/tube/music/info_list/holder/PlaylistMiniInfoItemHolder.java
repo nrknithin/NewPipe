@@ -1,16 +1,16 @@
-package org.schabi.newpipe.info_list.holder;
+package com.nrknithin.tube.music.info_list.holder;
 
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.playlist.PlaylistInfoItem;
-import org.schabi.newpipe.info_list.InfoItemBuilder;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.image.CoilHelper;
+import com.nrknithin.tube.music.info_list.InfoItemBuilder;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.image.CoilHelper;
 
 public class PlaylistMiniInfoItemHolder extends InfoItemHolder {
     public final ImageView itemThumbnailView;

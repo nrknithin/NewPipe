@@ -1,11 +1,11 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.View
 import androidx.annotation.DrawableRes
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.PickerIconItemBinding
+import com.nrknithin.tube.music.local.subscription.FeedGroupIcon
 import com.xwray.groupie.viewbinding.BindableItem
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.PickerIconItemBinding
-import org.schabi.newpipe.local.subscription.FeedGroupIcon
 
 class PickerIconItem(
     val icon: FeedGroupIcon

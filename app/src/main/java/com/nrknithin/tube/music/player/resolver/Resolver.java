@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.resolver;
+package com.nrknithin.tube.music.player.resolver;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -1,10 +1,10 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.View
 import androidx.core.view.isVisible
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.SubscriptionGroupsHeaderBinding
 import com.xwray.groupie.viewbinding.BindableItem
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.SubscriptionGroupsHeaderBinding
 
 class GroupsHeader(
     private val title: String,

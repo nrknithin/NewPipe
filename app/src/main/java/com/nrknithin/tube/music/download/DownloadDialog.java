@@ -1,7 +1,7 @@
-package org.schabi.newpipe.download;
+package com.nrknithin.tube.music.download;
 
 import static org.schabi.newpipe.extractor.stream.DeliveryMethod.PROGRESSIVE_HTTP;
-import static org.schabi.newpipe.util.ListHelper.getStreamsOfSpecifiedDelivery;
+import static com.nrknithin.tube.music.util.ListHelper.getStreamsOfSpecifiedDelivery;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -42,12 +42,12 @@ import com.evernote.android.state.State;
 import com.livefront.bridge.Bridge;
 import com.nononsenseapps.filepicker.Utils;
 
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.DownloadDialogBinding;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.MainActivity;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.DownloadDialogBinding;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.MediaFormat;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.localization.Localization;
@@ -56,21 +56,21 @@ import org.schabi.newpipe.extractor.stream.Stream;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.SubtitlesStream;
 import org.schabi.newpipe.extractor.stream.VideoStream;
-import org.schabi.newpipe.settings.NewPipeSettings;
-import org.schabi.newpipe.streams.io.NoFileManagerSafeGuard;
-import org.schabi.newpipe.streams.io.StoredDirectoryHelper;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.AudioTrackAdapter;
-import org.schabi.newpipe.util.AudioTrackAdapter.AudioTracksWrapper;
-import org.schabi.newpipe.util.FilePickerActivityHelper;
-import org.schabi.newpipe.util.FilenameUtils;
-import org.schabi.newpipe.util.ListHelper;
-import org.schabi.newpipe.util.PermissionHelper;
-import org.schabi.newpipe.util.SecondaryStreamHelper;
-import org.schabi.newpipe.util.SimpleOnSeekBarChangeListener;
-import org.schabi.newpipe.util.StreamItemAdapter;
-import org.schabi.newpipe.util.StreamItemAdapter.StreamInfoWrapper;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.settings.NewPipeSettings;
+import com.nrknithin.tube.music.streams.io.NoFileManagerSafeGuard;
+import com.nrknithin.tube.music.streams.io.StoredDirectoryHelper;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.util.AudioTrackAdapter;
+import com.nrknithin.tube.music.util.AudioTrackAdapter.AudioTracksWrapper;
+import com.nrknithin.tube.music.util.FilePickerActivityHelper;
+import com.nrknithin.tube.music.util.FilenameUtils;
+import com.nrknithin.tube.music.util.ListHelper;
+import com.nrknithin.tube.music.util.PermissionHelper;
+import com.nrknithin.tube.music.util.SecondaryStreamHelper;
+import com.nrknithin.tube.music.util.SimpleOnSeekBarChangeListener;
+import com.nrknithin.tube.music.util.StreamItemAdapter;
+import com.nrknithin.tube.music.util.StreamItemAdapter.StreamInfoWrapper;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -81,12 +81,12 @@ import java.util.Objects;
 import java.util.Optional;
 
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
-import us.shandian.giga.get.MissionRecoveryInfo;
-import us.shandian.giga.postprocessing.Postprocessing;
-import us.shandian.giga.service.DownloadManager;
-import us.shandian.giga.service.DownloadManagerService;
-import us.shandian.giga.service.DownloadManagerService.DownloadManagerBinder;
-import us.shandian.giga.service.MissionState;
+import com.nrknithin.tube.music.giga.get.MissionRecoveryInfo;
+import com.nrknithin.tube.music.giga.postprocessing.Postprocessing;
+import com.nrknithin.tube.music.giga.service.DownloadManager;
+import com.nrknithin.tube.music.giga.service.DownloadManagerService;
+import com.nrknithin.tube.music.giga.service.DownloadManagerService.DownloadManagerBinder;
+import com.nrknithin.tube.music.giga.service.MissionState;
 
 public class DownloadDialog extends DialogFragment
         implements RadioGroup.OnCheckedChangeListener, AdapterView.OnItemSelectedListener {

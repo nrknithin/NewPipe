@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import android.util.Log;
 
@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.collection.LruCache;
 
-import org.schabi.newpipe.MainActivity;
+import com.nrknithin.tube.music.MainActivity;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

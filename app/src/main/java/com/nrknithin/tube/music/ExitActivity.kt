@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe
+package com.nrknithin.tube.music
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import org.schabi.newpipe.util.NavigationHelper
+import com.nrknithin.tube.music.util.NavigationHelper
 
 class ExitActivity : Activity() {
     @SuppressLint("NewApi")

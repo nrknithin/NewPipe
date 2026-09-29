@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.feed
+package com.nrknithin.tube.music.local.feed
 
 import android.app.Application
 import android.content.Context
@@ -9,6 +9,17 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.preference.PreferenceManager
+import com.nrknithin.tube.music.App
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.stream.StreamWithState
+import com.nrknithin.tube.music.local.feed.item.StreamItem
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager.Event.ErrorResultEvent
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager.Event.IdleEvent
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager.Event.ProgressEvent
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager.Event.SuccessResultEvent
+import com.nrknithin.tube.music.util.DEFAULT_THROTTLE_TIMEOUT
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.functions.Function6
@@ -16,17 +27,6 @@ import io.reactivex.rxjava3.processors.BehaviorProcessor
 import io.reactivex.rxjava3.schedulers.Schedulers
 import java.time.OffsetDateTime
 import java.util.concurrent.TimeUnit
-import org.schabi.newpipe.App
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.stream.StreamWithState
-import org.schabi.newpipe.local.feed.item.StreamItem
-import org.schabi.newpipe.local.feed.service.FeedEventManager
-import org.schabi.newpipe.local.feed.service.FeedEventManager.Event.ErrorResultEvent
-import org.schabi.newpipe.local.feed.service.FeedEventManager.Event.IdleEvent
-import org.schabi.newpipe.local.feed.service.FeedEventManager.Event.ProgressEvent
-import org.schabi.newpipe.local.feed.service.FeedEventManager.Event.SuccessResultEvent
-import org.schabi.newpipe.util.DEFAULT_THROTTLE_TIMEOUT
 
 class FeedViewModel(
     private val application: Application,

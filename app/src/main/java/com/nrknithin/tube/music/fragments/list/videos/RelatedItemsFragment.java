@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments.list.videos;
+package com.nrknithin.tube.music.fragments.list.videos;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -13,17 +13,17 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.RelatedItemsHeaderBinding;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.RelatedItemsHeaderBinding;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
-import org.schabi.newpipe.info_list.ItemViewMode;
-import org.schabi.newpipe.info_list.dialog.InfoItemDialog;
-import org.schabi.newpipe.ktx.ViewUtils;
+import com.nrknithin.tube.music.fragments.list.BaseListInfoFragment;
+import com.nrknithin.tube.music.info_list.ItemViewMode;
+import com.nrknithin.tube.music.info_list.dialog.InfoItemDialog;
+import com.nrknithin.tube.music.ktx.ViewUtils;
 
 import java.io.Serializable;
 import java.util.function.Supplier;

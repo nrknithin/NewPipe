@@ -1,6 +1,6 @@
-package org.schabi.newpipe.streams;
+package com.nrknithin.tube.music.streams;
 
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.EOFException;
 import java.io.IOException;

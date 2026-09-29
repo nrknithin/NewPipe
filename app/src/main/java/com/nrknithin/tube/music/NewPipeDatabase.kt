@@ -4,20 +4,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe
+package com.nrknithin.tube.music
 
 import android.content.Context
 import androidx.room.Room.databaseBuilder
+import com.nrknithin.tube.music.database.AppDatabase
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_1_2
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_2_3
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_3_4
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_4_5
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_5_6
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_6_7
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_7_8
+import com.nrknithin.tube.music.database.Migrations.MIGRATION_8_9
 import kotlin.concurrent.Volatile
-import org.schabi.newpipe.database.AppDatabase
-import org.schabi.newpipe.database.Migrations.MIGRATION_1_2
-import org.schabi.newpipe.database.Migrations.MIGRATION_2_3
-import org.schabi.newpipe.database.Migrations.MIGRATION_3_4
-import org.schabi.newpipe.database.Migrations.MIGRATION_4_5
-import org.schabi.newpipe.database.Migrations.MIGRATION_5_6
-import org.schabi.newpipe.database.Migrations.MIGRATION_6_7
-import org.schabi.newpipe.database.Migrations.MIGRATION_7_8
-import org.schabi.newpipe.database.Migrations.MIGRATION_8_9
 
 object NewPipeDatabase {
 

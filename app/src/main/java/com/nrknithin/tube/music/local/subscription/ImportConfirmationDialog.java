@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription;
+package com.nrknithin.tube.music.local.subscription;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -18,9 +18,9 @@ import androidx.work.WorkManager;
 
 import com.livefront.bridge.Bridge;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.local.subscription.workers.SubscriptionImportInput;
-import org.schabi.newpipe.local.subscription.workers.SubscriptionImportWorker;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionImportInput;
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionImportWorker;
 
 public class ImportConfirmationDialog extends DialogFragment {
     private static final String INPUT = "input";

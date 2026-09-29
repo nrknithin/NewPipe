@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.notifications
+package com.nrknithin.tube.music.settings.notifications
 
 import android.content.Context
 import android.os.Bundle
@@ -9,14 +9,14 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.databinding.FragmentChannelsNotificationsBinding
+import com.nrknithin.tube.music.local.subscription.SubscriptionManager
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.disposables.Disposable
 import io.reactivex.rxjava3.schedulers.Schedulers
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.subscription.NotificationMode
-import org.schabi.newpipe.databinding.FragmentChannelsNotificationsBinding
-import org.schabi.newpipe.local.subscription.SubscriptionManager
 
 /**
  * [NotificationModeConfigFragment] is a settings fragment

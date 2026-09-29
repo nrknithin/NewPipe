@@ -3,17 +3,17 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import android.text.Selection
 import android.text.Spannable
 import android.widget.TextView
-import org.schabi.newpipe.util.external_communication.ShareUtils
+import com.nrknithin.tube.music.util.external_communication.ShareUtils
 
 object NewPipeTextViewHelper {
     /**
-     * Share the selected text of [NewPipeTextViews][org.schabi.newpipe.views.NewPipeTextView] and
-     * [NewPipeEditTexts][org.schabi.newpipe.views.NewPipeEditText] with
+     * Share the selected text of [NewPipeTextViews][com.nrknithin.tube.music.views.NewPipeTextView] and
+     * [NewPipeEditTexts][com.nrknithin.tube.music.views.NewPipeEditText] with
      * [ShareUtils.shareText].
      *
      *
@@ -23,7 +23,7 @@ object NewPipeTextViewHelper {
      *
      *
      * @param textView the [TextView] on which sharing the selected text. It should be a
-     * [org.schabi.newpipe.views.NewPipeTextView] or a [org.schabi.newpipe.views.NewPipeEditText]
+     * [com.nrknithin.tube.music.views.NewPipeTextView] or a [com.nrknithin.tube.music.views.NewPipeEditText]
      * (even if [standard TextViews][TextView] are supported).
      */
     @JvmStatic

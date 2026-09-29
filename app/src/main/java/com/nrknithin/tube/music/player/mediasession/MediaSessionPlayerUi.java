@@ -1,7 +1,7 @@
-package org.schabi.newpipe.player.mediasession;
+package com.nrknithin.tube.music.player.mediasession;
 
-import static org.schabi.newpipe.MainActivity.DEBUG;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_RECREATE_NOTIFICATION;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_RECREATE_NOTIFICATION;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -19,14 +19,14 @@ import com.google.android.exoplayer2.ForwardingPlayer;
 import com.google.android.exoplayer2.Player.RepeatMode;
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.notification.NotificationActionData;
-import org.schabi.newpipe.player.notification.NotificationConstants;
-import org.schabi.newpipe.player.ui.PlayerUi;
-import org.schabi.newpipe.player.ui.VideoPlayerUi;
-import org.schabi.newpipe.util.StreamTypeUtil;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.notification.NotificationActionData;
+import com.nrknithin.tube.music.player.notification.NotificationConstants;
+import com.nrknithin.tube.music.player.ui.PlayerUi;
+import com.nrknithin.tube.music.player.ui.VideoPlayerUi;
+import com.nrknithin.tube.music.util.StreamTypeUtil;
 
 import java.util.List;
 import java.util.Objects;

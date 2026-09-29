@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist
+package com.nrknithin.tube.music.database.playlist
 
 import androidx.room.ColumnInfo
-import org.schabi.newpipe.database.LocalItem.LocalItemType
-import org.schabi.newpipe.database.playlist.model.PlaylistEntity
+import com.nrknithin.tube.music.database.LocalItem.LocalItemType
+import com.nrknithin.tube.music.database.playlist.model.PlaylistEntity
 
 open class PlaylistMetadataEntry(
     @ColumnInfo(name = PlaylistEntity.PLAYLIST_ID)

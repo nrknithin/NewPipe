@@ -1,7 +1,7 @@
-package us.shandian.giga.postprocessing;
+package com.nrknithin.tube.music.giga.postprocessing;
 
-import org.schabi.newpipe.streams.Mp4FromDashWriter;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.Mp4FromDashWriter;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 

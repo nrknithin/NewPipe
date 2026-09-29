@@ -4,18 +4,18 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.stream
+package com.nrknithin.tube.music.database.stream
 
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
 import androidx.room.Ignore
+import com.nrknithin.tube.music.database.LocalItem
+import com.nrknithin.tube.music.database.history.model.StreamHistoryEntity
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.stream.model.StreamStateEntity.Companion.STREAM_PROGRESS_MILLIS
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import java.time.OffsetDateTime
-import org.schabi.newpipe.database.LocalItem
-import org.schabi.newpipe.database.history.model.StreamHistoryEntity
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.stream.model.StreamStateEntity.Companion.STREAM_PROGRESS_MILLIS
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.util.image.ImageStrategy
 
 data class StreamStatisticsEntry(
     @Embedded

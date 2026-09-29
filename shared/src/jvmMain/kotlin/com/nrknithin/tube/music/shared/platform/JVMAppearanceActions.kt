@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package com.nrknithin.tube.music.shared.platform
 
 import co.touchlab.kermit.Logger
-import org.koin.core.annotation.Singleton
 import java.io.IOException
+import org.koin.core.annotation.Singleton
 
 @Singleton(binds = [AppearanceActions::class])
 class JVMAppearanceActions : AppearanceActions {

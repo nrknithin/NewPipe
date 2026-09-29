@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player
+package com.nrknithin.tube.music.player
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

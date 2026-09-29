@@ -1,20 +1,20 @@
-package org.schabi.newpipe.player.ui;
+package com.nrknithin.tube.music.player.ui;
 
 import static com.google.android.exoplayer2.Player.REPEAT_MODE_ALL;
 import static com.google.android.exoplayer2.Player.REPEAT_MODE_ONE;
-import static org.schabi.newpipe.MainActivity.DEBUG;
-import static org.schabi.newpipe.ktx.ViewUtils.animate;
-import static org.schabi.newpipe.ktx.ViewUtils.animateRotation;
-import static org.schabi.newpipe.player.Player.RENDERER_UNAVAILABLE;
-import static org.schabi.newpipe.player.Player.STATE_BUFFERING;
-import static org.schabi.newpipe.player.Player.STATE_COMPLETED;
-import static org.schabi.newpipe.player.Player.STATE_PAUSED;
-import static org.schabi.newpipe.player.Player.STATE_PAUSED_SEEK;
-import static org.schabi.newpipe.player.Player.STATE_PLAYING;
-import static org.schabi.newpipe.player.helper.PlayerHelper.formatSpeed;
-import static org.schabi.newpipe.player.helper.PlayerHelper.getTimeString;
-import static org.schabi.newpipe.player.helper.PlayerHelper.nextResizeModeAndSaveToPrefs;
-import static org.schabi.newpipe.player.helper.PlayerHelper.retrieveSeekDurationFromPreferences;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animate;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animateRotation;
+import static com.nrknithin.tube.music.player.Player.RENDERER_UNAVAILABLE;
+import static com.nrknithin.tube.music.player.Player.STATE_BUFFERING;
+import static com.nrknithin.tube.music.player.Player.STATE_COMPLETED;
+import static com.nrknithin.tube.music.player.Player.STATE_PAUSED;
+import static com.nrknithin.tube.music.player.Player.STATE_PAUSED_SEEK;
+import static com.nrknithin.tube.music.player.Player.STATE_PLAYING;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.formatSpeed;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.getTimeString;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.nextResizeModeAndSaveToPrefs;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.retrieveSeekDurationFromPreferences;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -59,31 +59,31 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.android.exoplayer2.ui.CaptionStyleCompat;
 import com.google.android.exoplayer2.video.VideoSize;
 
-import org.schabi.newpipe.App;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.PlayerBinding;
+import com.nrknithin.tube.music.App;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.PlayerBinding;
 import org.schabi.newpipe.extractor.MediaFormat;
 import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.VideoStream;
-import org.schabi.newpipe.fragments.detail.VideoDetailFragment;
-import org.schabi.newpipe.ktx.AnimationType;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.gesture.BasePlayerGestureListener;
-import org.schabi.newpipe.player.gesture.DisplayPortion;
-import org.schabi.newpipe.player.helper.PlayerHelper;
-import org.schabi.newpipe.player.mediaitem.MediaItemTag;
-import org.schabi.newpipe.player.playback.SurfaceHolderCallback;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.player.seekbarpreview.SeekbarPreviewThumbnailHelper;
-import org.schabi.newpipe.player.seekbarpreview.SeekbarPreviewThumbnailHolder;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.external_communication.KoreUtils;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
-import org.schabi.newpipe.views.player.PlayerFastSeekOverlay;
+import com.nrknithin.tube.music.fragments.detail.VideoDetailFragment;
+import com.nrknithin.tube.music.ktx.AnimationType;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.gesture.BasePlayerGestureListener;
+import com.nrknithin.tube.music.player.gesture.DisplayPortion;
+import com.nrknithin.tube.music.player.helper.PlayerHelper;
+import com.nrknithin.tube.music.player.mediaitem.MediaItemTag;
+import com.nrknithin.tube.music.player.playback.SurfaceHolderCallback;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.seekbarpreview.SeekbarPreviewThumbnailHelper;
+import com.nrknithin.tube.music.player.seekbarpreview.SeekbarPreviewThumbnailHolder;
+import com.nrknithin.tube.music.util.DeviceUtils;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.external_communication.KoreUtils;
+import com.nrknithin.tube.music.util.external_communication.ShareUtils;
+import com.nrknithin.tube.music.views.player.PlayerFastSeekOverlay;
 
 import java.util.List;
 import java.util.Objects;
@@ -1496,7 +1496,8 @@ public abstract class VideoPlayerUi extends PlayerUi implements SeekBar.OnSeekBa
                     break;
                 }
 
-                if (player.getCurrentState() == org.schabi.newpipe.player.Player.STATE_BLOCKED) {
+                if (player.getCurrentState()
+                        == com.nrknithin.tube.music.player.Player.STATE_BLOCKED) {
                     return true;
                 }
 

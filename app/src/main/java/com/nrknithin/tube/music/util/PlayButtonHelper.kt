@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import android.content.Context
 import android.view.View
@@ -11,10 +11,10 @@ import android.view.View.OnLongClickListener
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.PlaylistControlBinding
-import org.schabi.newpipe.fragments.list.playlist.PlaylistControlViewHolder
-import org.schabi.newpipe.player.PlayerType
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.PlaylistControlBinding
+import com.nrknithin.tube.music.fragments.list.playlist.PlaylistControlViewHolder
+import com.nrknithin.tube.music.player.PlayerType
 
 /**
  * Utility class for play buttons and their respective click listeners.

@@ -1,14 +1,14 @@
-package org.schabi.newpipe.local.playlist
+package com.nrknithin.tube.music.local.playlist
 
+import com.nrknithin.tube.music.database.AppDatabase
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.testUtil.TestDatabase
+import com.nrknithin.tube.music.testUtil.TrampolineSchedulerRule
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.schabi.newpipe.database.AppDatabase
-import org.schabi.newpipe.database.stream.model.StreamEntity
 import org.schabi.newpipe.extractor.stream.StreamType
-import org.schabi.newpipe.testUtil.TestDatabase
-import org.schabi.newpipe.testUtil.TrampolineSchedulerRule
 
 class LocalPlaylistManagerTest {
 

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error
+package com.nrknithin.tube.music.error
 
 import android.content.Context
 import android.content.Intent
@@ -9,14 +9,14 @@ import androidx.annotation.StringRes
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.jakewharton.rxbinding4.view.clicks
+import com.nrknithin.tube.music.MainActivity
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.ktx.animate
+import com.nrknithin.tube.music.util.external_communication.ShareUtils
+import com.nrknithin.tube.music.util.text.setTextWithLinks
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.Disposable
 import java.util.concurrent.TimeUnit
-import org.schabi.newpipe.MainActivity
-import org.schabi.newpipe.R
-import org.schabi.newpipe.ktx.animate
-import org.schabi.newpipe.util.external_communication.ShareUtils
-import org.schabi.newpipe.util.text.setTextWithLinks
 
 class ErrorPanelHelper(
     private val fragment: Fragment,

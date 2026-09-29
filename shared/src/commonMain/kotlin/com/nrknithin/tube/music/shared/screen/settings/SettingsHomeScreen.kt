@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.screen.settings
+package com.nrknithin.tube.music.shared.screen.settings
 
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
@@ -21,14 +21,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import net.newpipe.app.composable.PreferenceRow
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Destination
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.screen.settings.model.SettingsCategory
-import net.newpipe.app.screen.settings.model.SettingsCategoryType
-import net.newpipe.app.viewmodel.settings.SettingsViewModel
+import com.nrknithin.tube.music.shared.composable.PreferenceRow
+import com.nrknithin.tube.music.shared.composable.TopAppBar
+import com.nrknithin.tube.music.shared.navigation.Destination
+import com.nrknithin.tube.music.shared.navigation.Navigator
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.screen.settings.model.SettingsCategory
+import com.nrknithin.tube.music.shared.screen.settings.model.SettingsCategoryType
+import com.nrknithin.tube.music.shared.viewmodel.settings.SettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.ic_search
 import newpipe.shared.generated.resources.search

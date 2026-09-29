@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.navigation
+package com.nrknithin.tube.music.shared.navigation
 
 import androidx.compose.runtime.mutableStateListOf
 import co.touchlab.kermit.Logger
-import net.newpipe.app.screen.about.AboutScreen
-import net.newpipe.app.screen.settings.AppearanceSettingsScreen
-import net.newpipe.app.screen.settings.SettingsHomeScreen
+import com.nrknithin.tube.music.shared.screen.about.AboutScreen
+import com.nrknithin.tube.music.shared.screen.settings.AppearanceSettingsScreen
+import com.nrknithin.tube.music.shared.screen.settings.SettingsHomeScreen
 import org.koin.core.annotation.KoinExperimentalAPI
 import org.koin.core.annotation.Provided
 import org.koin.core.annotation.Singleton

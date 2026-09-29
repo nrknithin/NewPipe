@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.error
+package com.nrknithin.tube.music.error
 
 /**
  * The user actions that can cause an error.

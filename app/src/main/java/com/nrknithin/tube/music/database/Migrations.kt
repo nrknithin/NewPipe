@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database
+package com.nrknithin.tube.music.database
 
 import android.util.Log
 import androidx.room.migration.Migration
-import org.schabi.newpipe.MainActivity
+import com.nrknithin.tube.music.MainActivity
 
 object Migrations {
 

@@ -1,6 +1,6 @@
 @file:JvmName("Constants")
 
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 /**
  * Default duration when using throttle functions across the app, in milliseconds.

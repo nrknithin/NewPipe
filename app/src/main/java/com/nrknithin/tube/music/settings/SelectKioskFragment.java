@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,13 +19,13 @@ import androidx.fragment.app.DialogFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorUtil;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorUtil;
 import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.StreamingService;
-import org.schabi.newpipe.util.KioskTranslator;
-import org.schabi.newpipe.util.ThemeHelper;
-import org.schabi.newpipe.util.YouTubeMusicHelper;
+import com.nrknithin.tube.music.util.KioskTranslator;
+import com.nrknithin.tube.music.util.ThemeHelper;
+import com.nrknithin.tube.music.util.YouTubeMusicHelper;
 
 import java.util.List;
 import java.util.Vector;

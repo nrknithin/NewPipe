@@ -1,4 +1,4 @@
-package org.schabi.newpipe;
+package com.nrknithin.tube.music;
 
 import android.content.Context;
 
@@ -6,12 +6,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.error.ReCaptchaActivity;
+import com.nrknithin.tube.music.error.ReCaptchaActivity;
 import org.schabi.newpipe.extractor.downloader.Downloader;
 import org.schabi.newpipe.extractor.downloader.Request;
 import org.schabi.newpipe.extractor.downloader.Response;
 import org.schabi.newpipe.extractor.exceptions.ReCaptchaException;
-import org.schabi.newpipe.util.InfoCache;
+import com.nrknithin.tube.music.util.InfoCache;
 
 import java.io.IOException;
 import java.util.Arrays;

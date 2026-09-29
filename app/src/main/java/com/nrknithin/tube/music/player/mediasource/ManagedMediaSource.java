@@ -1,10 +1,10 @@
-package org.schabi.newpipe.player.mediasource;
+package com.nrknithin.tube.music.player.mediasource;
 
 import androidx.annotation.NonNull;
 
 import com.google.android.exoplayer2.source.MediaSource;
 
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
 
 public interface ManagedMediaSource extends MediaSource {
     /**

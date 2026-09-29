@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.mediaitem;
+package com.nrknithin.tube.music.player.mediaitem;
 
 import android.net.Uri;
 

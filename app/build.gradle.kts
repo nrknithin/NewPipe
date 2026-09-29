@@ -17,15 +17,6 @@ plugins {
     checkstyle
 }
 
-val gitWorkingBranch = providers.exec {
-    commandLine("git", "rev-parse", "--abbrev-ref", "HEAD")
-}.standardOutput.asText.map { it.trim() }
-val defaultBranches = listOf("master", "dev")
-val workingBranch = gitWorkingBranch.getOrElse("")
-val normalizedWorkingBranch = workingBranch
-    .replaceFirst("^[^A-Za-z]+".toRegex(), "")
-    .replace("[^0-9A-Za-z]+".toRegex(), "")
-
 kotlin {
     jvmToolchain(21)
 }
@@ -36,10 +27,10 @@ configure<ApplicationExtension> {
             minorApiLevel = NEWPIPE_VERSION_SDK_COMPILE_MINOR
         }
     }
-    namespace = NEWPIPE_APPLICATION_ID_OLD
+    namespace = APPLICATION_ID
 
     defaultConfig {
-        applicationId = NEWPIPE_APPLICATION_ID_OLD
+        applicationId = APPLICATION_ID
         resValue("string", "app_name", "NewPipe")
         minSdk {
             version = release(NEWPIPE_VERSION_SDK_MIN)
@@ -57,24 +48,13 @@ configure<ApplicationExtension> {
     }
 
     buildTypes {
+        // Every build type keeps the same application id and app name, so a debug build
+        // installs over a release one instead of sitting beside it as a separate app.
         debug {
             isDebuggable = true
-
-            // suffix the app id and the app name with git branch name
-            if (normalizedWorkingBranch.isEmpty() || workingBranch in defaultBranches) {
-                applicationIdSuffix = ".debug"
-                resValue("string", "app_name", "NewPipe Debug")
-            } else {
-                applicationIdSuffix = ".debug.$normalizedWorkingBranch"
-                resValue("string", "app_name", "NewPipe $workingBranch")
-            }
         }
 
         release {
-            System.getProperty("packageSuffix")?.let { suffix ->
-                applicationIdSuffix = suffix
-                resValue("string", "app_name", "NewPipe $suffix")
-            }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
@@ -87,15 +67,6 @@ configure<ApplicationExtension> {
             initWith(getByName("release"))
             signingConfig = signingConfigs.getByName("debug")
             isDefault = true
-
-            // suffix the app id and the app name with git branch name
-            if (normalizedWorkingBranch.isEmpty() || workingBranch in defaultBranches) {
-                applicationIdSuffix = ".continuous"
-                resValue("string", "app_name", "NewPipe Continuous")
-            } else {
-                applicationIdSuffix = ".continuous.$normalizedWorkingBranch"
-                resValue("string", "app_name", "NewPipe $workingBranch")
-            }
         }
     }
 
@@ -160,7 +131,7 @@ tasks.register<Checkstyle>("runCheckstyle") {
     exclude("**/gen/**")
     exclude("**/R.java")
     exclude("**/BuildConfig.java")
-    exclude("main/java/us/shandian/giga/**")
+    exclude("main/java/com/nrknithin/tube/music/giga/**")
 
     classpath = configurations.getByName("checkstyle")
 

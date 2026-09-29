@@ -1,6 +1,6 @@
-package org.schabi.newpipe.util.debounce;
+package com.nrknithin.tube.music.util.debounce;
 
-import org.schabi.newpipe.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorInfo;
 
 public interface DebounceSavable {
 

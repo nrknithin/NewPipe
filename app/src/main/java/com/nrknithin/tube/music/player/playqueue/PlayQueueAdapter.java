@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.player.playqueue;
+package com.nrknithin.tube.music.player.playqueue;
 
 import android.content.Context;
 import android.util.Log;
@@ -14,13 +14,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.AppendEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.ErrorEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.MoveEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.RemoveEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.SelectEvent;
-import org.schabi.newpipe.util.FallbackViewHolder;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.AppendEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.ErrorEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.MoveEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.RemoveEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.SelectEvent;
+import com.nrknithin.tube.music.util.FallbackViewHolder;
 
 import java.util.List;
 

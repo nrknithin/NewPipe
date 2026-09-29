@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.potoken
+package com.nrknithin.tube.music.util.potoken
 
 import android.content.Context
 import android.os.Handler
@@ -11,14 +11,14 @@ import android.webkit.WebView
 import androidx.annotation.MainThread
 import androidx.webkit.WebSettingsCompat
 import androidx.webkit.WebViewFeature
+import com.nrknithin.tube.music.BuildConfig
+import com.nrknithin.tube.music.DownloaderImpl
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.core.SingleEmitter
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import java.time.Instant
-import org.schabi.newpipe.BuildConfig
-import org.schabi.newpipe.DownloaderImpl
 
 class PoTokenWebView private constructor(
     context: Context,

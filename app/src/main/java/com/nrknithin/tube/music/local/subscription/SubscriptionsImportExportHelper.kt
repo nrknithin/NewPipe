@@ -1,18 +1,18 @@
-package org.schabi.newpipe.local.subscription
+package com.nrknithin.tube.music.local.subscription
 
 import android.app.Activity
 import android.content.Context
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.fragment.app.Fragment
+import com.nrknithin.tube.music.local.subscription.SubscriptionFragment.Companion.JSON_MIME_TYPE
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionExportWorker
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionImportInput
+import com.nrknithin.tube.music.streams.io.NoFileManagerSafeGuard
+import com.nrknithin.tube.music.streams.io.StoredFileHelper
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
-import org.schabi.newpipe.local.subscription.SubscriptionFragment.Companion.JSON_MIME_TYPE
-import org.schabi.newpipe.local.subscription.workers.SubscriptionExportWorker
-import org.schabi.newpipe.local.subscription.workers.SubscriptionImportInput
-import org.schabi.newpipe.streams.io.NoFileManagerSafeGuard
-import org.schabi.newpipe.streams.io.StoredFileHelper
 
 /**
  * This class has to be created in onAttach() or onCreate().

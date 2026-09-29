@@ -1,4 +1,4 @@
-package org.schabi.newpipe.ktx
+package com.nrknithin.tube.music.ktx
 
 import android.graphics.Bitmap
 import android.graphics.Rect

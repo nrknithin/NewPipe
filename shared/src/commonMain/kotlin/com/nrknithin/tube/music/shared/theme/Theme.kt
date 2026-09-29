@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.theme
+package com.nrknithin.tube.music.shared.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
@@ -12,17 +12,17 @@ import androidx.compose.material3.MaterialExpressiveTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalInspectionMode
-import com.russhwolf.settings.Settings
-import org.koin.compose.koinInject
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalInspectionMode
+import com.nrknithin.tube.music.shared.preferences.AppearancePreferences
 import com.russhwolf.settings.ObservableSettings
-import net.newpipe.app.preferences.AppearancePreferences
+import com.russhwolf.settings.Settings
+import org.koin.compose.koinInject
 
 private val lightScheme = lightColorScheme(
     primary = primaryLight,

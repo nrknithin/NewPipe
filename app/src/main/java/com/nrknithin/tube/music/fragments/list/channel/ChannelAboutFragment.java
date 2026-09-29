@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments.list.channel;
+package com.nrknithin.tube.music.fragments.list.channel;
 
 import static org.schabi.newpipe.extractor.stream.StreamExtractor.UNKNOWN_SUBSCRIBER_COUNT;
 
@@ -12,13 +12,13 @@ import androidx.annotation.Nullable;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.channel.ChannelInfo;
 import org.schabi.newpipe.extractor.stream.Description;
-import org.schabi.newpipe.fragments.detail.BaseDescriptionFragment;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.Localization;
+import com.nrknithin.tube.music.fragments.detail.BaseDescriptionFragment;
+import com.nrknithin.tube.music.util.DeviceUtils;
+import com.nrknithin.tube.music.util.Localization;
 
 import java.util.List;
 

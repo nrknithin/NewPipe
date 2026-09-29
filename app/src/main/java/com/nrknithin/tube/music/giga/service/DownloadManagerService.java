@@ -1,7 +1,7 @@
-package us.shandian.giga.service;
+package com.nrknithin.tube.music.giga.service;
 
-import static org.schabi.newpipe.BuildConfig.APPLICATION_ID;
-import static org.schabi.newpipe.BuildConfig.DEBUG;
+import static com.nrknithin.tube.music.BuildConfig.APPLICATION_ID;
+import static com.nrknithin.tube.music.BuildConfig.DEBUG;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -38,13 +38,13 @@ import androidx.core.content.ContextCompat;
 import androidx.core.content.IntentCompat;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.download.DownloadActivity;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.download.DownloadActivity;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.player.helper.LockManager;
-import org.schabi.newpipe.streams.io.StoredDirectoryHelper;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.Localization;
+import com.nrknithin.tube.music.player.helper.LockManager;
+import com.nrknithin.tube.music.streams.io.StoredDirectoryHelper;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.util.Localization;
 
 import java.io.File;
 import java.io.IOException;
@@ -52,10 +52,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import us.shandian.giga.get.DownloadMission;
-import us.shandian.giga.get.MissionRecoveryInfo;
-import us.shandian.giga.postprocessing.Postprocessing;
-import us.shandian.giga.service.DownloadManager.NetworkState;
+import com.nrknithin.tube.music.giga.get.DownloadMission;
+import com.nrknithin.tube.music.giga.get.MissionRecoveryInfo;
+import com.nrknithin.tube.music.giga.postprocessing.Postprocessing;
+import com.nrknithin.tube.music.giga.service.DownloadManager.NetworkState;
 
 public class DownloadManagerService extends Service {
 

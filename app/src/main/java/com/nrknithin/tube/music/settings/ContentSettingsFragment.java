@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,13 +13,13 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.os.LocaleListCompat;
 import androidx.preference.Preference;
 
-import org.schabi.newpipe.DownloaderImpl;
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.DownloaderImpl;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.NewPipe;
-import org.schabi.newpipe.player.helper.PlayerHelper;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.image.ImageStrategy;
-import org.schabi.newpipe.util.image.PreferredImageQuality;
+import com.nrknithin.tube.music.player.helper.PlayerHelper;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.image.ImageStrategy;
+import com.nrknithin.tube.music.util.image.PreferredImageQuality;
 
 import java.util.Locale;
 

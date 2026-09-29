@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database
+package com.nrknithin.tube.music.database
 
 import androidx.room.Dao
 import androidx.room.Delete

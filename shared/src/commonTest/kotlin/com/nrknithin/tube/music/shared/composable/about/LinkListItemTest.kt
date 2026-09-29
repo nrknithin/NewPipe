@@ -3,16 +3,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.composable.about
+package com.nrknithin.tube.music.shared.composable.about
 
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.v2.runComposeUiTest
+import com.nrknithin.tube.music.shared.model.Link
 import kotlin.test.Test
 import kotlin.test.assertTrue
-import net.newpipe.app.model.Link
 
 @OptIn(ExperimentalTestApi::class)
 class LinkListItemTest {

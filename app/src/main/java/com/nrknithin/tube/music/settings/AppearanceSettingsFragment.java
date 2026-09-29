@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -9,9 +9,9 @@ import android.widget.Toast;
 import androidx.core.app.ActivityCompat;
 import androidx.preference.Preference;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.util.Constants;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.util.Constants;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 public class AppearanceSettingsFragment extends BasePreferenceFragment {
 

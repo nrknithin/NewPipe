@@ -1,6 +1,6 @@
 @file:JvmName("ViewUtils")
 
-package org.schabi.newpipe.ktx
+package com.nrknithin.tube.music.ktx
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

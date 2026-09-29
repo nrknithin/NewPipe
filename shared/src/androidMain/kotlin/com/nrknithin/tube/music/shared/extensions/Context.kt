@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.extensions
+package com.nrknithin.tube.music.shared.extensions
 
 import android.content.Context
 import android.content.Intent
+import com.nrknithin.tube.music.shared.ComposeActivity
+import com.nrknithin.tube.music.shared.Constants
+import com.nrknithin.tube.music.shared.navigation.Destination
 import kotlinx.serialization.json.Json
-import net.newpipe.Constants
-import net.newpipe.app.ComposeActivity
-import net.newpipe.app.navigation.Destination
 
 /**
  * Navigates to a given compose destination

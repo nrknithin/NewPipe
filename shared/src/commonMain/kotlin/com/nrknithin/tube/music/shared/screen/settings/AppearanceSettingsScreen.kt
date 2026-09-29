@@ -3,8 +3,9 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.screen.settings
+package com.nrknithin.tube.music.shared.screen.settings
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -15,7 +16,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
-import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
@@ -24,17 +24,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.nrknithin.tube.music.shared.composable.ListPreference
+import com.nrknithin.tube.music.shared.composable.ListPreferenceEntry
+import com.nrknithin.tube.music.shared.composable.PreferenceRow
+import com.nrknithin.tube.music.shared.composable.SwitchPreference
+import com.nrknithin.tube.music.shared.composable.TopAppBar
+import com.nrknithin.tube.music.shared.navigation.Navigator
+import com.nrknithin.tube.music.shared.platform.AppearanceActions
+import com.nrknithin.tube.music.shared.preferences.AppearancePreferences
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.viewmodel.settings.AppearanceSettingsViewModel
 import kotlinx.coroutines.launch
-import net.newpipe.app.composable.ListPreference
-import net.newpipe.app.composable.ListPreferenceEntry
-import net.newpipe.app.composable.PreferenceRow
-import net.newpipe.app.composable.SwitchPreference
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.platform.AppearanceActions
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.preferences.AppearancePreferences
-import net.newpipe.app.viewmodel.settings.AppearanceSettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.auto
 import newpipe.shared.generated.resources.auto_device_theme_title

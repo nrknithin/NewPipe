@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription;
+package com.nrknithin.tube.music.local.subscription;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -22,19 +22,19 @@ import androidx.core.text.util.LinkifyCompat;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.BaseFragment;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.BaseFragment;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.schabi.newpipe.extractor.subscription.SubscriptionExtractor;
-import org.schabi.newpipe.local.subscription.workers.SubscriptionImportInput;
-import org.schabi.newpipe.streams.io.NoFileManagerSafeGuard;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.Constants;
-import org.schabi.newpipe.util.ServiceHelper;
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionImportInput;
+import com.nrknithin.tube.music.streams.io.NoFileManagerSafeGuard;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.util.Constants;
+import com.nrknithin.tube.music.util.ServiceHelper;
 
 import java.util.Collections;
 import java.util.List;

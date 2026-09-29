@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.ui;
+package com.nrknithin.tube.music.player.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import com.google.android.exoplayer2.text.Cue;
 import com.google.android.exoplayer2.video.VideoSize;
 
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.player.Player;
+import com.nrknithin.tube.music.player.Player;
 
 import java.util.List;
 

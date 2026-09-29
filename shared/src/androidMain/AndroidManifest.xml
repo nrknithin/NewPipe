@@ -7,7 +7,7 @@
 
     <application>
         <activity
-            android:name="net.newpipe.app.ComposeActivity"
+            android:name="com.nrknithin.tube.music.shared.ComposeActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

@@ -1,21 +1,21 @@
-package us.shandian.giga.get;
+package com.nrknithin.tube.music.giga.get;
 
 import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.net.HttpURLConnection;
 import java.nio.channels.ClosedByInterruptException;
 
-import us.shandian.giga.util.Utility;
+import com.nrknithin.tube.music.giga.util.Utility;
 
-import static org.schabi.newpipe.BuildConfig.DEBUG;
-import static us.shandian.giga.get.DownloadMission.ERROR_HTTP_FORBIDDEN;
+import static com.nrknithin.tube.music.BuildConfig.DEBUG;
+import static com.nrknithin.tube.music.giga.get.DownloadMission.ERROR_HTTP_FORBIDDEN;
 
 public class DownloadInitializer extends Thread {
     private static final String TAG = "DownloadInitializer";

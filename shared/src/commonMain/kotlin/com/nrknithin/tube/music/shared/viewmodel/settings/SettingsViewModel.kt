@@ -3,13 +3,13 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.viewmodel.settings
+package com.nrknithin.tube.music.shared.viewmodel.settings
 
 import androidx.lifecycle.ViewModel
+import com.nrknithin.tube.music.shared.platform.BuildInfo
+import com.nrknithin.tube.music.shared.screen.settings.model.SettingsCategoryType
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import net.newpipe.app.platform.BuildInfo
-import net.newpipe.app.screen.settings.model.SettingsCategoryType
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

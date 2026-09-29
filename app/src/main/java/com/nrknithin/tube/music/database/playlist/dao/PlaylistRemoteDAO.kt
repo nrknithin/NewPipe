@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist.dao
+package com.nrknithin.tube.music.database.playlist.dao
 
 import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.Transaction
+import com.nrknithin.tube.music.database.BasicDAO
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity
 import io.reactivex.rxjava3.core.Flowable
-import org.schabi.newpipe.database.BasicDAO
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity
 
 @Dao
 interface PlaylistRemoteDAO : BasicDAO<PlaylistRemoteEntity> {

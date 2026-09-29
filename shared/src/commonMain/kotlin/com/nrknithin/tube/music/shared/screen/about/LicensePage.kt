@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about
+package com.nrknithin.tube.music.shared.screen.about
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -31,17 +31,17 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.nrknithin.tube.music.shared.composable.about.LibraryListItem
+import com.nrknithin.tube.music.shared.model.Library
+import com.nrknithin.tube.music.shared.model.License
+import com.nrknithin.tube.music.shared.platform.ShareHandler
+import com.nrknithin.tube.music.shared.preview.LibraryPreviewProvider
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.theme.spaceMedium
+import com.nrknithin.tube.music.shared.theme.spaceXSmall
+import com.nrknithin.tube.music.shared.theme.spaceXXSmall
+import com.nrknithin.tube.music.shared.viewmodel.about.AboutViewModel
 import kotlin.random.Random
-import net.newpipe.app.composable.about.LibraryListItem
-import net.newpipe.app.model.Library
-import net.newpipe.app.model.License
-import net.newpipe.app.platform.ShareHandler
-import net.newpipe.app.preview.LibraryPreviewProvider
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.theme.spaceMedium
-import net.newpipe.app.theme.spaceXSmall
-import net.newpipe.app.theme.spaceXXSmall
-import net.newpipe.app.viewmodel.about.AboutViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.app_license
 import newpipe.shared.generated.resources.app_license_title

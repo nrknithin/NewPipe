@@ -1,4 +1,4 @@
-package org.schabi.newpipe.database.stream.dao
+package com.nrknithin.tube.music.database.stream.dao
 
 import androidx.room.ColumnInfo
 import androidx.room.Dao
@@ -6,14 +6,14 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
+import com.nrknithin.tube.music.database.BasicDAO
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.stream.model.StreamEntity.Companion.STREAM_ID
+import com.nrknithin.tube.music.util.StreamTypeUtil
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
 import java.time.OffsetDateTime
-import org.schabi.newpipe.database.BasicDAO
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.stream.model.StreamEntity.Companion.STREAM_ID
 import org.schabi.newpipe.extractor.stream.StreamType
-import org.schabi.newpipe.util.StreamTypeUtil
 
 @Dao
 abstract class StreamDAO : BasicDAO<StreamEntity> {

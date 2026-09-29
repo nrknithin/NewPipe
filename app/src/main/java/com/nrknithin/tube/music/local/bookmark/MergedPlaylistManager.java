@@ -1,10 +1,10 @@
-package org.schabi.newpipe.local.bookmark;
+package com.nrknithin.tube.music.local.bookmark;
 
-import org.schabi.newpipe.database.playlist.PlaylistLocalItem;
-import org.schabi.newpipe.database.playlist.PlaylistMetadataEntry;
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity;
-import org.schabi.newpipe.local.playlist.LocalPlaylistManager;
-import org.schabi.newpipe.local.playlist.RemotePlaylistManager;
+import com.nrknithin.tube.music.database.playlist.PlaylistLocalItem;
+import com.nrknithin.tube.music.database.playlist.PlaylistMetadataEntry;
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity;
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistManager;
+import com.nrknithin.tube.music.local.playlist.RemotePlaylistManager;
 
 import java.util.ArrayList;
 import java.util.Collections;

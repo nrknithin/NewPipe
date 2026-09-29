@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe.player;
+package com.nrknithin.tube.music.player;
 
 import android.content.Context;
 import android.content.Intent;
@@ -35,13 +35,13 @@ import androidx.media.MediaBrowserServiceCompat;
 
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
 
-import org.schabi.newpipe.ktx.BundleKt;
-import org.schabi.newpipe.player.mediabrowser.MediaBrowserImpl;
-import org.schabi.newpipe.player.mediabrowser.MediaBrowserPlaybackPreparer;
-import org.schabi.newpipe.player.mediasession.MediaSessionPlayerUi;
-import org.schabi.newpipe.player.notification.NotificationPlayerUi;
-import org.schabi.newpipe.player.notification.NotificationUtil;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.ktx.BundleKt;
+import com.nrknithin.tube.music.player.mediabrowser.MediaBrowserImpl;
+import com.nrknithin.tube.music.player.mediabrowser.MediaBrowserPlaybackPreparer;
+import com.nrknithin.tube.music.player.mediasession.MediaSessionPlayerUi;
+import com.nrknithin.tube.music.player.notification.NotificationPlayerUi;
+import com.nrknithin.tube.music.player.notification.NotificationUtil;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 import java.lang.ref.WeakReference;
 import java.util.List;

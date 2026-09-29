@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings
+package com.nrknithin.tube.music.settings
 
 import android.content.SharedPreferences
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
@@ -8,18 +8,18 @@ import android.os.Bundle
 import androidx.preference.Preference
 import androidx.preference.SwitchPreference
 import com.google.android.material.snackbar.Snackbar
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.error.ErrorInfo
+import com.nrknithin.tube.music.error.ErrorUtil
+import com.nrknithin.tube.music.error.UserAction
+import com.nrknithin.tube.music.local.feed.notifications.NotificationHelper
+import com.nrknithin.tube.music.local.feed.notifications.NotificationWorker
+import com.nrknithin.tube.music.local.feed.notifications.ScheduleOptions
+import com.nrknithin.tube.music.local.subscription.SubscriptionManager
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.Disposable
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.subscription.NotificationMode
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
-import org.schabi.newpipe.error.ErrorInfo
-import org.schabi.newpipe.error.ErrorUtil
-import org.schabi.newpipe.error.UserAction
-import org.schabi.newpipe.local.feed.notifications.NotificationHelper
-import org.schabi.newpipe.local.feed.notifications.NotificationWorker
-import org.schabi.newpipe.local.feed.notifications.ScheduleOptions
-import org.schabi.newpipe.local.subscription.SubscriptionManager
 
 class NotificationsSettingsFragment : BasePreferenceFragment(), OnSharedPreferenceChangeListener {
 

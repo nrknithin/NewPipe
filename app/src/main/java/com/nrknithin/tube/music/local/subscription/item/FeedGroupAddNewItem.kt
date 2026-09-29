@@ -1,9 +1,9 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.View
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.FeedGroupAddNewItemBinding
 import com.xwray.groupie.viewbinding.BindableItem
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.FeedGroupAddNewItemBinding
 
 class FeedGroupAddNewItem : BindableItem<FeedGroupAddNewItemBinding>() {
     override fun getLayout(): Int = R.layout.feed_group_add_new_item

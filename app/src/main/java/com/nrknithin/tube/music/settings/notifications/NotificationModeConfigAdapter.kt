@@ -1,14 +1,14 @@
-package org.schabi.newpipe.settings.notifications
+package com.nrknithin.tube.music.settings.notifications
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.schabi.newpipe.database.subscription.NotificationMode
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
-import org.schabi.newpipe.databinding.ItemNotificationConfigBinding
-import org.schabi.newpipe.settings.notifications.NotificationModeConfigAdapter.SubscriptionHolder
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.databinding.ItemNotificationConfigBinding
+import com.nrknithin.tube.music.settings.notifications.NotificationModeConfigAdapter.SubscriptionHolder
 
 /**
  * This [RecyclerView.Adapter] is used in the [NotificationModeConfigFragment].

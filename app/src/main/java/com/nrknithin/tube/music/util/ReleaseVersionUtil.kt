@@ -1,14 +1,14 @@
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import android.content.pm.PackageManager
 import androidx.core.content.pm.PackageInfoCompat
+import com.nrknithin.tube.music.App
+import com.nrknithin.tube.music.error.ErrorInfo
+import com.nrknithin.tube.music.error.ErrorUtil.Companion.createNotification
+import com.nrknithin.tube.music.error.UserAction
 import java.time.Instant
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
-import org.schabi.newpipe.App
-import org.schabi.newpipe.error.ErrorInfo
-import org.schabi.newpipe.error.ErrorUtil.Companion.createNotification
-import org.schabi.newpipe.error.UserAction
 
 object ReleaseVersionUtil {
     // Public key of the certificate that is used in NewPipe release versions

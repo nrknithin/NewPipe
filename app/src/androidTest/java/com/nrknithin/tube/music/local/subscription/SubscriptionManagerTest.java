@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription;
+package com.nrknithin.tube.music.local.subscription;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,13 +8,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.schabi.newpipe.database.AppDatabase;
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity;
-import org.schabi.newpipe.database.subscription.SubscriptionEntity;
+import com.nrknithin.tube.music.database.AppDatabase;
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity;
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity;
 import org.schabi.newpipe.extractor.channel.ChannelInfo;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
-import org.schabi.newpipe.testUtil.TestDatabase;
-import org.schabi.newpipe.testUtil.TrampolineSchedulerRule;
+import com.nrknithin.tube.music.testUtil.TestDatabase;
+import com.nrknithin.tube.music.testUtil.TrampolineSchedulerRule;
 
 import java.io.IOException;
 import java.util.List;

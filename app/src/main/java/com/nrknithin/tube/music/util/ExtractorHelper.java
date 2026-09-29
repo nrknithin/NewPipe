@@ -17,10 +17,10 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
-import static org.schabi.newpipe.util.text.TextLinkifier.SET_LINK_MOVEMENT_METHOD;
+import static com.nrknithin.tube.music.util.text.TextLinkifier.SET_LINK_MOVEMENT_METHOD;
 
 import android.content.Context;
 import android.util.Log;
@@ -32,8 +32,8 @@ import androidx.annotation.Nullable;
 import androidx.core.text.HtmlCompat;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.MainActivity;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.Info;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.ListExtractor.InfoItemsPage;
@@ -51,7 +51,7 @@ import org.schabi.newpipe.extractor.search.SearchInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.schabi.newpipe.extractor.suggestion.SuggestionExtractor;
-import org.schabi.newpipe.util.text.TextLinkifier;
+import com.nrknithin.tube.music.util.text.TextLinkifier;
 
 import java.util.Collections;
 import java.util.List;

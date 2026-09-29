@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error
+package com.nrknithin.tube.music.error
 
 import android.app.Activity
 import android.app.PendingIntent
@@ -14,8 +14,8 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.preference.PreferenceManager
 import com.google.android.material.snackbar.Snackbar
-import org.schabi.newpipe.MainActivity
-import org.schabi.newpipe.R
+import com.nrknithin.tube.music.MainActivity
+import com.nrknithin.tube.music.R
 
 /**
  * This class contains all of the methods that should be used to let the user know that an error has

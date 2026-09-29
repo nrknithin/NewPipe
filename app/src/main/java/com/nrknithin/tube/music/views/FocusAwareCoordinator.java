@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with NewPipe.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.schabi.newpipe.views;
+package com.nrknithin.tube.music.views;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -29,7 +29,7 @@ import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.WindowInsetsCompat;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 public final class FocusAwareCoordinator extends CoordinatorLayout {
     private final Rect childFocus = new Rect();

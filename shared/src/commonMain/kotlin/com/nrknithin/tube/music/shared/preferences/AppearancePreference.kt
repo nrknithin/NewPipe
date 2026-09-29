@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.preferences
+package com.nrknithin.tube.music.shared.preferences
 
 /**
  * Preference keys, values, and defaults for the Appearance settings screen.

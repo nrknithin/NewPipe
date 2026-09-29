@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.holder;
+package com.nrknithin.tube.music.local.holder;
 
 import android.view.MotionEvent;
 import android.view.View;
@@ -8,17 +8,17 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.LocalItem;
-import org.schabi.newpipe.database.playlist.PlaylistStreamEntry;
-import org.schabi.newpipe.ktx.ViewUtils;
-import org.schabi.newpipe.local.LocalItemBuilder;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.util.DependentPreferenceHelper;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.ServiceHelper;
-import org.schabi.newpipe.util.image.CoilHelper;
-import org.schabi.newpipe.views.AnimatedProgressBar;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.LocalItem;
+import com.nrknithin.tube.music.database.playlist.PlaylistStreamEntry;
+import com.nrknithin.tube.music.ktx.ViewUtils;
+import com.nrknithin.tube.music.local.LocalItemBuilder;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.util.DependentPreferenceHelper;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.ServiceHelper;
+import com.nrknithin.tube.music.util.image.CoilHelper;
+import com.nrknithin.tube.music.views.AnimatedProgressBar;
 
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.TimeUnit;

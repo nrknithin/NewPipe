@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.playqueue;
+package com.nrknithin.tube.music.player.playqueue;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -7,7 +7,7 @@ import org.schabi.newpipe.extractor.Image;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.schabi.newpipe.extractor.stream.StreamType;
-import org.schabi.newpipe.util.ExtractorHelper;
+import com.nrknithin.tube.music.util.ExtractorHelper;
 
 import java.io.Serializable;
 import java.util.List;

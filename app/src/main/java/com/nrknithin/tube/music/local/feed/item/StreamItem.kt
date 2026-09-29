@@ -1,27 +1,27 @@
-package org.schabi.newpipe.local.feed.item
+package com.nrknithin.tube.music.local.feed.item
 
 import android.content.Context
 import android.text.TextUtils
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceManager
+import com.nrknithin.tube.music.MainActivity
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.stream.StreamWithState
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.databinding.ListStreamItemBinding
+import com.nrknithin.tube.music.util.Localization
+import com.nrknithin.tube.music.util.StreamTypeUtil
+import com.nrknithin.tube.music.util.image.CoilHelper
 import com.xwray.groupie.viewbinding.BindableItem
 import java.util.concurrent.TimeUnit
 import java.util.function.Consumer
-import org.schabi.newpipe.MainActivity
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.stream.StreamWithState
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.databinding.ListStreamItemBinding
 import org.schabi.newpipe.extractor.stream.StreamType.AUDIO_LIVE_STREAM
 import org.schabi.newpipe.extractor.stream.StreamType.AUDIO_STREAM
 import org.schabi.newpipe.extractor.stream.StreamType.LIVE_STREAM
 import org.schabi.newpipe.extractor.stream.StreamType.POST_LIVE_AUDIO_STREAM
 import org.schabi.newpipe.extractor.stream.StreamType.POST_LIVE_STREAM
 import org.schabi.newpipe.extractor.stream.StreamType.VIDEO_STREAM
-import org.schabi.newpipe.util.Localization
-import org.schabi.newpipe.util.StreamTypeUtil
-import org.schabi.newpipe.util.image.CoilHelper
 
 data class StreamItem(
     val streamWithState: StreamWithState,

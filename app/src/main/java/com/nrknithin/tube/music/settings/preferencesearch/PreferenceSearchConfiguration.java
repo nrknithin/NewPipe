@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.preferencesearch;
+package com.nrknithin.tube.music.settings.preferencesearch;
 
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;

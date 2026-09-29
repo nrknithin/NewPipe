@@ -1,4 +1,4 @@
-package net.newpipe.app.screen.settings.model
+package com.nrknithin.tube.music.shared.screen.settings.model
 
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.content

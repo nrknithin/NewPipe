@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import static org.schabi.newpipe.extractor.utils.Utils.isBlank;
 
@@ -21,18 +21,18 @@ import androidx.preference.PreferenceManager;
 
 import com.grack.nanojson.JsonParserException;
 
-import org.schabi.newpipe.NewPipeDatabase;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.local.subscription.SubscriptionsImportExportHelper;
-import org.schabi.newpipe.settings.export.BackupFileLocator;
-import org.schabi.newpipe.settings.export.ImportExportManager;
-import org.schabi.newpipe.streams.io.NoFileManagerSafeGuard;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.ZipHelper;
+import com.nrknithin.tube.music.NewPipeDatabase;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
+import com.nrknithin.tube.music.local.subscription.SubscriptionsImportExportHelper;
+import com.nrknithin.tube.music.settings.export.BackupFileLocator;
+import com.nrknithin.tube.music.settings.export.ImportExportManager;
+import com.nrknithin.tube.music.streams.io.NoFileManagerSafeGuard;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.ZipHelper;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

@@ -1,13 +1,13 @@
-package org.schabi.newpipe.streams;
+package com.nrknithin.tube.music.streams;
 
-import org.schabi.newpipe.streams.Mp4DashReader.Hdlr;
-import org.schabi.newpipe.streams.Mp4DashReader.Mdia;
-import org.schabi.newpipe.streams.Mp4DashReader.Mp4DashChunk;
-import org.schabi.newpipe.streams.Mp4DashReader.Mp4DashSample;
-import org.schabi.newpipe.streams.Mp4DashReader.Mp4Track;
-import org.schabi.newpipe.streams.Mp4DashReader.TrackKind;
-import org.schabi.newpipe.streams.Mp4DashReader.TrunEntry;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.Mp4DashReader.Hdlr;
+import com.nrknithin.tube.music.streams.Mp4DashReader.Mdia;
+import com.nrknithin.tube.music.streams.Mp4DashReader.Mp4DashChunk;
+import com.nrknithin.tube.music.streams.Mp4DashReader.Mp4DashSample;
+import com.nrknithin.tube.music.streams.Mp4DashReader.Mp4Track;
+import com.nrknithin.tube.music.streams.Mp4DashReader.TrackKind;
+import com.nrknithin.tube.music.streams.Mp4DashReader.TrunEntry;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

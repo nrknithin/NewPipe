@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.tabs;
+package com.nrknithin.tube.music.settings.tabs;
 
 import androidx.annotation.Nullable;
 

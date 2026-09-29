@@ -4,17 +4,17 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.subscription
+package com.nrknithin.tube.music.database.subscription
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.Index
 import androidx.room.PrimaryKey
+import com.nrknithin.tube.music.util.NO_SERVICE_ID
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import org.schabi.newpipe.extractor.channel.ChannelInfo
 import org.schabi.newpipe.extractor.channel.ChannelInfoItem
-import org.schabi.newpipe.util.NO_SERVICE_ID
-import org.schabi.newpipe.util.image.ImageStrategy
 
 @Entity(
     tableName = SubscriptionEntity.Companion.SUBSCRIPTION_TABLE,

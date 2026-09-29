@@ -1,16 +1,16 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.os.Parcelable
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.FeedItemCarouselBinding
+import com.nrknithin.tube.music.util.DeviceUtils
+import com.nrknithin.tube.music.util.ThemeHelper.getGridSpanCount
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.viewbinding.BindableItem
 import com.xwray.groupie.viewbinding.GroupieViewHolder
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.FeedItemCarouselBinding
-import org.schabi.newpipe.util.DeviceUtils
-import org.schabi.newpipe.util.ThemeHelper.getGridSpanCount
 
 class FeedGroupCarouselItem(
     private val carouselAdapter: GroupAdapter<GroupieViewHolder<FeedItemCarouselBinding>>,

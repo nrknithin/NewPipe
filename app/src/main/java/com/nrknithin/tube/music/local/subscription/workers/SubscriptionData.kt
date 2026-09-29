@@ -1,8 +1,8 @@
-package org.schabi.newpipe.local.subscription.workers
+package com.nrknithin.tube.music.local.subscription.workers
 
+import com.nrknithin.tube.music.BuildConfig
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import org.schabi.newpipe.BuildConfig
 
 @Serializable
 class SubscriptionData(

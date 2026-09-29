@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.tabs;
+package com.nrknithin.tube.music.settings.tabs;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -6,7 +6,7 @@ import android.widget.Toast;
 
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package us.shandian.giga.io;
+package com.nrknithin.tube.music.giga.io;
 
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 

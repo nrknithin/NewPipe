@@ -1,12 +1,12 @@
-package org.schabi.newpipe.util.text;
+package com.nrknithin.tube.music.util.text;
 
 import android.content.Context;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.external_communication.ShareUtils;
 
 final class HashtagLongPressClickableSpan extends LongPressClickableSpan {
 

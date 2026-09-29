@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.helper;
+package com.nrknithin.tube.music.player.helper;
 
 import androidx.core.math.MathUtils;
 

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.dialog;
+package com.nrknithin.tube.music.local.dialog;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -9,12 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog.Builder;
 
-import org.schabi.newpipe.NewPipeDatabase;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.stream.model.StreamEntity;
-import org.schabi.newpipe.databinding.DialogEditTextBinding;
-import org.schabi.newpipe.local.playlist.LocalPlaylistManager;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.NewPipeDatabase;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.stream.model.StreamEntity;
+import com.nrknithin.tube.music.databinding.DialogEditTextBinding;
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistManager;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 import java.util.List;
 

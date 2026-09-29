@@ -1,11 +1,11 @@
-package org.schabi.newpipe.info_list.holder;
+package com.nrknithin.tube.music.info_list.holder;
 
 import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.info_list.InfoItemBuilder;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.info_list.InfoItemBuilder;
 
 public class ChannelCardInfoItemHolder extends ChannelMiniInfoItemHolder {
     public ChannelCardInfoItemHolder(final InfoItemBuilder infoItemBuilder,

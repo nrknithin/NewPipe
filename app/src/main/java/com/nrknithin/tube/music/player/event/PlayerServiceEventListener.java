@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.event;
+package com.nrknithin.tube.music.player.event;
 
 import com.google.android.exoplayer2.PlaybackException;
 

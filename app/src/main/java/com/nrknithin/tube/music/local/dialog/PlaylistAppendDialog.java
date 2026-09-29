@@ -1,6 +1,6 @@
-package org.schabi.newpipe.local.dialog;
+package com.nrknithin.tube.music.local.dialog;
 
-import static org.schabi.newpipe.database.playlist.model.PlaylistEntity.DEFAULT_THUMBNAIL_ID;
+import static com.nrknithin.tube.music.database.playlist.model.PlaylistEntity.DEFAULT_THUMBNAIL_ID;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,12 +14,12 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.NewPipeDatabase;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.playlist.PlaylistDuplicatesEntry;
-import org.schabi.newpipe.database.stream.model.StreamEntity;
-import org.schabi.newpipe.local.LocalItemListAdapter;
-import org.schabi.newpipe.local.playlist.LocalPlaylistManager;
+import com.nrknithin.tube.music.NewPipeDatabase;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.playlist.PlaylistDuplicatesEntry;
+import com.nrknithin.tube.music.database.stream.model.StreamEntity;
+import com.nrknithin.tube.music.local.LocalItemListAdapter;
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistManager;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package org.schabi.newpipe;
+package com.nrknithin.tube.music;
 
-import static org.schabi.newpipe.util.SparseItemUtil.fetchStreamInfoAndSaveToDatabase;
-import static org.schabi.newpipe.util.external_communication.ShareUtils.shareText;
+import static com.nrknithin.tube.music.util.SparseItemUtil.fetchStreamInfoAndSaveToDatabase;
+import static com.nrknithin.tube.music.util.external_communication.ShareUtils.shareText;
 
 import android.content.Context;
 import android.view.ContextThemeWrapper;
@@ -10,13 +10,13 @@ import android.widget.PopupMenu;
 
 import androidx.fragment.app.FragmentManager;
 
-import org.schabi.newpipe.database.stream.model.StreamEntity;
-import org.schabi.newpipe.download.DownloadDialog;
-import org.schabi.newpipe.local.dialog.PlaylistDialog;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.SparseItemUtil;
+import com.nrknithin.tube.music.database.stream.model.StreamEntity;
+import com.nrknithin.tube.music.download.DownloadDialog;
+import com.nrknithin.tube.music.local.dialog.PlaylistDialog;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.SparseItemUtil;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -25,20 +25,20 @@ import com.evernote.android.state.State;
 import com.jakewharton.rxbinding4.widget.RxTextView;
 import com.livefront.bridge.Bridge;
 
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.SettingsLayoutBinding;
-import org.schabi.newpipe.settings.preferencesearch.PreferenceParser;
-import org.schabi.newpipe.settings.preferencesearch.PreferenceSearchConfiguration;
-import org.schabi.newpipe.settings.preferencesearch.PreferenceSearchFragment;
-import org.schabi.newpipe.settings.preferencesearch.PreferenceSearchItem;
-import org.schabi.newpipe.settings.preferencesearch.PreferenceSearchResultHighlighter;
-import org.schabi.newpipe.settings.preferencesearch.PreferenceSearchResultListener;
-import org.schabi.newpipe.settings.preferencesearch.PreferenceSearcher;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.ReleaseVersionUtil;
-import org.schabi.newpipe.util.ThemeHelper;
-import org.schabi.newpipe.views.FocusOverlayView;
+import com.nrknithin.tube.music.MainActivity;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.SettingsLayoutBinding;
+import com.nrknithin.tube.music.settings.preferencesearch.PreferenceParser;
+import com.nrknithin.tube.music.settings.preferencesearch.PreferenceSearchConfiguration;
+import com.nrknithin.tube.music.settings.preferencesearch.PreferenceSearchFragment;
+import com.nrknithin.tube.music.settings.preferencesearch.PreferenceSearchItem;
+import com.nrknithin.tube.music.settings.preferencesearch.PreferenceSearchResultHighlighter;
+import com.nrknithin.tube.music.settings.preferencesearch.PreferenceSearchResultListener;
+import com.nrknithin.tube.music.settings.preferencesearch.PreferenceSearcher;
+import com.nrknithin.tube.music.util.DeviceUtils;
+import com.nrknithin.tube.music.util.ReleaseVersionUtil;
+import com.nrknithin.tube.music.util.ThemeHelper;
+import com.nrknithin.tube.music.views.FocusOverlayView;
 
 import java.util.concurrent.TimeUnit;
 

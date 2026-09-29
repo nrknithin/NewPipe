@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.feed.notifications
+package com.nrknithin.tube.music.local.feed.notifications
 
 import android.app.Notification
 import android.app.NotificationManager
@@ -16,11 +16,11 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.getSystemService
 import androidx.core.net.toUri
 import androidx.preference.PreferenceManager
-import org.schabi.newpipe.R
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.local.feed.service.FeedUpdateInfo
+import com.nrknithin.tube.music.util.NavigationHelper
+import com.nrknithin.tube.music.util.image.CoilHelper
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.local.feed.service.FeedUpdateInfo
-import org.schabi.newpipe.util.NavigationHelper
-import org.schabi.newpipe.util.image.CoilHelper
 
 /**
  * Helper for everything related to show notifications about new streams to the user.

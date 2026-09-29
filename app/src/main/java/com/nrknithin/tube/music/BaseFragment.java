@@ -1,4 +1,4 @@
-package org.schabi.newpipe;
+package com.nrknithin.tube.music;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -123,12 +123,12 @@ public abstract class BaseFragment extends Fragment {
 
     /**
      * Finds the root fragment by looping through all of the parent fragments. The root fragment
-     * is supposed to be {@link org.schabi.newpipe.fragments.MainFragment}, and is the fragment that
-     * handles keeping the backstack of opened fragments in NewPipe, and also the player bottom
-     * sheet. This function therefore returns the fragment manager of said fragment.
+     * is supposed to be {@link com.nrknithin.tube.music.fragments.MainFragment}, and is the
+     * fragment that handles keeping the backstack of opened fragments in NewPipe, and also the
+     * player bottom sheet. This function therefore returns the fragment manager of said fragment.
      *
      * @return the fragment manager of the root fragment, i.e.
-     *         {@link org.schabi.newpipe.fragments.MainFragment}
+     *         {@link com.nrknithin.tube.music.fragments.MainFragment}
      */
     protected FragmentManager getFM() {
         Fragment current = this;

@@ -1,14 +1,14 @@
-package org.schabi.newpipe.database.feed.model
+package com.nrknithin.tube.music.database.feed.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
-import org.schabi.newpipe.database.feed.model.FeedEntity.Companion.FEED_TABLE
-import org.schabi.newpipe.database.feed.model.FeedEntity.Companion.STREAM_ID
-import org.schabi.newpipe.database.feed.model.FeedEntity.Companion.SUBSCRIPTION_ID
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.database.feed.model.FeedEntity.Companion.FEED_TABLE
+import com.nrknithin.tube.music.database.feed.model.FeedEntity.Companion.STREAM_ID
+import com.nrknithin.tube.music.database.feed.model.FeedEntity.Companion.SUBSCRIPTION_ID
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
 
 @Entity(
     tableName = FEED_TABLE,

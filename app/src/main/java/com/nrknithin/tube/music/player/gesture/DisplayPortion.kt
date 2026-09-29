@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.gesture
+package com.nrknithin.tube.music.player.gesture
 
 enum class DisplayPortion {
     LEFT,

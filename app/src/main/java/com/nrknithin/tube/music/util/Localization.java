@@ -1,6 +1,6 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
-import static org.schabi.newpipe.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -24,7 +24,7 @@ import androidx.preference.PreferenceManager;
 
 import org.ocpsoft.prettytime.PrettyTime;
 import org.ocpsoft.prettytime.units.Decade;
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.localization.ContentCountry;
 import org.schabi.newpipe.extractor.localization.DateWrapper;

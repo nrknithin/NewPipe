@@ -1,8 +1,8 @@
-package org.schabi.newpipe.fragments.detail;
+package com.nrknithin.tube.music.fragments.detail;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
 
 import java.io.Serializable;
 

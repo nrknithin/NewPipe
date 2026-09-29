@@ -1,11 +1,11 @@
-package org.schabi.newpipe.player.helper;
+package com.nrknithin.tube.music.player.helper;
 
-import static org.schabi.newpipe.player.helper.PlayerHelper.AutoplayType.AUTOPLAY_TYPE_ALWAYS;
-import static org.schabi.newpipe.player.helper.PlayerHelper.AutoplayType.AUTOPLAY_TYPE_NEVER;
-import static org.schabi.newpipe.player.helper.PlayerHelper.AutoplayType.AUTOPLAY_TYPE_WIFI;
-import static org.schabi.newpipe.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_BACKGROUND;
-import static org.schabi.newpipe.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_NONE;
-import static org.schabi.newpipe.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_POPUP;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.AutoplayType.AUTOPLAY_TYPE_ALWAYS;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.AutoplayType.AUTOPLAY_TYPE_NEVER;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.AutoplayType.AUTOPLAY_TYPE_WIFI;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_BACKGROUND;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_NONE;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_POPUP;
 import static java.lang.annotation.RetentionPolicy.SOURCE;
 
 import android.annotation.SuppressLint;
@@ -30,18 +30,18 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout.ResizeMode;
 import com.google.android.exoplayer2.ui.CaptionStyleCompat;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.schabi.newpipe.extractor.stream.SubtitlesStream;
 import org.schabi.newpipe.extractor.utils.Utils;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.player.playqueue.SinglePlayQueue;
-import org.schabi.newpipe.util.ListHelper;
-import org.schabi.newpipe.util.Localization;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.playqueue.SinglePlayQueue;
+import com.nrknithin.tube.music.util.ListHelper;
+import com.nrknithin.tube.music.util.Localization;
 
 import java.lang.annotation.Retention;
 import java.text.DecimalFormat;

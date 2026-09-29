@@ -1,9 +1,9 @@
-package us.shandian.giga.postprocessing;
+package com.nrknithin.tube.music.giga.postprocessing;
 
-import org.schabi.newpipe.streams.WebMReader.TrackKind;
-import org.schabi.newpipe.streams.WebMReader.WebMTrack;
-import org.schabi.newpipe.streams.WebMWriter;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.WebMReader.TrackKind;
+import com.nrknithin.tube.music.streams.WebMReader.WebMTrack;
+import com.nrknithin.tube.music.streams.WebMWriter;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 

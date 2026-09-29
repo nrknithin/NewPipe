@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.text;
+package com.nrknithin.tube.music.util.text;
 
 import android.content.Context;
 import android.text.SpannableStringBuilder;
@@ -14,8 +14,8 @@ import androidx.core.text.HtmlCompat;
 
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.stream.Description;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.external_communication.ShareUtils;
 
 import java.util.function.Consumer;
 import java.util.regex.Matcher;

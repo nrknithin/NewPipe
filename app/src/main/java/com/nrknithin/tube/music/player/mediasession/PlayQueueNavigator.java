@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.mediasession;
+package com.nrknithin.tube.music.player.mediasession;
 
 import static android.support.v4.media.session.PlaybackStateCompat.ACTION_SKIP_TO_NEXT;
 import static android.support.v4.media.session.PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS;
@@ -17,10 +17,10 @@ import androidx.annotation.Nullable;
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
 import com.google.android.exoplayer2.util.Util;
 
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.util.image.ImageStrategy;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.util.image.ImageStrategy;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,6 +1,6 @@
-package org.schabi.newpipe.fragments.list;
+package com.nrknithin.tube.music.fragments.list;
 
-import org.schabi.newpipe.fragments.ViewContract;
+import com.nrknithin.tube.music.fragments.ViewContract;
 
 public interface ListViewContract<I, N> extends ViewContract<I> {
     void showListFooter(boolean show);

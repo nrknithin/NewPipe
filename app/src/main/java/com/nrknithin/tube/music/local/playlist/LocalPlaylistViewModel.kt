@@ -3,22 +3,22 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.local.playlist
+package com.nrknithin.tube.music.local.playlist
 
 import android.app.Application
 import android.util.Pair
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.nrknithin.tube.music.NewPipeDatabase
+import com.nrknithin.tube.music.database.playlist.PlaylistStreamEntry
+import com.nrknithin.tube.music.database.playlist.model.PlaylistEntity
+import com.nrknithin.tube.music.local.history.HistoryRecordManager
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import java.util.Collections
-import org.schabi.newpipe.NewPipeDatabase
-import org.schabi.newpipe.database.playlist.PlaylistStreamEntry
-import org.schabi.newpipe.database.playlist.model.PlaylistEntity
-import org.schabi.newpipe.local.history.HistoryRecordManager
 
 class LocalPlaylistViewModel(application: Application) : AndroidViewModel(application) {
     private val playlistManager = LocalPlaylistManager(NewPipeDatabase.getInstance(application))

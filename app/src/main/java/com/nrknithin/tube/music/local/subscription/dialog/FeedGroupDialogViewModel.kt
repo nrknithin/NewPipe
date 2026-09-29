@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription.dialog
+package com.nrknithin.tube.music.local.subscription.dialog
 
 import android.content.Context
 import androidx.lifecycle.LiveData
@@ -6,16 +6,16 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.local.feed.FeedDatabaseManager
+import com.nrknithin.tube.music.local.subscription.FeedGroupIcon
+import com.nrknithin.tube.music.local.subscription.SubscriptionManager
+import com.nrknithin.tube.music.local.subscription.item.PickerSubscriptionItem
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.disposables.Disposable
 import io.reactivex.rxjava3.processors.BehaviorProcessor
 import io.reactivex.rxjava3.schedulers.Schedulers
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.local.feed.FeedDatabaseManager
-import org.schabi.newpipe.local.subscription.FeedGroupIcon
-import org.schabi.newpipe.local.subscription.SubscriptionManager
-import org.schabi.newpipe.local.subscription.item.PickerSubscriptionItem
 
 class FeedGroupDialogViewModel(
     applicationContext: Context,

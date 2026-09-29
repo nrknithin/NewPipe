@@ -1,8 +1,8 @@
-package org.schabi.newpipe.player.ui;
+package com.nrknithin.tube.music.player.ui;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
-import static org.schabi.newpipe.MainActivity.DEBUG;
-import static org.schabi.newpipe.player.helper.PlayerHelper.getMinimumVideoHeight;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.getMinimumVideoHeight;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -33,14 +33,14 @@ import androidx.core.math.MathUtils;
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout;
 import com.google.android.exoplayer2.ui.SubtitleView;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.PlayerBinding;
-import org.schabi.newpipe.databinding.PlayerPopupCloseOverlayBinding;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.gesture.BasePlayerGestureListener;
-import org.schabi.newpipe.player.gesture.PopupPlayerGestureListener;
-import org.schabi.newpipe.player.helper.PlayerHelper;
-import org.schabi.newpipe.util.DeviceUtils;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.PlayerBinding;
+import com.nrknithin.tube.music.databinding.PlayerPopupCloseOverlayBinding;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.gesture.BasePlayerGestureListener;
+import com.nrknithin.tube.music.player.gesture.PopupPlayerGestureListener;
+import com.nrknithin.tube.music.player.helper.PlayerHelper;
+import com.nrknithin.tube.music.util.DeviceUtils;
 
 public final class PopupPlayerUi extends VideoPlayerUi {
     private static final String TAG = PopupPlayerUi.class.getSimpleName();

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.error
+package com.nrknithin.tube.music.error
 
 import android.content.Context
 import android.content.Intent
@@ -17,15 +17,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.IntentCompat
 import androidx.core.net.toUri
 import com.grack.nanojson.JsonWriter
+import com.nrknithin.tube.music.BuildConfig
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.ActivityErrorBinding
+import com.nrknithin.tube.music.util.Localization
+import com.nrknithin.tube.music.util.ThemeHelper
+import com.nrknithin.tube.music.util.external_communication.ShareUtils
+import com.nrknithin.tube.music.util.text.setTextWithLinks
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
-import org.schabi.newpipe.BuildConfig
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.ActivityErrorBinding
-import org.schabi.newpipe.util.Localization
-import org.schabi.newpipe.util.ThemeHelper
-import org.schabi.newpipe.util.external_communication.ShareUtils
-import org.schabi.newpipe.util.text.setTextWithLinks
 
 /**
  * This activity is used to show error details and allow reporting them in various ways.

@@ -1,4 +1,4 @@
-package us.shandian.giga.ui.fragment;
+package com.nrknithin.tube.music.giga.ui.fragment;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -30,20 +30,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nononsenseapps.filepicker.Utils;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.settings.NewPipeSettings;
-import org.schabi.newpipe.streams.io.NoFileManagerSafeGuard;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.FilePickerActivityHelper;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.settings.NewPipeSettings;
+import com.nrknithin.tube.music.streams.io.NoFileManagerSafeGuard;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.util.FilePickerActivityHelper;
 
 import java.io.File;
 import java.io.IOException;
 
-import us.shandian.giga.get.DownloadMission;
-import us.shandian.giga.service.DownloadManager;
-import us.shandian.giga.service.DownloadManagerService;
-import us.shandian.giga.service.DownloadManagerService.DownloadManagerBinder;
-import us.shandian.giga.ui.adapter.MissionAdapter;
+import com.nrknithin.tube.music.giga.get.DownloadMission;
+import com.nrknithin.tube.music.giga.service.DownloadManager;
+import com.nrknithin.tube.music.giga.service.DownloadManagerService;
+import com.nrknithin.tube.music.giga.service.DownloadManagerService.DownloadManagerBinder;
+import com.nrknithin.tube.music.giga.ui.adapter.MissionAdapter;
 
 public class MissionsFragment extends Fragment {
 

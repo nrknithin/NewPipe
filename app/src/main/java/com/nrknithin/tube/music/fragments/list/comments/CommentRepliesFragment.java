@@ -1,6 +1,6 @@
-package org.schabi.newpipe.fragments.list.comments;
+package com.nrknithin.tube.music.fragments.list.comments;
 
-import static org.schabi.newpipe.util.ServiceHelper.getServiceById;
+import static com.nrknithin.tube.music.util.ServiceHelper.getServiceById;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,21 +14,21 @@ import androidx.core.text.HtmlCompat;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.CommentRepliesHeaderBinding;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.CommentRepliesHeaderBinding;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
-import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
-import org.schabi.newpipe.info_list.ItemViewMode;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.ExtractorHelper;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.image.CoilHelper;
-import org.schabi.newpipe.util.image.ImageStrategy;
-import org.schabi.newpipe.util.text.TextLinkifier;
-import org.schabi.newpipe.util.text.LongPressLinkMovementMethod;
+import com.nrknithin.tube.music.fragments.list.BaseListInfoFragment;
+import com.nrknithin.tube.music.info_list.ItemViewMode;
+import com.nrknithin.tube.music.util.DeviceUtils;
+import com.nrknithin.tube.music.util.ExtractorHelper;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.image.CoilHelper;
+import com.nrknithin.tube.music.util.image.ImageStrategy;
+import com.nrknithin.tube.music.util.text.TextLinkifier;
+import com.nrknithin.tube.music.util.text.LongPressLinkMovementMethod;
 
 import java.util.Queue;
 import java.util.function.Supplier;

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.database
+package com.nrknithin.tube.music.database
 
 import android.content.ContentValues
 import android.database.sqlite.SQLiteDatabase
@@ -7,14 +7,14 @@ import androidx.room.testing.MigrationTestHelper
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import com.nrknithin.tube.music.database.playlist.model.PlaylistEntity
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
 import org.junit.Assert.assertNull
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.schabi.newpipe.database.playlist.model.PlaylistEntity
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity
 import org.schabi.newpipe.extractor.stream.StreamType
 
 @RunWith(AndroidJUnit4::class)

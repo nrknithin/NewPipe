@@ -1,14 +1,14 @@
-package org.schabi.newpipe.local.subscription.dialog
+package com.nrknithin.tube.music.local.subscription.dialog
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.local.feed.FeedDatabaseManager
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.disposables.Disposable
 import io.reactivex.rxjava3.schedulers.Schedulers
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.local.feed.FeedDatabaseManager
 
 class FeedGroupReorderDialogViewModel(application: Application) : AndroidViewModel(application) {
     private var feedDatabaseManager: FeedDatabaseManager = FeedDatabaseManager(application)

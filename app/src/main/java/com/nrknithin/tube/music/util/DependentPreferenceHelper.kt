@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import android.content.Context
 import androidx.preference.PreferenceManager
-import org.schabi.newpipe.R
+import com.nrknithin.tube.music.R
 
 /**
  * For preferences with dependencies and multiple use case,

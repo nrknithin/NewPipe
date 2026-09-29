@@ -1,11 +1,11 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.View
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.databinding.FeedGroupCardGridItemBinding
+import com.nrknithin.tube.music.local.subscription.FeedGroupIcon
 import com.xwray.groupie.viewbinding.BindableItem
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.databinding.FeedGroupCardGridItemBinding
-import org.schabi.newpipe.local.subscription.FeedGroupIcon
 
 data class FeedGroupCardGridItem(
     val groupId: Long = FeedGroupEntity.GROUP_ALL_ID,

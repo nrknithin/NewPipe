@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import org.schabi.newpipe.extractor.MediaFormat;
 import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.schabi.newpipe.extractor.stream.Stream;
 import org.schabi.newpipe.extractor.stream.VideoStream;
-import org.schabi.newpipe.util.StreamItemAdapter.StreamInfoWrapper;
+import com.nrknithin.tube.music.util.StreamItemAdapter.StreamInfoWrapper;
 
 import java.util.List;
 

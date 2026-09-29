@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with NewPipe.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.schabi.newpipe.views;
+package com.nrknithin.tube.music.views;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -26,7 +26,7 @@ import android.widget.SeekBar;
 
 import androidx.appcompat.widget.AppCompatSeekBar;
 
-import org.schabi.newpipe.util.DeviceUtils;
+import com.nrknithin.tube.music.util.DeviceUtils;
 
 /**
  * SeekBar, adapted for directional navigation. It emulates touch-related callbacks

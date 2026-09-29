@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.feed.service
+package com.nrknithin.tube.music.local.feed.service
 
 data class FeedLoadState(
     val updateDescription: String,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.fragments.list.search
+package com.nrknithin.tube.music.fragments.list.search
 
 class SuggestionItem(@JvmField val fromHistory: Boolean, @JvmField val query: String) {
     override fun equals(other: Any?): Boolean {

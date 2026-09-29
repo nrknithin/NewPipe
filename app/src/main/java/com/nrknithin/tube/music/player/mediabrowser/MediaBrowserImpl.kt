@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.mediabrowser
+package com.nrknithin.tube.music.player.mediabrowser
 
 import android.content.ContentResolver
 import android.content.Context
@@ -13,18 +13,23 @@ import androidx.media.MediaBrowserServiceCompat
 import androidx.media.MediaBrowserServiceCompat.BrowserRoot.EXTRA_RECENT
 import androidx.media.MediaBrowserServiceCompat.Result
 import androidx.media.utils.MediaConstants
+import com.nrknithin.tube.music.MainActivity.DEBUG
+import com.nrknithin.tube.music.NewPipeDatabase
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.history.model.StreamHistoryEntry
+import com.nrknithin.tube.music.database.playlist.PlaylistLocalItem
+import com.nrknithin.tube.music.database.playlist.PlaylistStreamEntry
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity
+import com.nrknithin.tube.music.local.bookmark.MergedPlaylistManager
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistManager
+import com.nrknithin.tube.music.local.playlist.RemotePlaylistManager
+import com.nrknithin.tube.music.util.ExtractorHelper
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import java.util.function.Consumer
-import org.schabi.newpipe.MainActivity.DEBUG
-import org.schabi.newpipe.NewPipeDatabase
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.history.model.StreamHistoryEntry
-import org.schabi.newpipe.database.playlist.PlaylistLocalItem
-import org.schabi.newpipe.database.playlist.PlaylistStreamEntry
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity
 import org.schabi.newpipe.extractor.InfoItem
 import org.schabi.newpipe.extractor.InfoItem.InfoType
 import org.schabi.newpipe.extractor.ServiceList
@@ -33,15 +38,10 @@ import org.schabi.newpipe.extractor.exceptions.ContentNotAvailableException
 import org.schabi.newpipe.extractor.playlist.PlaylistInfoItem
 import org.schabi.newpipe.extractor.search.SearchInfo
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.local.bookmark.MergedPlaylistManager
-import org.schabi.newpipe.local.playlist.LocalPlaylistManager
-import org.schabi.newpipe.local.playlist.RemotePlaylistManager
-import org.schabi.newpipe.util.ExtractorHelper
-import org.schabi.newpipe.util.image.ImageStrategy
 
 /**
  * This class is used to cleanly separate the Service implementation (in
- * [org.schabi.newpipe.player.PlayerService]) and the media browser implementation (in this file).
+ * [com.nrknithin.tube.music.player.PlayerService]) and the media browser implementation (in this file).
  *
  * @param notifyChildrenChanged takes the parent id of the children that changed
  */

@@ -1,6 +1,6 @@
-package org.schabi.newpipe.fragments;
+package com.nrknithin.tube.music.fragments;
 
-import static org.schabi.newpipe.ktx.ViewUtils.animate;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animate;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,12 +15,12 @@ import androidx.fragment.app.Fragment;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.BaseFragment;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorPanelHelper;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.util.InfoCache;
+import com.nrknithin.tube.music.BaseFragment;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorPanelHelper;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.util.InfoCache;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

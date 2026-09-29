@@ -1,4 +1,4 @@
-package org.schabi.newpipe.download;
+package com.nrknithin.tube.music.download;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,14 +11,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.ActivityDownloaderBinding;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.ThemeHelper;
-import org.schabi.newpipe.views.FocusOverlayView;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.ActivityDownloaderBinding;
+import com.nrknithin.tube.music.util.DeviceUtils;
+import com.nrknithin.tube.music.util.ThemeHelper;
+import com.nrknithin.tube.music.views.FocusOverlayView;
 
-import us.shandian.giga.service.DownloadManagerService;
-import us.shandian.giga.ui.fragment.MissionsFragment;
+import com.nrknithin.tube.music.giga.service.DownloadManagerService;
+import com.nrknithin.tube.music.giga.ui.fragment.MissionsFragment;
 
 public class DownloadActivity extends AppCompatActivity {
 

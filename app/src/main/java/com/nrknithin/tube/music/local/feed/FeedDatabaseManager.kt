@@ -1,7 +1,16 @@
-package org.schabi.newpipe.local.feed
+package com.nrknithin.tube.music.local.feed
 
 import android.content.Context
 import android.util.Log
+import com.nrknithin.tube.music.MainActivity.DEBUG
+import com.nrknithin.tube.music.NewPipeDatabase
+import com.nrknithin.tube.music.database.feed.model.FeedEntity
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.feed.model.FeedLastUpdatedEntity
+import com.nrknithin.tube.music.database.stream.StreamWithState
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.local.subscription.FeedGroupIcon
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
@@ -10,17 +19,8 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 import java.time.LocalDate
 import java.time.OffsetDateTime
 import java.time.ZoneOffset
-import org.schabi.newpipe.MainActivity.DEBUG
-import org.schabi.newpipe.NewPipeDatabase
-import org.schabi.newpipe.database.feed.model.FeedEntity
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.feed.model.FeedLastUpdatedEntity
-import org.schabi.newpipe.database.stream.StreamWithState
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.subscription.NotificationMode
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.schabi.newpipe.extractor.stream.StreamType
-import org.schabi.newpipe.local.subscription.FeedGroupIcon
 
 class FeedDatabaseManager(context: Context) {
     private val database = NewPipeDatabase.getInstance(context)

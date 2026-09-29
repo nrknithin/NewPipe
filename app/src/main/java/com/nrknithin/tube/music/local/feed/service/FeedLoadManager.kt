@@ -1,8 +1,19 @@
-package org.schabi.newpipe.local.feed.service
+package com.nrknithin.tube.music.local.feed.service
 
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.ktx.getStringSafe
+import com.nrknithin.tube.music.local.feed.FeedDatabaseManager
+import com.nrknithin.tube.music.local.subscription.SubscriptionManager
+import com.nrknithin.tube.music.util.ChannelTabHelper
+import com.nrknithin.tube.music.util.ExtractorHelper.getChannelInfo
+import com.nrknithin.tube.music.util.ExtractorHelper.getChannelTab
+import com.nrknithin.tube.music.util.ExtractorHelper.getMoreChannelTabItems
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
@@ -15,22 +26,11 @@ import java.time.OffsetDateTime
 import java.time.ZoneOffset
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicInteger
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.subscription.NotificationMode
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
 import org.schabi.newpipe.extractor.Info
 import org.schabi.newpipe.extractor.NewPipe
 import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.feed.FeedInfo
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.ktx.getStringSafe
-import org.schabi.newpipe.local.feed.FeedDatabaseManager
-import org.schabi.newpipe.local.subscription.SubscriptionManager
-import org.schabi.newpipe.util.ChannelTabHelper
-import org.schabi.newpipe.util.ExtractorHelper.getChannelInfo
-import org.schabi.newpipe.util.ExtractorHelper.getChannelTab
-import org.schabi.newpipe.util.ExtractorHelper.getMoreChannelTabItems
 
 class FeedLoadManager(private val context: Context) {
 

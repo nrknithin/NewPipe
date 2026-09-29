@@ -1,9 +1,9 @@
-package us.shandian.giga.postprocessing;
+package com.nrknithin.tube.music.giga.postprocessing;
 
 import android.util.Log;
 
-import org.schabi.newpipe.streams.SrtFromTtmlWriter;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.SrtFromTtmlWriter;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.mediasource;
+package com.nrknithin.tube.music.player.mediasource;
 
 import com.google.android.exoplayer2.MediaItem;
 import com.google.android.exoplayer2.Timeline;
@@ -7,8 +7,8 @@ import com.google.android.exoplayer2.source.MediaPeriod;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.upstream.Allocator;
 
-import org.schabi.newpipe.player.mediaitem.PlaceholderTag;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.mediaitem.PlaceholderTag;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
 
 import androidx.annotation.NonNull;
 

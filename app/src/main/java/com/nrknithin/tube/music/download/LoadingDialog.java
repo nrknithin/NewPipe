@@ -1,4 +1,4 @@
-package org.schabi.newpipe.download;
+package com.nrknithin.tube.music.download;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -12,9 +12,9 @@ import androidx.annotation.StringRes;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.DialogFragment;
 
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.DownloadLoadingDialogBinding;
+import com.nrknithin.tube.music.MainActivity;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.DownloadLoadingDialogBinding;
 
 /**
  * This class contains a dialog which shows a loading indicator and has a customizable title.

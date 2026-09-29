@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.di.settings
+package com.nrknithin.tube.music.shared.di.settings
 
 import org.koin.core.annotation.ComponentScan
 import org.koin.core.annotation.Configuration

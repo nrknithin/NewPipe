@@ -1,9 +1,9 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.View
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.SubscriptionHeaderBinding
 import com.xwray.groupie.viewbinding.BindableItem
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.SubscriptionHeaderBinding
 
 class Header(private val title: String) : BindableItem<SubscriptionHeaderBinding>() {
 

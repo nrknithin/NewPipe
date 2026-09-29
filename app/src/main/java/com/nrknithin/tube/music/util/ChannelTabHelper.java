@@ -1,11 +1,11 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import androidx.annotation.StringRes;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.channel.tabs.ChannelTabs;
 import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
 

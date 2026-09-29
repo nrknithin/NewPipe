@@ -1,10 +1,10 @@
-package org.schabi.newpipe.testUtil
+package com.nrknithin.tube.music.testUtil
 
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
+import com.nrknithin.tube.music.NewPipeDatabase
+import com.nrknithin.tube.music.database.AppDatabase
 import org.junit.Assert.assertSame
-import org.schabi.newpipe.NewPipeDatabase
-import org.schabi.newpipe.database.AppDatabase
 
 class TestDatabase {
     companion object {

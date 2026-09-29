@@ -1,4 +1,4 @@
-package us.shandian.giga.io;
+package com.nrknithin.tube.music.giga.io;
 
 import android.content.ContentResolver;
 import android.net.Uri;
@@ -7,7 +7,7 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

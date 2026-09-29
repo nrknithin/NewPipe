@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.navigation
+package com.nrknithin.tube.music.shared.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.saveable.rememberSerializable

@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.history.dao
+package com.nrknithin.tube.music.database.history.dao
 
 import androidx.room.Dao
 import androidx.room.Query
+import com.nrknithin.tube.music.database.BasicDAO
+import com.nrknithin.tube.music.database.history.model.SearchHistoryEntry
 import io.reactivex.rxjava3.core.Flowable
-import org.schabi.newpipe.database.BasicDAO
-import org.schabi.newpipe.database.history.model.SearchHistoryEntry
 
 @Dao
 interface SearchHistoryDAO : BasicDAO<SearchHistoryEntry> {

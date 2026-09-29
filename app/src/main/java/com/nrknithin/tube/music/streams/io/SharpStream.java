@@ -1,4 +1,4 @@
-package org.schabi.newpipe.streams.io;
+package com.nrknithin.tube.music.streams.io;
 
 import java.io.Closeable;
 import java.io.Flushable;
@@ -6,7 +6,8 @@ import java.io.IOException;
 
 /**
  * Based on C#'s Stream class. SharpStream is a wrapper around the 2 different APIs for SAF
- * ({@link us.shandian.giga.io.FileStreamSAF}) and non-SAF ({@link us.shandian.giga.io.FileStream}).
+ * ({@link com.nrknithin.tube.music.giga.io.FileStreamSAF}) and non-SAF
+ * ({@link com.nrknithin.tube.music.giga.io.FileStream}).
  * It has both input and output like in C#, while in Java those are usually different classes.
  * {@link SharpInputStream} and {@link SharpOutputStream} are simple classes that wrap
  * {@link SharpStream} and extend respectively {@link java.io.InputStream} and

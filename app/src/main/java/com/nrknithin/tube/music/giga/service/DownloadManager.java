@@ -1,4 +1,4 @@
-package us.shandian.giga.service;
+package com.nrknithin.tube.music.giga.service;
 
 import android.content.Context;
 import android.os.Handler;
@@ -15,17 +15,17 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import us.shandian.giga.get.DownloadMission;
-import us.shandian.giga.get.FinishedMission;
-import us.shandian.giga.get.Mission;
-import us.shandian.giga.get.sqlite.FinishedMissionStore;
-import org.schabi.newpipe.streams.io.StoredDirectoryHelper;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import us.shandian.giga.util.Utility;
+import com.nrknithin.tube.music.giga.get.DownloadMission;
+import com.nrknithin.tube.music.giga.get.FinishedMission;
+import com.nrknithin.tube.music.giga.get.Mission;
+import com.nrknithin.tube.music.giga.get.sqlite.FinishedMissionStore;
+import com.nrknithin.tube.music.streams.io.StoredDirectoryHelper;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.giga.util.Utility;
 
-import static org.schabi.newpipe.BuildConfig.DEBUG;
-import static us.shandian.giga.get.DownloadMission.ERROR_NOTHING;
-import static us.shandian.giga.get.DownloadMission.ERROR_PROGRESS_LOST;
+import static com.nrknithin.tube.music.BuildConfig.DEBUG;
+import static com.nrknithin.tube.music.giga.get.DownloadMission.ERROR_NOTHING;
+import static com.nrknithin.tube.music.giga.get.DownloadMission.ERROR_PROGRESS_LOST;
 
 public class DownloadManager {
     private static final String TAG = DownloadManager.class.getSimpleName();

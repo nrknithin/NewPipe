@@ -1,21 +1,21 @@
-package org.schabi.newpipe.database.stream.model
+package com.nrknithin.tube.music.database.stream.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.Index
 import androidx.room.PrimaryKey
+import com.nrknithin.tube.music.database.stream.model.StreamEntity.Companion.STREAM_SERVICE_ID
+import com.nrknithin.tube.music.database.stream.model.StreamEntity.Companion.STREAM_TABLE
+import com.nrknithin.tube.music.database.stream.model.StreamEntity.Companion.STREAM_URL
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import java.io.Serializable
 import java.time.OffsetDateTime
-import org.schabi.newpipe.database.stream.model.StreamEntity.Companion.STREAM_SERVICE_ID
-import org.schabi.newpipe.database.stream.model.StreamEntity.Companion.STREAM_TABLE
-import org.schabi.newpipe.database.stream.model.StreamEntity.Companion.STREAM_URL
 import org.schabi.newpipe.extractor.localization.DateWrapper
 import org.schabi.newpipe.extractor.stream.StreamInfo
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.schabi.newpipe.extractor.stream.StreamType
-import org.schabi.newpipe.player.playqueue.PlayQueueItem
-import org.schabi.newpipe.util.image.ImageStrategy
 
 @Entity(
     tableName = STREAM_TABLE,

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.potoken
+package com.nrknithin.tube.music.util.potoken
 
 import com.grack.nanojson.JsonObject
 import com.grack.nanojson.JsonParser

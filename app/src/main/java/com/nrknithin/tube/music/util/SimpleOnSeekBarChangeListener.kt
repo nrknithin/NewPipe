@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import android.widget.SeekBar
 

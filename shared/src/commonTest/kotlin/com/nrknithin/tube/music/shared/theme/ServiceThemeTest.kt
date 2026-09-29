@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.theme
+package com.nrknithin.tube.music.shared.theme
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

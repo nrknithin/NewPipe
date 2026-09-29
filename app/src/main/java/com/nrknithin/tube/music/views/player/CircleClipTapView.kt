@@ -1,4 +1,4 @@
-package org.schabi.newpipe.views.player
+package com.nrknithin.tube.music.views.player
 
 import android.content.Context
 import android.graphics.Canvas

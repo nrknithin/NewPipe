@@ -1,22 +1,22 @@
-package org.schabi.newpipe.local.subscription
+package com.nrknithin.tube.music.local.subscription
 
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.nrknithin.tube.music.info_list.ItemViewMode
+import com.nrknithin.tube.music.local.feed.FeedDatabaseManager
+import com.nrknithin.tube.music.local.subscription.item.ChannelItem
+import com.nrknithin.tube.music.local.subscription.item.FeedGroupCardGridItem
+import com.nrknithin.tube.music.local.subscription.item.FeedGroupCardItem
+import com.nrknithin.tube.music.util.DEFAULT_THROTTLE_TIMEOUT
+import com.nrknithin.tube.music.util.ThemeHelper.getItemViewMode
 import com.xwray.groupie.Group
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.processors.BehaviorProcessor
 import io.reactivex.rxjava3.schedulers.Schedulers
 import java.util.concurrent.TimeUnit
-import org.schabi.newpipe.info_list.ItemViewMode
-import org.schabi.newpipe.local.feed.FeedDatabaseManager
-import org.schabi.newpipe.local.subscription.item.ChannelItem
-import org.schabi.newpipe.local.subscription.item.FeedGroupCardGridItem
-import org.schabi.newpipe.local.subscription.item.FeedGroupCardItem
-import org.schabi.newpipe.util.DEFAULT_THROTTLE_TIMEOUT
-import org.schabi.newpipe.util.ThemeHelper.getItemViewMode
 
 class SubscriptionViewModel(application: Application) : AndroidViewModel(application) {
     private var feedDatabaseManager: FeedDatabaseManager = FeedDatabaseManager(application)

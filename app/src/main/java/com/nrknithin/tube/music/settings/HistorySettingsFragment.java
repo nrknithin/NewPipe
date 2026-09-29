@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,14 +8,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.Preference;
 
-import org.schabi.newpipe.DownloaderImpl;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.ReCaptchaActivity;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.util.InfoCache;
+import com.nrknithin.tube.music.DownloaderImpl;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.ReCaptchaActivity;
+import com.nrknithin.tube.music.error.UserAction;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.util.InfoCache;
 
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.disposables.CompositeDisposable;

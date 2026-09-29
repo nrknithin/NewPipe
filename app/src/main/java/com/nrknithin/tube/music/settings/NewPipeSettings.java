@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
@@ -11,10 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.App;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.settings.migration.MigrationManager;
-import org.schabi.newpipe.util.DeviceUtils;
+import com.nrknithin.tube.music.App;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.settings.migration.MigrationManager;
+import com.nrknithin.tube.music.util.DeviceUtils;
 
 import java.io.File;
 import java.util.Set;

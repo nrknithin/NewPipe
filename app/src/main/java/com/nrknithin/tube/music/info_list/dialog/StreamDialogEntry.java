@@ -1,4 +1,4 @@
-package org.schabi.newpipe.info_list.dialog;
+package com.nrknithin.tube.music.info_list.dialog;
 
 import android.content.Context;
 

@@ -17,7 +17,7 @@
 // THIS FILE WAS TAKEN FROM UAMP, EXCEPT FOR THINGS RELATED TO THE WHITELIST. UPDATE IT WHEN NEEDED.
 // https://github.com/android/uamp/blob/329a21b63c247e9bd35f6858d4fc0e448fa38603/common/src/main/java/com/example/android/uamp/media/PackageValidator.kt
 
-package org.schabi.newpipe.player.mediabrowser
+package com.nrknithin.tube.music.player.mediabrowser
 
 import android.Manifest.permission.MEDIA_CONTENT_CONTROL
 import android.annotation.SuppressLint
@@ -30,9 +30,9 @@ import android.support.v4.media.session.MediaSessionCompat
 import android.util.Log
 import androidx.core.app.NotificationManagerCompat
 import androidx.media.MediaBrowserServiceCompat
+import com.nrknithin.tube.music.BuildConfig
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException
-import org.schabi.newpipe.BuildConfig
 
 /**
  * Validates that the calling package is authorized to browse a [MediaBrowserServiceCompat].

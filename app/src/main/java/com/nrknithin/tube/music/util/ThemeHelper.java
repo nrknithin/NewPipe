@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -37,11 +37,11 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
-import org.schabi.newpipe.info_list.ItemViewMode;
+import com.nrknithin.tube.music.info_list.ItemViewMode;
 
 public final class ThemeHelper {
     private ThemeHelper() {

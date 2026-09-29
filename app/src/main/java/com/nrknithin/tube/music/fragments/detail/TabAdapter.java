@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments.detail;
+package com.nrknithin.tube.music.fragments.detail;
 
 import android.view.ViewGroup;
 

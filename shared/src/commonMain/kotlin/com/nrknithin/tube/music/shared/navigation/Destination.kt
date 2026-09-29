@@ -3,11 +3,11 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.navigation
+package com.nrknithin.tube.music.shared.navigation
 
 import androidx.navigation3.runtime.NavKey
+import com.nrknithin.tube.music.shared.model.License
 import kotlinx.serialization.Serializable
-import net.newpipe.app.model.License
 
 /**
  * Destinations for navigation in compose

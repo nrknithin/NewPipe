@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error;
+package com.nrknithin.tube.music.error;
 
 import android.content.Context;
 
@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import org.acra.ReportField;
 import org.acra.data.CrashReportData;
 import org.acra.sender.ReportSender;
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 /*
  * Created by Christian Schabesberger  on 13.09.16.

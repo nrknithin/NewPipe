@@ -3,13 +3,13 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import android.content.Context
 import androidx.preference.PreferenceManager
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.ktx.getStringSafe
 import java.util.regex.Matcher
-import org.schabi.newpipe.R
-import org.schabi.newpipe.ktx.getStringSafe
 
 object FilenameUtils {
     private const val CHARSET_MOST_SPECIAL = "[\\n\\r|?*<\":\\\\>/']+"

@@ -1,10 +1,10 @@
-package org.schabi.newpipe.local.feed.service
+package com.nrknithin.tube.music.local.feed.service
 
 import androidx.annotation.StringRes
+import com.nrknithin.tube.music.local.feed.service.FeedEventManager.Event.IdleEvent
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.processors.BehaviorProcessor
 import java.util.concurrent.atomic.AtomicBoolean
-import org.schabi.newpipe.local.feed.service.FeedEventManager.Event.IdleEvent
 
 object FeedEventManager {
     private var processor: BehaviorProcessor<Event> = BehaviorProcessor.create()

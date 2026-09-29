@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist
+package com.nrknithin.tube.music.database.playlist
 
-import org.schabi.newpipe.database.LocalItem
+import com.nrknithin.tube.music.database.LocalItem
 
 interface PlaylistLocalItem : LocalItem {
     val orderingName: String?

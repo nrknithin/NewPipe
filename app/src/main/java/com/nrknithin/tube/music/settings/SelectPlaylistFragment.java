@@ -1,6 +1,6 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
-import static org.schabi.newpipe.local.bookmark.MergedPlaylistManager.getMergedOrderedPlaylists;
+import static com.nrknithin.tube.music.local.bookmark.MergedPlaylistManager.getMergedOrderedPlaylists;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,19 +15,19 @@ import androidx.fragment.app.DialogFragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.NewPipeDatabase;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.AppDatabase;
-import org.schabi.newpipe.database.LocalItem;
-import org.schabi.newpipe.database.playlist.PlaylistLocalItem;
-import org.schabi.newpipe.database.playlist.PlaylistMetadataEntry;
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.local.playlist.LocalPlaylistManager;
-import org.schabi.newpipe.local.playlist.RemotePlaylistManager;
-import org.schabi.newpipe.util.image.CoilHelper;
+import com.nrknithin.tube.music.NewPipeDatabase;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.AppDatabase;
+import com.nrknithin.tube.music.database.LocalItem;
+import com.nrknithin.tube.music.database.playlist.PlaylistLocalItem;
+import com.nrknithin.tube.music.database.playlist.PlaylistMetadataEntry;
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistManager;
+import com.nrknithin.tube.music.local.playlist.RemotePlaylistManager;
+import com.nrknithin.tube.music.util.image.CoilHelper;
 
 import java.util.List;
 import java.util.Vector;

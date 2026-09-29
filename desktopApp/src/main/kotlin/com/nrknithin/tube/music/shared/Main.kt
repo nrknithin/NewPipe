@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package com.nrknithin.tube.music.shared
 
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application

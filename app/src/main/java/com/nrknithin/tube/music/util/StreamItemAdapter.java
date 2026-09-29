@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
@@ -16,8 +16,8 @@ import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.collection.SparseArrayCompat;
 
-import org.schabi.newpipe.DownloaderImpl;
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.DownloaderImpl;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.MediaFormat;
 import org.schabi.newpipe.extractor.downloader.Response;
 import org.schabi.newpipe.extractor.stream.AudioStream;
@@ -36,7 +36,7 @@ import java.util.stream.Collectors;
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.schedulers.Schedulers;
-import us.shandian.giga.util.Utility;
+import com.nrknithin.tube.music.giga.util.Utility;
 
 /**
  * A list adapter for a list of {@link Stream streams}.

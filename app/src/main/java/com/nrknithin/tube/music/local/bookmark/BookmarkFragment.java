@@ -1,7 +1,7 @@
-package org.schabi.newpipe.local.bookmark;
+package com.nrknithin.tube.music.local.bookmark;
 
-import static org.schabi.newpipe.local.bookmark.MergedPlaylistManager.getMergedOrderedPlaylists;
-import static org.schabi.newpipe.util.ThemeHelper.shouldUseGridLayout;
+import static com.nrknithin.tube.music.local.bookmark.MergedPlaylistManager.getMergedOrderedPlaylists;
+import static com.nrknithin.tube.music.util.ThemeHelper.shouldUseGridLayout;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -24,25 +24,25 @@ import com.evernote.android.state.State;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
-import org.schabi.newpipe.NewPipeDatabase;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.AppDatabase;
-import org.schabi.newpipe.database.LocalItem;
-import org.schabi.newpipe.database.playlist.PlaylistLocalItem;
-import org.schabi.newpipe.database.playlist.PlaylistMetadataEntry;
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity;
-import org.schabi.newpipe.databinding.DialogEditTextBinding;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.local.BaseLocalListFragment;
-import org.schabi.newpipe.local.holder.LocalBookmarkPlaylistItemHolder;
-import org.schabi.newpipe.local.holder.RemoteBookmarkPlaylistItemHolder;
-import org.schabi.newpipe.local.playlist.LocalPlaylistManager;
-import org.schabi.newpipe.local.playlist.RemotePlaylistManager;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.OnClickGesture;
-import org.schabi.newpipe.util.debounce.DebounceSavable;
-import org.schabi.newpipe.util.debounce.DebounceSaver;
+import com.nrknithin.tube.music.NewPipeDatabase;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.AppDatabase;
+import com.nrknithin.tube.music.database.LocalItem;
+import com.nrknithin.tube.music.database.playlist.PlaylistLocalItem;
+import com.nrknithin.tube.music.database.playlist.PlaylistMetadataEntry;
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity;
+import com.nrknithin.tube.music.databinding.DialogEditTextBinding;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.UserAction;
+import com.nrknithin.tube.music.local.BaseLocalListFragment;
+import com.nrknithin.tube.music.local.holder.LocalBookmarkPlaylistItemHolder;
+import com.nrknithin.tube.music.local.holder.RemoteBookmarkPlaylistItemHolder;
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistManager;
+import com.nrknithin.tube.music.local.playlist.RemotePlaylistManager;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.OnClickGesture;
+import com.nrknithin.tube.music.util.debounce.DebounceSavable;
+import com.nrknithin.tube.music.util.debounce.DebounceSaver;
 
 import java.util.ArrayList;
 import java.util.List;

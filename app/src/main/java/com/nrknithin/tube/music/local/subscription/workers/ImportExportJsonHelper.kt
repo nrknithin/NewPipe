@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe.local.subscription.workers
+package com.nrknithin.tube.music.local.subscription.workers
 
 import java.io.InputStream
 import java.io.OutputStream

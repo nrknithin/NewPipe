@@ -1,6 +1,6 @@
-package org.schabi.newpipe.player.mediabrowser
+package com.nrknithin.tube.music.player.mediabrowser
 
-import org.schabi.newpipe.BuildConfig
+import com.nrknithin.tube.music.BuildConfig
 import org.schabi.newpipe.extractor.InfoItem.InfoType
 import org.schabi.newpipe.extractor.exceptions.ContentNotAvailableException
 

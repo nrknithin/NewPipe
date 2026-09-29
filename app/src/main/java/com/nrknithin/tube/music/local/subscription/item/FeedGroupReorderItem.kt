@@ -1,16 +1,16 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.MotionEvent
 import android.view.View
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.ItemTouchHelper.DOWN
 import androidx.recyclerview.widget.ItemTouchHelper.UP
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.databinding.FeedGroupReorderItemBinding
+import com.nrknithin.tube.music.local.subscription.FeedGroupIcon
 import com.xwray.groupie.viewbinding.BindableItem
 import com.xwray.groupie.viewbinding.GroupieViewHolder
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.databinding.FeedGroupReorderItemBinding
-import org.schabi.newpipe.local.subscription.FeedGroupIcon
 
 data class FeedGroupReorderItem(
     val groupId: Long = FeedGroupEntity.GROUP_ALL_ID,

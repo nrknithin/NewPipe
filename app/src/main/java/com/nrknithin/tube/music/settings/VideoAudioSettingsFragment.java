@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -11,9 +11,9 @@ import androidx.preference.ListPreference;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.util.ListHelper;
-import org.schabi.newpipe.util.PermissionHelper;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.util.ListHelper;
+import com.nrknithin.tube.music.util.PermissionHelper;
 
 import java.util.LinkedList;
 import java.util.List;

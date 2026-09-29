@@ -1,9 +1,9 @@
-package org.schabi.newpipe.fragments.list.search;
+package com.nrknithin.tube.music.fragments.list.search;
 
 import static androidx.recyclerview.widget.ItemTouchHelper.Callback.makeMovementFlags;
 import static org.schabi.newpipe.extractor.utils.Utils.isBlank;
-import static org.schabi.newpipe.ktx.ViewUtils.animate;
-import static org.schabi.newpipe.util.ExtractorHelper.showMetaInfoInTextView;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animate;
+import static com.nrknithin.tube.music.util.ExtractorHelper.showMetaInfoInTextView;
 import static java.util.Arrays.asList;
 
 import android.app.Activity;
@@ -50,12 +50,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.FragmentSearchBinding;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.ReCaptchaActivity;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.FragmentSearchBinding;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.ReCaptchaActivity;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.MetaInfo;
@@ -65,18 +65,18 @@ import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.exceptions.ParsingException;
 import org.schabi.newpipe.extractor.search.SearchExtractor;
 import org.schabi.newpipe.extractor.search.SearchInfo;
-import org.schabi.newpipe.fragments.BackPressable;
-import org.schabi.newpipe.fragments.list.BaseListFragment;
-import org.schabi.newpipe.ktx.AnimationType;
-import org.schabi.newpipe.ktx.ExceptionUtils;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.settings.NewPipeSettings;
-import org.schabi.newpipe.util.Constants;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.ExtractorHelper;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.ServiceHelper;
-import org.schabi.newpipe.util.YouTubeMusicHelper;
+import com.nrknithin.tube.music.fragments.BackPressable;
+import com.nrknithin.tube.music.fragments.list.BaseListFragment;
+import com.nrknithin.tube.music.ktx.AnimationType;
+import com.nrknithin.tube.music.ktx.ExceptionUtils;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.settings.NewPipeSettings;
+import com.nrknithin.tube.music.util.Constants;
+import com.nrknithin.tube.music.util.DeviceUtils;
+import com.nrknithin.tube.music.util.ExtractorHelper;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.ServiceHelper;
+import com.nrknithin.tube.music.util.YouTubeMusicHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,8 +1,8 @@
-package org.schabi.newpipe.player.resolver;
+package com.nrknithin.tube.music.player.resolver;
 
 import static org.schabi.newpipe.extractor.stream.AudioStream.UNKNOWN_BITRATE;
 import static org.schabi.newpipe.extractor.stream.VideoStream.RESOLUTION_UNKNOWN;
-import static org.schabi.newpipe.player.helper.PlayerDataSource.LIVE_STREAM_EDGE_GAP_MILLIS;
+import static com.nrknithin.tube.music.player.helper.PlayerDataSource.LIVE_STREAM_EDGE_GAP_MILLIS;
 
 import android.net.Uri;
 import android.util.Log;
@@ -34,11 +34,11 @@ import org.schabi.newpipe.extractor.stream.Stream;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamType;
 import org.schabi.newpipe.extractor.stream.VideoStream;
-import org.schabi.newpipe.player.datasource.NonUriHlsDataSourceFactory;
-import org.schabi.newpipe.player.helper.PlayerDataSource;
-import org.schabi.newpipe.player.mediaitem.MediaItemTag;
-import org.schabi.newpipe.player.mediaitem.StreamInfoTag;
-import org.schabi.newpipe.util.StreamTypeUtil;
+import com.nrknithin.tube.music.player.datasource.NonUriHlsDataSourceFactory;
+import com.nrknithin.tube.music.player.helper.PlayerDataSource;
+import com.nrknithin.tube.music.player.mediaitem.MediaItemTag;
+import com.nrknithin.tube.music.player.mediaitem.StreamInfoTag;
+import com.nrknithin.tube.music.util.StreamTypeUtil;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

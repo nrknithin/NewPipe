@@ -1,6 +1,6 @@
-package org.schabi.newpipe.util.external_communication;
+package com.nrknithin.tube.music.util.external_communication;
 
-import static org.schabi.newpipe.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
 import static coil3.Image_androidKt.toBitmap;
 
 import android.content.ActivityNotFoundException;
@@ -22,11 +22,11 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
-import org.schabi.newpipe.BuildConfig;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.RouterActivity;
+import com.nrknithin.tube.music.BuildConfig;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.RouterActivity;
 import org.schabi.newpipe.extractor.Image;
-import org.schabi.newpipe.util.image.ImageStrategy;
+import com.nrknithin.tube.music.util.image.ImageStrategy;
 
 import java.nio.file.Files;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package net.newpipe.app.platform
+package com.nrknithin.tube.music.shared.platform
 
 import org.koin.core.annotation.Singleton
 

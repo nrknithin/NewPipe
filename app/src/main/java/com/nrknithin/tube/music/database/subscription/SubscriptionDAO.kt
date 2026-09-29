@@ -1,4 +1,4 @@
-package org.schabi.newpipe.database.subscription
+package com.nrknithin.tube.music.database.subscription
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -6,9 +6,9 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.RewriteQueriesToDropUnusedColumns
 import androidx.room.Transaction
+import com.nrknithin.tube.music.database.BasicDAO
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Maybe
-import org.schabi.newpipe.database.BasicDAO
 
 @Dao
 abstract class SubscriptionDAO : BasicDAO<SubscriptionEntity> {

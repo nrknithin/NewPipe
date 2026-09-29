@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error
+package com.nrknithin.tube.music.error
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,9 +1,9 @@
-package org.schabi.newpipe.settings.custom
+package com.nrknithin.tube.music.settings.custom
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.preference.ListPreference
-import org.schabi.newpipe.util.Localization
+import com.nrknithin.tube.music.util.Localization
 
 /**
  * An extension of a common ListPreference where it sets the duration values to human readable strings.

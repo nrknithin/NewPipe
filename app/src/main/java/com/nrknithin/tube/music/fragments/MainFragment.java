@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments;
+package com.nrknithin.tube.music.fragments;
 
 import static android.widget.RelativeLayout.ABOVE;
 import static android.widget.RelativeLayout.ALIGN_PARENT_BOTTOM;
@@ -33,19 +33,19 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
-import org.schabi.newpipe.BaseFragment;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.FragmentMainBinding;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.BaseFragment;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.FragmentMainBinding;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.ServiceList;
-import org.schabi.newpipe.local.playlist.LocalPlaylistFragment;
-import org.schabi.newpipe.settings.tabs.Tab;
-import org.schabi.newpipe.settings.tabs.TabsManager;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.ThemeHelper;
-import org.schabi.newpipe.views.ScrollableTabLayout;
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistFragment;
+import com.nrknithin.tube.music.settings.tabs.Tab;
+import com.nrknithin.tube.music.settings.tabs.TabsManager;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.ThemeHelper;
+import com.nrknithin.tube.music.views.ScrollableTabLayout;
 
 import java.util.ArrayList;
 import java.util.List;

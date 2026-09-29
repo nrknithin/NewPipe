@@ -1,4 +1,4 @@
-package us.shandian.giga.get;
+package com.nrknithin.tube.music.giga.get;
 
 import android.os.Handler;
 import android.system.ErrnoException;
@@ -8,7 +8,7 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.schabi.newpipe.DownloaderImpl;
+import com.nrknithin.tube.music.DownloaderImpl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -25,12 +25,12 @@ import java.util.Objects;
 
 import javax.net.ssl.SSLException;
 
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import us.shandian.giga.postprocessing.Postprocessing;
-import us.shandian.giga.service.DownloadManagerService;
-import us.shandian.giga.util.Utility;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.giga.postprocessing.Postprocessing;
+import com.nrknithin.tube.music.giga.service.DownloadManagerService;
+import com.nrknithin.tube.music.giga.util.Utility;
 
-import static org.schabi.newpipe.BuildConfig.DEBUG;
+import static com.nrknithin.tube.music.BuildConfig.DEBUG;
 
 public class DownloadMission extends Mission {
     private static final long serialVersionUID = 6L;// last bump: 07 october 2019

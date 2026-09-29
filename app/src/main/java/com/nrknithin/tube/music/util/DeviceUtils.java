@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import static android.content.Context.INPUT_SERVICE;
 
@@ -25,8 +25,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.App;
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.App;
+import com.nrknithin.tube.music.R;
 
 import java.lang.reflect.Method;
 

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments.list;
+package com.nrknithin.tube.music.fragments.list;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -10,16 +10,16 @@ import androidx.annotation.Nullable;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.ListInfo;
 import org.schabi.newpipe.extractor.Page;
 import org.schabi.newpipe.extractor.exceptions.ContentNotSupportedException;
-import org.schabi.newpipe.util.Constants;
-import org.schabi.newpipe.views.NewPipeRecyclerView;
+import com.nrknithin.tube.music.util.Constants;
+import com.nrknithin.tube.music.views.NewPipeRecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -123,7 +123,8 @@ public abstract class BaseListInfoFragment<I extends InfoItem, L extends ListInf
 
     /**
      * Implement the logic to load the info from the network.<br/>
-     * You can use the default implementations from {@link org.schabi.newpipe.util.ExtractorHelper}.
+     * You can use the default implementations from
+     * {@link com.nrknithin.tube.music.util.ExtractorHelper}.
      *
      * @param forceLoad allow or disallow the result to come from the cache
      * @return Rx {@link Single} containing the {@link ListInfo}
@@ -157,7 +158,7 @@ public abstract class BaseListInfoFragment<I extends InfoItem, L extends ListInf
     /**
      * Implement the logic to load more items.
      * <p>You can use the default implementations
-     * from {@link org.schabi.newpipe.util.ExtractorHelper}.</p>
+     * from {@link com.nrknithin.tube.music.util.ExtractorHelper}.</p>
      *
      * @return Rx {@link Single} containing the {@link ListExtractor.InfoItemsPage}
      */

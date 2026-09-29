@@ -1,7 +1,7 @@
-package org.schabi.newpipe.fragments.detail;
+package com.nrknithin.tube.music.fragments.detail;
 
 import static org.schabi.newpipe.extractor.stream.StreamExtractor.NO_AGE_LIMIT;
-import static org.schabi.newpipe.util.Localization.getAppLocale;
+import static com.nrknithin.tube.music.util.Localization.getAppLocale;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,11 +12,11 @@ import androidx.annotation.StringRes;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.stream.Description;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.util.Localization;
+import com.nrknithin.tube.music.util.Localization;
 
 import java.util.List;
 

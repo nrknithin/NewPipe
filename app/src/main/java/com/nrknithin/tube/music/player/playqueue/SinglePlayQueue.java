@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.playqueue;
+package com.nrknithin.tube.music.player.playqueue;
 
 import androidx.annotation.NonNull;
 

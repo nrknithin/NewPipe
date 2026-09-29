@@ -1,17 +1,17 @@
-package org.schabi.newpipe.player.playqueue;
+package com.nrknithin.tube.music.player.playqueue;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.AppendEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.ErrorEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.InitEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.MoveEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.RecoveryEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.RemoveEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.ReorderEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.SelectEvent;
+import com.nrknithin.tube.music.MainActivity;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.AppendEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.ErrorEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.InitEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.MoveEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.RecoveryEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.RemoveEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.ReorderEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.SelectEvent;
 
 import java.io.Serializable;
 import java.util.ArrayList;

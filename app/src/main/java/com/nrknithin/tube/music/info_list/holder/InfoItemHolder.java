@@ -1,4 +1,4 @@
-package org.schabi.newpipe.info_list.holder;
+package com.nrknithin.tube.music.info_list.holder;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.schabi.newpipe.extractor.InfoItem;
-import org.schabi.newpipe.info_list.InfoItemBuilder;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.info_list.InfoItemBuilder;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
 
 /*
  * Created by Christian Schabesberger on 12.02.17.

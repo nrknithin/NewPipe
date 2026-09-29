@@ -1,4 +1,4 @@
-package org.schabi.newpipe.database.feed.dao
+package com.nrknithin.tube.music.database.feed.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -6,10 +6,10 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.feed.model.FeedGroupSubscriptionEntity
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Maybe
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.feed.model.FeedGroupSubscriptionEntity
 
 @Dao
 abstract class FeedGroupDAO {

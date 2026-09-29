@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package com.nrknithin.tube.music.shared
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,10 +12,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
+import com.nrknithin.tube.music.shared.navigation.Destination
+import com.nrknithin.tube.music.shared.theme.currentService
 import kotlinx.serialization.json.Json
-import net.newpipe.Constants
-import net.newpipe.app.navigation.Destination
-import net.newpipe.app.theme.currentService
 
 /**
  * Entry point for compose-related UI components on Android

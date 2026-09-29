@@ -18,7 +18,7 @@
  * along with NewPipe.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe;
+package com.nrknithin.tube.music;
 
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -54,40 +54,40 @@ import androidx.preference.PreferenceManager;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
-import org.schabi.newpipe.databinding.ActivityMainBinding;
-import org.schabi.newpipe.databinding.DrawerHeaderBinding;
-import org.schabi.newpipe.databinding.DrawerLayoutBinding;
-import org.schabi.newpipe.databinding.ToolbarLayoutBinding;
-import org.schabi.newpipe.error.ErrorUtil;
+import com.nrknithin.tube.music.databinding.ActivityMainBinding;
+import com.nrknithin.tube.music.databinding.DrawerHeaderBinding;
+import com.nrknithin.tube.music.databinding.DrawerLayoutBinding;
+import com.nrknithin.tube.music.databinding.ToolbarLayoutBinding;
+import com.nrknithin.tube.music.error.ErrorUtil;
 import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
-import org.schabi.newpipe.fragments.BackPressable;
-import org.schabi.newpipe.fragments.MainFragment;
-import org.schabi.newpipe.fragments.detail.VideoDetailFragment;
-import org.schabi.newpipe.fragments.list.comments.CommentRepliesFragment;
-import org.schabi.newpipe.fragments.list.search.SearchFragment;
-import org.schabi.newpipe.local.feed.notifications.NotificationWorker;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.event.OnKeyDownListener;
-import org.schabi.newpipe.player.helper.PlayerHolder;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.settings.UpdateSettingsFragment;
-import org.schabi.newpipe.settings.migration.MigrationManager;
-import org.schabi.newpipe.util.Constants;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.KioskTranslator;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.PermissionHelper;
-import org.schabi.newpipe.util.ReleaseVersionUtil;
-import org.schabi.newpipe.util.SerializedCache;
-import org.schabi.newpipe.util.StateSaver;
-import org.schabi.newpipe.util.ThemeHelper;
-import org.schabi.newpipe.util.YouTubeMusicHelper;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
-import org.schabi.newpipe.views.FocusOverlayView;
+import com.nrknithin.tube.music.fragments.BackPressable;
+import com.nrknithin.tube.music.fragments.MainFragment;
+import com.nrknithin.tube.music.fragments.detail.VideoDetailFragment;
+import com.nrknithin.tube.music.fragments.list.comments.CommentRepliesFragment;
+import com.nrknithin.tube.music.fragments.list.search.SearchFragment;
+import com.nrknithin.tube.music.local.feed.notifications.NotificationWorker;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.event.OnKeyDownListener;
+import com.nrknithin.tube.music.player.helper.PlayerHolder;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.settings.UpdateSettingsFragment;
+import com.nrknithin.tube.music.settings.migration.MigrationManager;
+import com.nrknithin.tube.music.util.Constants;
+import com.nrknithin.tube.music.util.DeviceUtils;
+import com.nrknithin.tube.music.util.KioskTranslator;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.PermissionHelper;
+import com.nrknithin.tube.music.util.ReleaseVersionUtil;
+import com.nrknithin.tube.music.util.SerializedCache;
+import com.nrknithin.tube.music.util.StateSaver;
+import com.nrknithin.tube.music.util.ThemeHelper;
+import com.nrknithin.tube.music.util.YouTubeMusicHelper;
+import com.nrknithin.tube.music.util.external_communication.ShareUtils;
+import com.nrknithin.tube.music.views.FocusOverlayView;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

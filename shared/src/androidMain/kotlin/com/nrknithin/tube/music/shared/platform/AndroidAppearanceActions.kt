@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package com.nrknithin.tube.music.shared.platform
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -11,8 +11,8 @@ import android.content.Intent
 import android.provider.Settings as AndroidSettings
 import androidx.appcompat.app.AppCompatDelegate
 import co.touchlab.kermit.Logger
+import com.nrknithin.tube.music.shared.preferences.AppearancePreferences
 import com.russhwolf.settings.Settings
-import net.newpipe.app.preferences.AppearancePreferences
 import org.koin.core.annotation.Singleton
 
 @Singleton(binds = [AppearanceActions::class])

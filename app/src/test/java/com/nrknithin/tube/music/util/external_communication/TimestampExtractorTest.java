@@ -1,9 +1,9 @@
-package org.schabi.newpipe.util.external_communication;
+package com.nrknithin.tube.music.util.external_communication;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.schabi.newpipe.util.text.TimestampExtractor;
+import com.nrknithin.tube.music.util.text.TimestampExtractor;
 
 import java.time.Duration;
 import java.util.Arrays;

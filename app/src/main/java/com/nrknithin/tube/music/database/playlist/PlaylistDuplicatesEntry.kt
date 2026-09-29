@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist
+package com.nrknithin.tube.music.database.playlist
 
 import androidx.room.ColumnInfo
-import org.schabi.newpipe.database.playlist.model.PlaylistEntity
+import com.nrknithin.tube.music.database.playlist.model.PlaylistEntity
 
 /**
  * This class adds a field to [PlaylistMetadataEntry] that contains an integer representing
  * how many times a specific stream is already contained inside a local playlist. Used to be able
  * to grey out playlists which already contain the current stream in the playlist append dialog.
- * @see org.schabi.newpipe.local.playlist.LocalPlaylistManager.getPlaylistDuplicates
+ * @see com.nrknithin.tube.music.local.playlist.LocalPlaylistManager.getPlaylistDuplicates
  */
 data class PlaylistDuplicatesEntry(
     @ColumnInfo(name = PlaylistEntity.PLAYLIST_ID)

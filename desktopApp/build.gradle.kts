@@ -22,11 +22,11 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "net.newpipe.app.MainKt"
+        mainClass = "com.nrknithin.tube.music.shared.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = NEWPIPE_APPLICATION_ID_NEW
+            packageName = APPLICATION_ID
             packageVersion = NEWPIPE_VERSION_NAME
         }
     }

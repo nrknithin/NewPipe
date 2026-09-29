@@ -1,17 +1,17 @@
-package org.schabi.newpipe.local.playlist;
+package com.nrknithin.tube.music.local.playlist;
 
 import androidx.annotation.Nullable;
 
-import org.schabi.newpipe.database.AppDatabase;
-import org.schabi.newpipe.database.playlist.PlaylistDuplicatesEntry;
-import org.schabi.newpipe.database.playlist.PlaylistMetadataEntry;
-import org.schabi.newpipe.database.playlist.PlaylistStreamEntry;
-import org.schabi.newpipe.database.playlist.dao.PlaylistDAO;
-import org.schabi.newpipe.database.playlist.dao.PlaylistStreamDAO;
-import org.schabi.newpipe.database.playlist.model.PlaylistEntity;
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity;
-import org.schabi.newpipe.database.stream.dao.StreamDAO;
-import org.schabi.newpipe.database.stream.model.StreamEntity;
+import com.nrknithin.tube.music.database.AppDatabase;
+import com.nrknithin.tube.music.database.playlist.PlaylistDuplicatesEntry;
+import com.nrknithin.tube.music.database.playlist.PlaylistMetadataEntry;
+import com.nrknithin.tube.music.database.playlist.PlaylistStreamEntry;
+import com.nrknithin.tube.music.database.playlist.dao.PlaylistDAO;
+import com.nrknithin.tube.music.database.playlist.dao.PlaylistStreamDAO;
+import com.nrknithin.tube.music.database.playlist.model.PlaylistEntity;
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity;
+import com.nrknithin.tube.music.database.stream.dao.StreamDAO;
+import com.nrknithin.tube.music.database.stream.model.StreamEntity;
 
 import java.util.ArrayList;
 import java.util.List;

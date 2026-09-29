@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.mediasource;
+package com.nrknithin.tube.music.player.mediasource;
 
 import android.os.Handler;
 
@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 import com.google.android.exoplayer2.source.ConcatenatingMediaSource;
 import com.google.android.exoplayer2.source.ShuffleOrder;
 
-import org.schabi.newpipe.player.mediaitem.MediaItemTag;
+import com.nrknithin.tube.music.player.mediaitem.MediaItemTag;
 
 public class ManagedMediaSourcePlaylist {
     @NonNull

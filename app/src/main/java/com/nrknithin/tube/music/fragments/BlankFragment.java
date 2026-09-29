@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments;
+package com.nrknithin.tube.music.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,10 +9,10 @@ import androidx.annotation.Nullable;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.BaseFragment;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorPanelHelper;
+import com.nrknithin.tube.music.BaseFragment;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorPanelHelper;
 
 public class BlankFragment extends BaseFragment {
 

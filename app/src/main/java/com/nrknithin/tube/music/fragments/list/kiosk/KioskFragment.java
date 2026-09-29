@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.fragments.list.kiosk;
+package com.nrknithin.tube.music.fragments.list.kiosk;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,9 +18,9 @@ import androidx.appcompat.app.ActionBar;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.StreamingService;
@@ -29,10 +29,10 @@ import org.schabi.newpipe.extractor.kiosk.KioskInfo;
 import org.schabi.newpipe.extractor.linkhandler.ListLinkHandlerFactory;
 import org.schabi.newpipe.extractor.localization.ContentCountry;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
-import org.schabi.newpipe.util.ExtractorHelper;
-import org.schabi.newpipe.util.KioskTranslator;
-import org.schabi.newpipe.util.Localization;
+import com.nrknithin.tube.music.fragments.list.BaseListInfoFragment;
+import com.nrknithin.tube.music.util.ExtractorHelper;
+import com.nrknithin.tube.music.util.KioskTranslator;
+import com.nrknithin.tube.music.util.Localization;
 
 import io.reactivex.rxjava3.core.Single;
 

@@ -5,7 +5,7 @@
  * Apache License, Version 2.0.
  */
 
-package org.schabi.newpipe.player.datasource;
+package com.nrknithin.tube.music.player.datasource;
 
 import static com.google.android.exoplayer2.upstream.DefaultHttpDataSource.DEFAULT_CONNECT_TIMEOUT_MILLIS;
 import static com.google.android.exoplayer2.upstream.DefaultHttpDataSource.DEFAULT_READ_TIMEOUT_MILLIS;
@@ -41,7 +41,7 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Sets;
 import com.google.common.net.HttpHeaders;
 
-import org.schabi.newpipe.DownloaderImpl;
+import com.nrknithin.tube.music.DownloaderImpl;
 
 import java.io.IOException;
 import java.io.InputStream;

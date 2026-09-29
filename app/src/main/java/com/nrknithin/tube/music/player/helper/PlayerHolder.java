@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.helper;
+package com.nrknithin.tube.music.player.helper;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -13,16 +13,16 @@ import androidx.core.content.ContextCompat;
 import com.google.android.exoplayer2.PlaybackException;
 import com.google.android.exoplayer2.PlaybackParameters;
 
-import org.schabi.newpipe.App;
-import org.schabi.newpipe.MainActivity;
+import com.nrknithin.tube.music.App;
+import com.nrknithin.tube.music.MainActivity;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.player.PlayerService;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.PlayerType;
-import org.schabi.newpipe.player.event.PlayerServiceEventListener;
-import org.schabi.newpipe.player.event.PlayerServiceExtendedEventListener;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.util.NavigationHelper;
+import com.nrknithin.tube.music.player.PlayerService;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.PlayerType;
+import com.nrknithin.tube.music.player.event.PlayerServiceEventListener;
+import com.nrknithin.tube.music.player.event.PlayerServiceExtendedEventListener;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.util.NavigationHelper;
 
 import java.util.Optional;
 import java.util.function.Consumer;

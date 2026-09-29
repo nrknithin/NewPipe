@@ -23,7 +23,7 @@
         app:shapeAppearance="@style/CircularImageView"
         tools:ignore="RtlHardcoded" />
 
-    <org.schabi.newpipe.views.NewPipeTextView
+    <com.nrknithin.tube.music.views.NewPipeTextView
         android:id="@+id/itemTitleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

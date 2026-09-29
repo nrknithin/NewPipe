@@ -1,4 +1,4 @@
-package org.schabi.newpipe.streams;
+package com.nrknithin.tube.music.streams;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -7,7 +7,7 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.parser.Parser;
 import org.jsoup.select.Elements;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

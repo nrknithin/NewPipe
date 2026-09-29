@@ -1,6 +1,6 @@
-package org.schabi.newpipe.util.text;
+package com.nrknithin.tube.music.util.text;
 
-import static org.schabi.newpipe.util.text.TouchUtils.getOffsetForHorizontalLine;
+import static com.nrknithin.tube.music.util.text.TouchUtils.getOffsetForHorizontalLine;
 
 import android.os.Handler;
 import android.os.Looper;

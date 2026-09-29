@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist.model
+package com.nrknithin.tube.music.database.playlist.model
 
 import android.text.TextUtils
 import androidx.room.ColumnInfo
@@ -12,14 +12,14 @@ import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import org.schabi.newpipe.database.LocalItem.LocalItemType
-import org.schabi.newpipe.database.playlist.PlaylistLocalItem
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_SERVICE_ID
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_TABLE
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_URL
+import com.nrknithin.tube.music.database.LocalItem.LocalItemType
+import com.nrknithin.tube.music.database.playlist.PlaylistLocalItem
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_SERVICE_ID
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_TABLE
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_URL
+import com.nrknithin.tube.music.util.NO_SERVICE_ID
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import org.schabi.newpipe.extractor.playlist.PlaylistInfo
-import org.schabi.newpipe.util.NO_SERVICE_ID
-import org.schabi.newpipe.util.image.ImageStrategy
 
 @Entity(
     tableName = REMOTE_PLAYLIST_TABLE,

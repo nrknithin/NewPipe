@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.composable
+package com.nrknithin.tube.music.shared.composable
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -29,7 +29,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.dp
-import net.newpipe.app.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.cancel
 import org.jetbrains.compose.resources.stringResource

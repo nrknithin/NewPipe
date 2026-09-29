@@ -1,4 +1,4 @@
-package org.schabi.newpipe.streams.io;
+package com.nrknithin.tube.music.streams.io;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -15,9 +15,9 @@ import androidx.documentfile.provider.DocumentFile;
 
 import com.nononsenseapps.filepicker.Utils;
 
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.settings.NewPipeSettings;
-import org.schabi.newpipe.util.FilePickerActivityHelper;
+import com.nrknithin.tube.music.MainActivity;
+import com.nrknithin.tube.music.settings.NewPipeSettings;
+import com.nrknithin.tube.music.util.FilePickerActivityHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,8 +27,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import us.shandian.giga.io.FileStream;
-import us.shandian.giga.io.FileStreamSAF;
+import com.nrknithin.tube.music.giga.io.FileStream;
+import com.nrknithin.tube.music.giga.io.FileStreamSAF;
 
 public class StoredFileHelper implements Serializable {
     private static final boolean DEBUG = MainActivity.DEBUG;

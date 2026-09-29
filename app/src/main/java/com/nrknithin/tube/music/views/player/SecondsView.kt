@@ -1,4 +1,4 @@
-package org.schabi.newpipe.views.player
+package com.nrknithin.tube.music.views.player
 
 import android.animation.ValueAnimator
 import android.content.Context
@@ -6,9 +6,9 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.core.animation.addListener
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.PlayerFastSeekSecondsViewBinding
-import org.schabi.newpipe.util.DeviceUtils
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.PlayerFastSeekSecondsViewBinding
+import com.nrknithin.tube.music.util.DeviceUtils
 
 class SecondsView(context: Context, attrs: AttributeSet?) : LinearLayout(context, attrs) {
 

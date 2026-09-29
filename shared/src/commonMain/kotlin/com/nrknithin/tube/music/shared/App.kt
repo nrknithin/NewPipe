@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package com.nrknithin.tube.music.shared
 
 import androidx.compose.runtime.Composable
-import net.newpipe.app.di.KoinApp
-import net.newpipe.app.navigation.Destination
-import net.newpipe.app.navigation.NavDisplay
-import net.newpipe.app.navigation.navModule
-import net.newpipe.app.theme.AppTheme
+import com.nrknithin.tube.music.shared.di.KoinApp
+import com.nrknithin.tube.music.shared.navigation.Destination
+import com.nrknithin.tube.music.shared.navigation.NavDisplay
+import com.nrknithin.tube.music.shared.navigation.navModule
+import com.nrknithin.tube.music.shared.theme.AppTheme
 import org.koin.compose.KoinApplication
 import org.koin.plugin.module.dsl.koinConfiguration
 

@@ -1,13 +1,13 @@
-package org.schabi.newpipe.player.playqueue;
+package com.nrknithin.tube.music.player.playqueue;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.view.MotionEvent;
 import android.view.View;
 
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.ServiceHelper;
-import org.schabi.newpipe.util.image.CoilHelper;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.ServiceHelper;
+import com.nrknithin.tube.music.util.image.CoilHelper;
 
 public class PlayQueueItemBuilder {
     private static final String TAG = PlayQueueItemBuilder.class.toString();

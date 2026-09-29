@@ -1,6 +1,6 @@
-package org.schabi.newpipe.settings.migration;
+package com.nrknithin.tube.music.settings.migration;
 
-import static org.schabi.newpipe.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
 import static org.schabi.newpipe.extractor.ServiceList.YouTube;
 
 import android.content.Context;
@@ -11,14 +11,14 @@ import androidx.annotation.NonNull;
 import androidx.core.util.Consumer;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.App;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.settings.tabs.Tab;
-import org.schabi.newpipe.settings.tabs.TabsManager;
-import org.schabi.newpipe.util.DeviceUtils;
+import com.nrknithin.tube.music.App;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
+import com.nrknithin.tube.music.settings.tabs.Tab;
+import com.nrknithin.tube.music.settings.tabs.TabsManager;
+import com.nrknithin.tube.music.util.DeviceUtils;
 
 import java.util.Collections;
 import java.util.HashSet;

@@ -1,9 +1,9 @@
-package us.shandian.giga.postprocessing;
+package com.nrknithin.tube.music.giga.postprocessing;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.streams.OggFromWebMWriter;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.OggFromWebMWriter;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

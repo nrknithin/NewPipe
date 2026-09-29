@@ -1,6 +1,6 @@
-package org.schabi.newpipe.fragments.list.playlist;
+package com.nrknithin.tube.music.fragments.list.playlist;
 
-import org.schabi.newpipe.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
 
 /**
  * Interface for {@code R.layout.playlist_control} view holders

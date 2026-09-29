@@ -3,16 +3,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.fragments.list.search
+package com.nrknithin.tube.music.fragments.list.search
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.ItemSearchSuggestionBinding
-import org.schabi.newpipe.fragments.list.search.SuggestionListAdapter.SuggestionItemHolder
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.ItemSearchSuggestionBinding
+import com.nrknithin.tube.music.fragments.list.search.SuggestionListAdapter.SuggestionItemHolder
 
 class SuggestionListAdapter :
     ListAdapter<SuggestionItem, SuggestionItemHolder>(SuggestionItemCallback()) {

@@ -1,23 +1,23 @@
-package org.schabi.newpipe.local.subscription
+package com.nrknithin.tube.music.local.subscription
 
 import android.content.Context
+import com.nrknithin.tube.music.NewPipeDatabase
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.database.subscription.SubscriptionDAO
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.local.feed.FeedDatabaseManager
+import com.nrknithin.tube.music.local.feed.service.FeedUpdateInfo
+import com.nrknithin.tube.music.util.ExtractorHelper
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.schedulers.Schedulers
-import org.schabi.newpipe.NewPipeDatabase
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.subscription.NotificationMode
-import org.schabi.newpipe.database.subscription.SubscriptionDAO
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
 import org.schabi.newpipe.extractor.channel.ChannelInfo
 import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.local.feed.FeedDatabaseManager
-import org.schabi.newpipe.local.feed.service.FeedUpdateInfo
-import org.schabi.newpipe.util.ExtractorHelper
-import org.schabi.newpipe.util.image.ImageStrategy
 
 class SubscriptionManager(context: Context) {
     private val database = NewPipeDatabase.getInstance(context)

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription
+package com.nrknithin.tube.music.local.subscription
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

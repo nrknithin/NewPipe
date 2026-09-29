@@ -1,7 +1,7 @@
-package org.schabi.newpipe.player;
+package com.nrknithin.tube.music.player;
 
-import static org.schabi.newpipe.QueueItemMenuUtil.openPopupMenu;
-import static org.schabi.newpipe.player.helper.PlayerHelper.formatSpeed;
+import static com.nrknithin.tube.music.QueueItemMenuUtil.openPopupMenu;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.formatSpeed;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -26,26 +26,26 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.exoplayer2.PlaybackParameters;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.ActivityPlayerQueueControlBinding;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.ActivityPlayerQueueControlBinding;
 import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.fragments.OnScrollBelowItemsListener;
-import org.schabi.newpipe.local.dialog.PlaylistDialog;
-import org.schabi.newpipe.player.event.PlayerEventListener;
-import org.schabi.newpipe.player.helper.PlaybackParameterDialog;
-import org.schabi.newpipe.player.mediaitem.MediaItemTag;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueueAdapter;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.player.playqueue.PlayQueueItemBuilder;
-import org.schabi.newpipe.player.playqueue.PlayQueueItemHolder;
-import org.schabi.newpipe.player.playqueue.PlayQueueItemTouchCallback;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.PermissionHelper;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.fragments.OnScrollBelowItemsListener;
+import com.nrknithin.tube.music.local.dialog.PlaylistDialog;
+import com.nrknithin.tube.music.player.event.PlayerEventListener;
+import com.nrknithin.tube.music.player.helper.PlaybackParameterDialog;
+import com.nrknithin.tube.music.player.mediaitem.MediaItemTag;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueAdapter;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItemBuilder;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItemHolder;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItemTouchCallback;
+import com.nrknithin.tube.music.util.Localization;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.PermissionHelper;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 import java.util.List;
 import java.util.Optional;

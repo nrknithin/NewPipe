@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription.workers
+package com.nrknithin.tube.music.local.subscription.workers
 
 import android.content.Context
 import android.content.pm.ServiceInfo
@@ -16,11 +16,11 @@ import androidx.work.OutOfQuotaPolicy
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
+import com.nrknithin.tube.music.NewPipeDatabase
+import com.nrknithin.tube.music.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.reactive.awaitFirst
 import kotlinx.coroutines.withContext
-import org.schabi.newpipe.NewPipeDatabase
-import org.schabi.newpipe.R
 
 class SubscriptionExportWorker(
     appContext: Context,

@@ -1,11 +1,11 @@
-package org.schabi.newpipe.player.playqueue;
+package com.nrknithin.tube.music.player.playqueue;
 
 
 import org.schabi.newpipe.extractor.Page;
 import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo;
 import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.util.ExtractorHelper;
+import com.nrknithin.tube.music.util.ExtractorHelper;
 
 import java.util.Collections;
 import java.util.List;

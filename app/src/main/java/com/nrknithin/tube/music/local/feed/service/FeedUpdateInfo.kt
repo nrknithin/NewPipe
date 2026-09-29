@@ -1,11 +1,11 @@
-package org.schabi.newpipe.local.feed.service
+package com.nrknithin.tube.music.local.feed.service
 
-import org.schabi.newpipe.database.subscription.NotificationMode
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import org.schabi.newpipe.extractor.Info
 import org.schabi.newpipe.extractor.channel.ChannelInfo
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.util.image.ImageStrategy
 
 /**
  * Instances of this class might stay around in memory for some time while fetching the feed,

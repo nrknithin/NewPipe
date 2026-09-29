@@ -1,4 +1,4 @@
-package org.schabi.newpipe.streams.io;
+package com.nrknithin.tube.music.streams.io;
 
 import static android.provider.DocumentsContract.Document.COLUMN_DISPLAY_NAME;
 import static android.provider.DocumentsContract.Root.COLUMN_DOCUMENT_ID;
@@ -19,8 +19,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.documentfile.provider.DocumentFile;
 
-import org.schabi.newpipe.settings.NewPipeSettings;
-import org.schabi.newpipe.util.FilePickerActivityHelper;
+import com.nrknithin.tube.music.settings.NewPipeSettings;
+import com.nrknithin.tube.music.util.FilePickerActivityHelper;
 
 import java.io.FileDescriptor;
 import java.io.IOException;

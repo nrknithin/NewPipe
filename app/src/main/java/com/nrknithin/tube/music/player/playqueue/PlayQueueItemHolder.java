@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.player.playqueue;
+package com.nrknithin.tube.music.player.playqueue;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 public class PlayQueueItemHolder extends RecyclerView.ViewHolder {
     public final TextView itemVideoTitleView;

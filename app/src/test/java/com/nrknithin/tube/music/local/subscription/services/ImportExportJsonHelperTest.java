@@ -1,12 +1,12 @@
-package org.schabi.newpipe.local.subscription.services;
+package com.nrknithin.tube.music.local.subscription.services;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import org.junit.Test;
 import org.schabi.newpipe.extractor.subscription.SubscriptionExtractor;
-import org.schabi.newpipe.local.subscription.workers.ImportExportJsonHelper;
-import org.schabi.newpipe.local.subscription.workers.SubscriptionItem;
+import com.nrknithin.tube.music.local.subscription.workers.ImportExportJsonHelper;
+import com.nrknithin.tube.music.local.subscription.workers.SubscriptionItem;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

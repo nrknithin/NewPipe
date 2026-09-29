@@ -1,13 +1,13 @@
-package org.schabi.newpipe.info_list
+package com.nrknithin.tube.music.info_list
 
 import android.view.View
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.ItemStreamSegmentBinding
+import com.nrknithin.tube.music.util.Localization
+import com.nrknithin.tube.music.util.image.CoilHelper
 import com.xwray.groupie.viewbinding.BindableItem
 import com.xwray.groupie.viewbinding.GroupieViewHolder
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.ItemStreamSegmentBinding
 import org.schabi.newpipe.extractor.stream.StreamSegment
-import org.schabi.newpipe.util.Localization
-import org.schabi.newpipe.util.image.CoilHelper
 
 class StreamSegmentItem(
     private val item: StreamSegment,

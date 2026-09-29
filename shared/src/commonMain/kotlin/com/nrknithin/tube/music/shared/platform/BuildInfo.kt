@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package com.nrknithin.tube.music.shared.platform
 
 /**
  * Information about the currently running build.

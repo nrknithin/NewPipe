@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.mediaitem;
+package com.nrknithin.tube.music.player.mediaitem;
 
 import com.google.android.exoplayer2.MediaItem;
 
@@ -6,7 +6,7 @@ import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamType;
 import org.schabi.newpipe.extractor.stream.VideoStream;
-import org.schabi.newpipe.util.image.ImageStrategy;
+import com.nrknithin.tube.music.util.image.ImageStrategy;
 
 import java.util.Collections;
 import java.util.List;

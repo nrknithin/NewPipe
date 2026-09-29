@@ -1,8 +1,8 @@
-package us.shandian.giga.get;
+package com.nrknithin.tube.music.giga.get;
 
 import android.util.Log;
 
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,11 +10,11 @@ import java.net.HttpURLConnection;
 import java.nio.channels.ClosedByInterruptException;
 import java.util.Objects;
 
-import us.shandian.giga.get.DownloadMission.Block;
-import us.shandian.giga.get.DownloadMission.HttpError;
+import com.nrknithin.tube.music.giga.get.DownloadMission.Block;
+import com.nrknithin.tube.music.giga.get.DownloadMission.HttpError;
 
-import static org.schabi.newpipe.BuildConfig.DEBUG;
-import static us.shandian.giga.get.DownloadMission.ERROR_HTTP_FORBIDDEN;
+import static com.nrknithin.tube.music.BuildConfig.DEBUG;
+import static com.nrknithin.tube.music.giga.get.DownloadMission.ERROR_HTTP_FORBIDDEN;
 
 
 /**

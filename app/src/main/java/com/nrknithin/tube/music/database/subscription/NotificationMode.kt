@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.subscription
+package com.nrknithin.tube.music.database.subscription
 
 import androidx.annotation.IntDef
 

@@ -1,10 +1,10 @@
-package org.schabi.newpipe.local.feed.notifications
+package com.nrknithin.tube.music.local.feed.notifications
 
 import android.content.Context
 import androidx.preference.PreferenceManager
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.ktx.getStringSafe
 import java.util.concurrent.TimeUnit
-import org.schabi.newpipe.R
-import org.schabi.newpipe.ktx.getStringSafe
 
 /**
  * Information for the Scheduler which checks for new streams.

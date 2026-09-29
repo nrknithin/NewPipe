@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.model
+package com.nrknithin.tube.music.shared.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

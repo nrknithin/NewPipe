@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.stream.dao
+package com.nrknithin.tube.music.database.stream.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
+import com.nrknithin.tube.music.database.BasicDAO
+import com.nrknithin.tube.music.database.stream.model.StreamStateEntity
 import io.reactivex.rxjava3.core.Flowable
-import org.schabi.newpipe.database.BasicDAO
-import org.schabi.newpipe.database.stream.model.StreamStateEntity
 
 @Dao
 interface StreamStateDAO : BasicDAO<StreamStateEntity> {

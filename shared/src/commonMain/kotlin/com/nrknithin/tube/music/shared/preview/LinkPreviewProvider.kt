@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.preview
+package com.nrknithin.tube.music.shared.preview
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import net.newpipe.app.model.Link
+import com.nrknithin.tube.music.shared.model.Link
 
 /**
  * Preview provider for composable working with [Link]

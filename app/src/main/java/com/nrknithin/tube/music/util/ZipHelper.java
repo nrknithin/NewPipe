@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
-import org.schabi.newpipe.streams.io.SharpInputStream;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.streams.io.SharpInputStream;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;

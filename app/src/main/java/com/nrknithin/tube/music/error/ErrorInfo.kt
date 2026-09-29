@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error
+package com.nrknithin.tube.music.error
 
 import android.content.Context
 import android.os.Parcelable
@@ -7,9 +7,13 @@ import androidx.core.content.ContextCompat
 import com.google.android.exoplayer2.ExoPlaybackException
 import com.google.android.exoplayer2.upstream.HttpDataSource
 import com.google.android.exoplayer2.upstream.Loader
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.ktx.isNetworkRelated
+import com.nrknithin.tube.music.player.mediasource.FailedMediaSource
+import com.nrknithin.tube.music.player.resolver.PlaybackResolver
+import com.nrknithin.tube.music.util.text.getText
 import java.net.UnknownHostException
 import kotlinx.parcelize.Parcelize
-import org.schabi.newpipe.R
 import org.schabi.newpipe.extractor.Info
 import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.ServiceList.YouTube
@@ -25,10 +29,6 @@ import org.schabi.newpipe.extractor.exceptions.ReCaptchaException
 import org.schabi.newpipe.extractor.exceptions.SignInConfirmNotBotException
 import org.schabi.newpipe.extractor.exceptions.UnsupportedContentInCountryException
 import org.schabi.newpipe.extractor.exceptions.YoutubeMusicPremiumContentException
-import org.schabi.newpipe.ktx.isNetworkRelated
-import org.schabi.newpipe.player.mediasource.FailedMediaSource
-import org.schabi.newpipe.player.resolver.PlaybackResolver
-import org.schabi.newpipe.util.text.getText
 
 /**
  * An error has occurred in the app. This class contains plain old parcelable data that can be used

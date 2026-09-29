@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.composable.about
+package com.nrknithin.tube.music.shared.composable.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -18,10 +18,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewWrapper
-import net.newpipe.app.model.Link
-import net.newpipe.app.preview.LinkPreviewProvider
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.theme.spaceMedium
+import com.nrknithin.tube.music.shared.model.Link
+import com.nrknithin.tube.music.shared.preview.LinkPreviewProvider
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.theme.spaceMedium
 
 /**
  * Composable to display information about links

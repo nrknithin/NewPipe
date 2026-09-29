@@ -1,14 +1,14 @@
-package org.schabi.newpipe.fragments.list.kiosk;
+package com.nrknithin.tube.music.fragments.list.kiosk;
 
 import android.os.Bundle;
 
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.schabi.newpipe.extractor.kiosk.KioskList;
-import org.schabi.newpipe.util.KioskTranslator;
-import org.schabi.newpipe.util.YouTubeMusicHelper;
+import com.nrknithin.tube.music.util.KioskTranslator;
+import com.nrknithin.tube.music.util.YouTubeMusicHelper;
 
 public class DefaultKioskFragment extends KioskFragment {
 

@@ -1,7 +1,7 @@
-package org.schabi.newpipe.util.debounce;
+package com.nrknithin.tube.music.util.debounce;
 
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.UserAction;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;

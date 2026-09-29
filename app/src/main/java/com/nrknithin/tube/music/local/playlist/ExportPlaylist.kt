@@ -3,16 +3,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.local.playlist
+package com.nrknithin.tube.music.local.playlist
 
 import android.content.Context
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.playlist.PlaylistStreamEntry
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.playlist.PlaylistStreamEntry
+import com.nrknithin.tube.music.local.playlist.PlayListShareMode.JUST_URLS
+import com.nrknithin.tube.music.local.playlist.PlayListShareMode.WITH_TITLES
+import com.nrknithin.tube.music.local.playlist.PlayListShareMode.YOUTUBE_TEMP_PLAYLIST
 import org.schabi.newpipe.extractor.exceptions.ParsingException
 import org.schabi.newpipe.extractor.services.youtube.linkHandler.YoutubeStreamLinkHandlerFactory
-import org.schabi.newpipe.local.playlist.PlayListShareMode.JUST_URLS
-import org.schabi.newpipe.local.playlist.PlayListShareMode.WITH_TITLES
-import org.schabi.newpipe.local.playlist.PlayListShareMode.YOUTUBE_TEMP_PLAYLIST
 
 fun export(
     shareMode: PlayListShareMode,

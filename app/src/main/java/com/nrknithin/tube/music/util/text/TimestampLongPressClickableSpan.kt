@@ -3,15 +3,15 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util.text
+package com.nrknithin.tube.music.util.text
 
 import android.content.Context
 import android.view.View
+import com.nrknithin.tube.music.util.external_communication.ShareUtils
+import com.nrknithin.tube.music.util.text.TimestampExtractor.TimestampMatchDTO
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.StreamingService
-import org.schabi.newpipe.util.external_communication.ShareUtils
-import org.schabi.newpipe.util.text.TimestampExtractor.TimestampMatchDTO
 
 class TimestampLongPressClickableSpan(
     private val context: Context,

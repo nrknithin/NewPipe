@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments.list.channel;
+package com.nrknithin.tube.music.fragments.list.channel;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 
 import com.evernote.android.state.State;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.PlaylistControlBinding;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.PlaylistControlBinding;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo;
@@ -22,13 +22,13 @@ import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
 import org.schabi.newpipe.extractor.linkhandler.ListLinkHandlerFactory;
 import org.schabi.newpipe.extractor.linkhandler.ReadyChannelTabListLinkHandler;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
-import org.schabi.newpipe.fragments.list.playlist.PlaylistControlViewHolder;
-import org.schabi.newpipe.player.playqueue.ChannelTabPlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.util.ChannelTabHelper;
-import org.schabi.newpipe.util.ExtractorHelper;
-import org.schabi.newpipe.util.PlayButtonHelper;
+import com.nrknithin.tube.music.fragments.list.BaseListInfoFragment;
+import com.nrknithin.tube.music.fragments.list.playlist.PlaylistControlViewHolder;
+import com.nrknithin.tube.music.player.playqueue.ChannelTabPlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.util.ChannelTabHelper;
+import com.nrknithin.tube.music.util.ExtractorHelper;
+import com.nrknithin.tube.music.util.PlayButtonHelper;
 
 import java.util.List;
 import java.util.function.Supplier;

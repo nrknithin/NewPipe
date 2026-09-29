@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.image
+package com.nrknithin.tube.music.util.image
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -17,11 +17,11 @@ import coil3.size.Size
 import coil3.target.Target
 import coil3.toBitmap
 import coil3.transform.Transformation
+import com.nrknithin.tube.music.MainActivity
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.ktx.scale
 import kotlin.math.min
-import org.schabi.newpipe.MainActivity
-import org.schabi.newpipe.R
 import org.schabi.newpipe.extractor.Image
-import org.schabi.newpipe.ktx.scale
 
 object CoilHelper {
     private val TAG = CoilHelper::class.java.simpleName

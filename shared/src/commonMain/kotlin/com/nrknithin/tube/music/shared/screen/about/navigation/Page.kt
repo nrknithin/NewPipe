@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about.navigation
+package com.nrknithin.tube.music.shared.screen.about.navigation
 
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.tab_about

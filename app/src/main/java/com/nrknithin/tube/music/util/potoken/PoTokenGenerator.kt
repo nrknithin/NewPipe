@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.potoken
+package com.nrknithin.tube.music.util.potoken
 
 import android.content.Context
 import io.reactivex.rxjava3.core.Single

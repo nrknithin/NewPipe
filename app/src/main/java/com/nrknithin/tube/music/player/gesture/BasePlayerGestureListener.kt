@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.gesture
+package com.nrknithin.tube.music.player.gesture
 
 import android.os.Handler
 import android.os.Looper
@@ -7,9 +7,9 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 import androidx.core.os.postDelayed
-import org.schabi.newpipe.databinding.PlayerBinding
-import org.schabi.newpipe.player.Player
-import org.schabi.newpipe.player.ui.VideoPlayerUi
+import com.nrknithin.tube.music.databinding.PlayerBinding
+import com.nrknithin.tube.music.player.Player
+import com.nrknithin.tube.music.player.ui.VideoPlayerUi
 
 /**
  * Base gesture handling for [Player]

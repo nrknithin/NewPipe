@@ -1,4 +1,4 @@
-package us.shandian.giga.io;
+package com.nrknithin.tube.music.giga.io;
 
 public interface ProgressReport {
 

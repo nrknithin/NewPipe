@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.potoken
+package com.nrknithin.tube.music.util.potoken
 
 class PoTokenException(message: String) : Exception(message)
 

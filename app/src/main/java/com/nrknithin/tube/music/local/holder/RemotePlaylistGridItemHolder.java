@@ -1,9 +1,9 @@
-package org.schabi.newpipe.local.holder;
+package com.nrknithin.tube.music.local.holder;
 
 import android.view.ViewGroup;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.local.LocalItemBuilder;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.local.LocalItemBuilder;
 
 public class RemotePlaylistGridItemHolder extends RemotePlaylistItemHolder {
     public RemotePlaylistGridItemHolder(final LocalItemBuilder infoItemBuilder,

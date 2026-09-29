@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.local.playlist
+package com.nrknithin.tube.music.local.playlist
 
+import com.nrknithin.tube.music.database.AppDatabase
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
-import org.schabi.newpipe.database.AppDatabase
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity
 import org.schabi.newpipe.extractor.playlist.PlaylistInfo
 
 class RemotePlaylistManager(private val database: AppDatabase) {

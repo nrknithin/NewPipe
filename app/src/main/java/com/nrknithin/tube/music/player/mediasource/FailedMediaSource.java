@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.mediasource;
+package com.nrknithin.tube.music.player.mediasource;
 
 import android.util.Log;
 
@@ -12,8 +12,8 @@ import com.google.android.exoplayer2.source.SinglePeriodTimeline;
 import com.google.android.exoplayer2.upstream.Allocator;
 import com.google.android.exoplayer2.upstream.TransferListener;
 
-import org.schabi.newpipe.player.mediaitem.ExceptionTag;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.mediaitem.ExceptionTag;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
 
 import java.io.IOException;
 import java.util.List;
@@ -117,7 +117,7 @@ public class FailedMediaSource extends BaseMediaSource implements ManagedMediaSo
     /**
      * If the error is not known, e.g. network issue, then the exception is not swallowed here in
      * {@link FailedMediaSource}. The exception is then propagated to the player, which
-     * {@link org.schabi.newpipe.player.Player Player} can react to inside
+     * {@link com.nrknithin.tube.music.player.Player Player} can react to inside
      * {@link com.google.android.exoplayer2.Player.Listener#onPlayerError(PlaybackException)}.
      *
      * @throws IOException An error which will always result in

@@ -1,8 +1,16 @@
-package org.schabi.newpipe.database
+package com.nrknithin.tube.music.database
 
 import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
+import com.nrknithin.tube.music.database.feed.dao.FeedDAO
+import com.nrknithin.tube.music.database.feed.model.FeedEntity
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.stream.StreamWithState
+import com.nrknithin.tube.music.database.stream.dao.StreamDAO
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.subscription.SubscriptionDAO
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
 import io.reactivex.rxjava3.core.Single
 import java.io.IOException
 import java.time.OffsetDateTime
@@ -11,14 +19,6 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Before
 import org.junit.Test
-import org.schabi.newpipe.database.feed.dao.FeedDAO
-import org.schabi.newpipe.database.feed.model.FeedEntity
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.stream.StreamWithState
-import org.schabi.newpipe.database.stream.dao.StreamDAO
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.subscription.SubscriptionDAO
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
 import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.channel.ChannelInfo
 import org.schabi.newpipe.extractor.stream.StreamType

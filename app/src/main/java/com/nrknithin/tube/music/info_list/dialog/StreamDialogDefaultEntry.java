@@ -1,9 +1,9 @@
-package org.schabi.newpipe.info_list.dialog;
+package com.nrknithin.tube.music.info_list.dialog;
 
-import static org.schabi.newpipe.util.NavigationHelper.openChannelFragment;
-import static org.schabi.newpipe.util.SparseItemUtil.fetchItemInfoIfSparse;
-import static org.schabi.newpipe.util.SparseItemUtil.fetchStreamInfoAndSaveToDatabase;
-import static org.schabi.newpipe.util.SparseItemUtil.fetchUploaderUrlIfSparse;
+import static com.nrknithin.tube.music.util.NavigationHelper.openChannelFragment;
+import static com.nrknithin.tube.music.util.SparseItemUtil.fetchItemInfoIfSparse;
+import static com.nrknithin.tube.music.util.SparseItemUtil.fetchStreamInfoAndSaveToDatabase;
+import static com.nrknithin.tube.music.util.SparseItemUtil.fetchUploaderUrlIfSparse;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,18 +11,18 @@ import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.stream.model.StreamEntity;
-import org.schabi.newpipe.download.DownloadDialog;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.local.dialog.PlaylistAppendDialog;
-import org.schabi.newpipe.local.dialog.PlaylistDialog;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.external_communication.KoreUtils;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.stream.model.StreamEntity;
+import com.nrknithin.tube.music.download.DownloadDialog;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
+import com.nrknithin.tube.music.local.dialog.PlaylistAppendDialog;
+import com.nrknithin.tube.music.local.dialog.PlaylistDialog;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.external_communication.KoreUtils;
+import com.nrknithin.tube.music.util.external_communication.ShareUtils;
 
 import java.util.List;
 

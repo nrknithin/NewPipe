@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.settings.export
+package com.nrknithin.tube.music.settings.export
 
 import java.io.IOException
 import java.io.InputStream

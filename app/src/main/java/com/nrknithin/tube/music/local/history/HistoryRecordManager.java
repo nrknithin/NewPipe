@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.history;
+package com.nrknithin.tube.music.local.history;
 
 /*
  * Copyright (C) Mauricio Colli 2018
@@ -24,28 +24,28 @@ import android.content.SharedPreferences;
 import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.NewPipeDatabase;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.AppDatabase;
-import org.schabi.newpipe.database.LocalItem;
-import org.schabi.newpipe.database.history.dao.SearchHistoryDAO;
-import org.schabi.newpipe.database.history.dao.StreamHistoryDAO;
-import org.schabi.newpipe.database.history.model.SearchHistoryEntry;
-import org.schabi.newpipe.database.history.model.StreamHistoryEntity;
-import org.schabi.newpipe.database.history.model.StreamHistoryEntry;
-import org.schabi.newpipe.database.playlist.PlaylistStreamEntry;
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity;
-import org.schabi.newpipe.database.stream.StreamStatisticsEntry;
-import org.schabi.newpipe.database.stream.dao.StreamDAO;
-import org.schabi.newpipe.database.stream.dao.StreamStateDAO;
-import org.schabi.newpipe.database.stream.model.StreamEntity;
-import org.schabi.newpipe.database.stream.model.StreamStateEntity;
+import com.nrknithin.tube.music.NewPipeDatabase;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.AppDatabase;
+import com.nrknithin.tube.music.database.LocalItem;
+import com.nrknithin.tube.music.database.history.dao.SearchHistoryDAO;
+import com.nrknithin.tube.music.database.history.dao.StreamHistoryDAO;
+import com.nrknithin.tube.music.database.history.model.SearchHistoryEntry;
+import com.nrknithin.tube.music.database.history.model.StreamHistoryEntity;
+import com.nrknithin.tube.music.database.history.model.StreamHistoryEntry;
+import com.nrknithin.tube.music.database.playlist.PlaylistStreamEntry;
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity;
+import com.nrknithin.tube.music.database.stream.StreamStatisticsEntry;
+import com.nrknithin.tube.music.database.stream.dao.StreamDAO;
+import com.nrknithin.tube.music.database.stream.dao.StreamStateDAO;
+import com.nrknithin.tube.music.database.stream.model.StreamEntity;
+import com.nrknithin.tube.music.database.stream.model.StreamStateEntity;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.local.feed.FeedViewModel;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.util.ExtractorHelper;
+import com.nrknithin.tube.music.local.feed.FeedViewModel;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.util.ExtractorHelper;
 
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;

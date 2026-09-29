@@ -1,4 +1,4 @@
-package org.schabi.newpipe.info_list
+package com.nrknithin.tube.music.info_list
 
 import android.util.Log
 import com.xwray.groupie.GroupieAdapter

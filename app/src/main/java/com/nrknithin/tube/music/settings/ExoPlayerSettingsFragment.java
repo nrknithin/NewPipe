@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreferenceCompat;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 public class ExoPlayerSettingsFragment extends BasePreferenceFragment {
 

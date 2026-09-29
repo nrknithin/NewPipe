@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.preferencesearch;
+package com.nrknithin.tube.music.settings.preferencesearch;
 
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -17,7 +17,7 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 
 public final class PreferenceSearchResultHighlighter {

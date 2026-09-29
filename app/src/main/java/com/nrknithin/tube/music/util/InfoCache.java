@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import android.util.Log;
 
@@ -25,7 +25,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.collection.LruCache;
 
-import org.schabi.newpipe.MainActivity;
+import com.nrknithin.tube.music.MainActivity;
 import org.schabi.newpipe.extractor.Info;
 
 import java.util.Map;

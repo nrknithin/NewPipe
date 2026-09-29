@@ -1,4 +1,4 @@
-package org.schabi.newpipe.views.player
+package com.nrknithin.tube.music.views.player
 
 import android.content.Context
 import android.util.AttributeSet
@@ -9,10 +9,10 @@ import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams.END
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams.PARENT_ID
 import androidx.constraintlayout.widget.ConstraintLayout.LayoutParams.START
 import androidx.constraintlayout.widget.ConstraintSet
-import org.schabi.newpipe.MainActivity
-import org.schabi.newpipe.R
-import org.schabi.newpipe.player.gesture.DisplayPortion
-import org.schabi.newpipe.player.gesture.DoubleTapListener
+import com.nrknithin.tube.music.MainActivity
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.player.gesture.DisplayPortion
+import com.nrknithin.tube.music.player.gesture.DoubleTapListener
 
 class PlayerFastSeekOverlay(context: Context, attrs: AttributeSet?) :
     ConstraintLayout(context, attrs), DoubleTapListener {

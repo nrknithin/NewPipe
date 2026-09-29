@@ -1,4 +1,4 @@
-package us.shandian.giga.ui.common;
+package com.nrknithin.tube.music.giga.ui.common;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,17 +10,17 @@ import androidx.core.os.HandlerCompat;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
 import kotlin.Pair;
-import us.shandian.giga.get.FinishedMission;
-import us.shandian.giga.get.Mission;
-import us.shandian.giga.service.DownloadManager;
-import us.shandian.giga.service.DownloadManager.MissionIterator;
-import us.shandian.giga.ui.adapter.MissionAdapter;
+import com.nrknithin.tube.music.giga.get.FinishedMission;
+import com.nrknithin.tube.music.giga.get.Mission;
+import com.nrknithin.tube.music.giga.service.DownloadManager;
+import com.nrknithin.tube.music.giga.service.DownloadManager.MissionIterator;
+import com.nrknithin.tube.music.giga.ui.adapter.MissionAdapter;
 
 public class Deleter {
     private static final String COMMIT = "commit";

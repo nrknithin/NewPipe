@@ -1,7 +1,7 @@
-package org.schabi.newpipe.util.external_communication;
+package com.nrknithin.tube.music.util.external_communication;
 
-import static org.schabi.newpipe.util.external_communication.ShareUtils.installApp;
-import static org.schabi.newpipe.util.external_communication.ShareUtils.tryOpenIntentInApp;
+import static com.nrknithin.tube.music.util.external_communication.ShareUtils.installApp;
+import static com.nrknithin.tube.music.util.external_communication.ShareUtils.tryOpenIntentInApp;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 import org.schabi.newpipe.extractor.ServiceList;
 
 /**

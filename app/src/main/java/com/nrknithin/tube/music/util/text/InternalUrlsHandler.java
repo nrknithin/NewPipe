@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.text;
+package com.nrknithin.tube.music.util.text;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.schabi.newpipe.extractor.exceptions.ParsingException;
 import org.schabi.newpipe.extractor.linkhandler.LinkHandlerFactory;
-import org.schabi.newpipe.player.TimestampChangeData;
-import org.schabi.newpipe.util.NavigationHelper;
+import com.nrknithin.tube.music.player.TimestampChangeData;
+import com.nrknithin.tube.music.util.NavigationHelper;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

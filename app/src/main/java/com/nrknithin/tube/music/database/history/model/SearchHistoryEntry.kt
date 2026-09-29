@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.history.model
+package com.nrknithin.tube.music.database.history.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

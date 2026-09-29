@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.local.subscription.workers
+package com.nrknithin.tube.music.local.subscription.workers
 
 import android.content.Context
 import android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC
@@ -21,6 +21,11 @@ import androidx.work.ForegroundInfo
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.local.subscription.SubscriptionManager
+import com.nrknithin.tube.music.streams.io.SharpInputStream
+import com.nrknithin.tube.music.streams.io.StoredFileHelper
+import com.nrknithin.tube.music.util.ExtractorHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.asFlow
@@ -32,12 +37,7 @@ import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import kotlinx.parcelize.Parcelize
-import org.schabi.newpipe.R
 import org.schabi.newpipe.extractor.NewPipe
-import org.schabi.newpipe.local.subscription.SubscriptionManager
-import org.schabi.newpipe.streams.io.SharpInputStream
-import org.schabi.newpipe.streams.io.StoredFileHelper
-import org.schabi.newpipe.util.ExtractorHelper
 
 class SubscriptionImportWorker(
     private val context: Context,

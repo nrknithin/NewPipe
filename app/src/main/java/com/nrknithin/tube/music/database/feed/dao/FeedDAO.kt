@@ -1,4 +1,4 @@
-package org.schabi.newpipe.database.feed.dao
+package com.nrknithin.tube.music.database.feed.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -6,16 +6,16 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
+import com.nrknithin.tube.music.database.feed.model.FeedEntity
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.feed.model.FeedLastUpdatedEntity
+import com.nrknithin.tube.music.database.stream.StreamWithState
+import com.nrknithin.tube.music.database.stream.model.StreamStateEntity
+import com.nrknithin.tube.music.database.subscription.NotificationMode
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Maybe
 import java.time.OffsetDateTime
-import org.schabi.newpipe.database.feed.model.FeedEntity
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.feed.model.FeedLastUpdatedEntity
-import org.schabi.newpipe.database.stream.StreamWithState
-import org.schabi.newpipe.database.stream.model.StreamStateEntity
-import org.schabi.newpipe.database.subscription.NotificationMode
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
 
 @Dao
 abstract class FeedDAO {

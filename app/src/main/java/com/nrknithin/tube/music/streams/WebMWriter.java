@@ -1,12 +1,12 @@
-package org.schabi.newpipe.streams;
+package com.nrknithin.tube.music.streams;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.streams.WebMReader.Cluster;
-import org.schabi.newpipe.streams.WebMReader.Segment;
-import org.schabi.newpipe.streams.WebMReader.SimpleBlock;
-import org.schabi.newpipe.streams.WebMReader.WebMTrack;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.nrknithin.tube.music.streams.WebMReader.Cluster;
+import com.nrknithin.tube.music.streams.WebMReader.Segment;
+import com.nrknithin.tube.music.streams.WebMReader.SimpleBlock;
+import com.nrknithin.tube.music.streams.WebMReader.WebMTrack;
+import com.nrknithin.tube.music.streams.io.SharpStream;
 
 import java.io.Closeable;
 import java.io.IOException;

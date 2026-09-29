@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.feed.notifications
+package com.nrknithin.tube.music.local.feed.notifications
 
 import android.content.Context
 import android.content.pm.ServiceInfo
@@ -14,16 +14,16 @@ import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
 import androidx.work.rxjava3.RxWorker
+import com.nrknithin.tube.music.App
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.error.ErrorInfo
+import com.nrknithin.tube.music.error.ErrorUtil
+import com.nrknithin.tube.music.error.UserAction
+import com.nrknithin.tube.music.local.feed.service.FeedLoadManager
+import com.nrknithin.tube.music.local.feed.service.FeedLoadService
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Single
 import java.util.concurrent.TimeUnit
-import org.schabi.newpipe.App
-import org.schabi.newpipe.R
-import org.schabi.newpipe.error.ErrorInfo
-import org.schabi.newpipe.error.ErrorUtil
-import org.schabi.newpipe.error.UserAction
-import org.schabi.newpipe.local.feed.service.FeedLoadManager
-import org.schabi.newpipe.local.feed.service.FeedLoadService
 
 /*
  * Worker which checks for new streams of subscribed channels

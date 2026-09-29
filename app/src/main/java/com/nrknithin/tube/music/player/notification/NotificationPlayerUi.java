@@ -1,7 +1,7 @@
-package org.schabi.newpipe.player.notification;
+package com.nrknithin.tube.music.player.notification;
 
-import static org.schabi.newpipe.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_NONE;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_RECREATE_NOTIFICATION;
+import static com.nrknithin.tube.music.player.helper.PlayerHelper.MinimizeMode.MINIMIZE_ON_EXIT_MODE_NONE;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_RECREATE_NOTIFICATION;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,9 +12,9 @@ import androidx.annotation.Nullable;
 import com.google.android.exoplayer2.Player.RepeatMode;
 
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.helper.PlayerHelper;
-import org.schabi.newpipe.player.ui.PlayerUi;
+import com.nrknithin.tube.music.player.Player;
+import com.nrknithin.tube.music.player.helper.PlayerHelper;
+import com.nrknithin.tube.music.player.ui.PlayerUi;
 
 public final class NotificationPlayerUi extends PlayerUi {
     private final NotificationUtil notificationUtil;

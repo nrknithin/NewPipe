@@ -1,15 +1,15 @@
-package org.schabi.newpipe.player.notification;
+package com.nrknithin.tube.music.player.notification;
 
 import static com.google.android.exoplayer2.Player.REPEAT_MODE_ALL;
 import static com.google.android.exoplayer2.Player.REPEAT_MODE_ONE;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_CLOSE;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_FAST_FORWARD;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_FAST_REWIND;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_PLAY_NEXT;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_PLAY_PAUSE;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_PLAY_PREVIOUS;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_REPEAT;
-import static org.schabi.newpipe.player.notification.NotificationConstants.ACTION_SHUFFLE;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_CLOSE;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_FAST_FORWARD;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_FAST_REWIND;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_PLAY_NEXT;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_PLAY_PAUSE;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_PLAY_PREVIOUS;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_REPEAT;
+import static com.nrknithin.tube.music.player.notification.NotificationConstants.ACTION_SHUFFLE;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,8 +18,8 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.player.Player;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.player.Player;
 
 import java.util.Objects;
 

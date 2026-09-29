@@ -1,4 +1,4 @@
-package us.shandian.giga.get;
+package com.nrknithin.tube.music.giga.get;
 
 import android.util.Log;
 
@@ -17,9 +17,9 @@ import java.net.HttpURLConnection;
 import java.nio.channels.ClosedByInterruptException;
 import java.util.List;
 
-import us.shandian.giga.get.DownloadMission.HttpError;
+import com.nrknithin.tube.music.giga.get.DownloadMission.HttpError;
 
-import static us.shandian.giga.get.DownloadMission.ERROR_RESOURCE_GONE;
+import static com.nrknithin.tube.music.giga.get.DownloadMission.ERROR_RESOURCE_GONE;
 
 public class DownloadMissionRecover extends Thread {
     private static final String TAG = "DownloadMissionRecover";

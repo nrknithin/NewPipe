@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.tabs;
+package com.nrknithin.tube.music.settings.tabs;
 
 import android.content.Context;
 
@@ -10,27 +10,27 @@ import androidx.fragment.app.Fragment;
 import com.grack.nanojson.JsonObject;
 import com.grack.nanojson.JsonStringWriter;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.LocalItem.LocalItemType;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.LocalItem.LocalItemType;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
-import org.schabi.newpipe.fragments.BlankFragment;
-import org.schabi.newpipe.fragments.list.channel.ChannelFragment;
-import org.schabi.newpipe.fragments.list.kiosk.DefaultKioskFragment;
-import org.schabi.newpipe.fragments.list.kiosk.KioskFragment;
-import org.schabi.newpipe.fragments.list.playlist.PlaylistFragment;
-import org.schabi.newpipe.local.bookmark.BookmarkFragment;
-import org.schabi.newpipe.local.feed.FeedFragment;
-import org.schabi.newpipe.local.history.StatisticsPlaylistFragment;
-import org.schabi.newpipe.local.playlist.LocalPlaylistFragment;
-import org.schabi.newpipe.local.subscription.SubscriptionFragment;
-import org.schabi.newpipe.util.KioskTranslator;
-import org.schabi.newpipe.util.YouTubeMusicHelper;
+import com.nrknithin.tube.music.fragments.BlankFragment;
+import com.nrknithin.tube.music.fragments.list.channel.ChannelFragment;
+import com.nrknithin.tube.music.fragments.list.kiosk.DefaultKioskFragment;
+import com.nrknithin.tube.music.fragments.list.kiosk.KioskFragment;
+import com.nrknithin.tube.music.fragments.list.playlist.PlaylistFragment;
+import com.nrknithin.tube.music.local.bookmark.BookmarkFragment;
+import com.nrknithin.tube.music.local.feed.FeedFragment;
+import com.nrknithin.tube.music.local.history.StatisticsPlaylistFragment;
+import com.nrknithin.tube.music.local.playlist.LocalPlaylistFragment;
+import com.nrknithin.tube.music.local.subscription.SubscriptionFragment;
+import com.nrknithin.tube.music.util.KioskTranslator;
+import com.nrknithin.tube.music.util.YouTubeMusicHelper;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
@@ -8,15 +8,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.schabi.newpipe.NewPipeDatabase;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.stream.model.StreamEntity;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.NewPipeDatabase;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.database.stream.model.StreamEntity;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.player.playqueue.SinglePlayQueue;
+import com.nrknithin.tube.music.player.playqueue.SinglePlayQueue;
 
 import java.util.function.Consumer;
 
@@ -36,7 +36,7 @@ public final class SparseItemUtil {
      * stream info item you are handling might be sparse, e.g. because it was fetched via a {@link
      * org.schabi.newpipe.extractor.feed.FeedExtractor}. FeedExtractors provide a fast and
      * lightweight method to fetch info, but the info might be incomplete (see
-     * {@link org.schabi.newpipe.local.feed.service.FeedLoadService} for more details).
+     * {@link com.nrknithin.tube.music.local.feed.service.FeedLoadService} for more details).
      *
      * @param context  Android context
      * @param item     item which is checked and eventually loaded completely

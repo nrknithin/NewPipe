@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

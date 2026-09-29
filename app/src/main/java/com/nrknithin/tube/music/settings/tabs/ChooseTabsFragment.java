@@ -1,7 +1,7 @@
-package org.schabi.newpipe.settings.tabs;
+package com.nrknithin.tube.music.settings.tabs;
 
-import static org.schabi.newpipe.settings.tabs.Tab.typeFrom;
-import static org.schabi.newpipe.util.ServiceHelper.getNameOfServiceById;
+import static com.nrknithin.tube.music.settings.tabs.Tab.typeFrom;
+import static com.nrknithin.tube.music.util.ServiceHelper.getNameOfServiceById;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -27,16 +27,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.settings.SelectChannelFragment;
-import org.schabi.newpipe.settings.SelectKioskFragment;
-import org.schabi.newpipe.settings.SelectPlaylistFragment;
-import org.schabi.newpipe.settings.SelectFeedGroupFragment;
-import org.schabi.newpipe.settings.tabs.AddTabDialog.ChooseTabListItem;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorInfo;
+import com.nrknithin.tube.music.error.ErrorUtil;
+import com.nrknithin.tube.music.error.UserAction;
+import com.nrknithin.tube.music.settings.SelectChannelFragment;
+import com.nrknithin.tube.music.settings.SelectKioskFragment;
+import com.nrknithin.tube.music.settings.SelectPlaylistFragment;
+import com.nrknithin.tube.music.settings.SelectFeedGroupFragment;
+import com.nrknithin.tube.music.settings.tabs.AddTabDialog.ChooseTabListItem;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;

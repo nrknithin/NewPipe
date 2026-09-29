@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package com.nrknithin.tube.music.shared
 
 object Constants {
     const val URL_GITHUB = "https://github.com/TeamNewPipe/NewPipe"
@@ -11,4 +11,6 @@ object Constants {
     const val URL_WEBSITE = "https://newpipe.net/"
     const val URL_PRIVACY = "https://newpipe.net/legal/privacy/"
     const val URL_FAQ = "https://newpipe.net/FAQ/"
+
+    const val INTENT_SCREEN_KEY = "SCREEN"
 }

@@ -4,20 +4,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist.model
+package com.nrknithin.tube.music.database.playlist.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.ForeignKey.Companion.CASCADE
 import androidx.room.Index
-import org.schabi.newpipe.database.LocalItem
-import org.schabi.newpipe.database.playlist.model.PlaylistEntity.Companion.PLAYLIST_ID
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity.Companion.JOIN_INDEX
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity.Companion.JOIN_PLAYLIST_ID
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity.Companion.JOIN_STREAM_ID
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity.Companion.PLAYLIST_STREAM_JOIN_TABLE
-import org.schabi.newpipe.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.LocalItem
+import com.nrknithin.tube.music.database.playlist.model.PlaylistEntity.Companion.PLAYLIST_ID
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity.Companion.JOIN_INDEX
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity.Companion.JOIN_PLAYLIST_ID
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity.Companion.JOIN_STREAM_ID
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity.Companion.PLAYLIST_STREAM_JOIN_TABLE
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
 
 @Entity(
     tableName = PLAYLIST_STREAM_JOIN_TABLE,

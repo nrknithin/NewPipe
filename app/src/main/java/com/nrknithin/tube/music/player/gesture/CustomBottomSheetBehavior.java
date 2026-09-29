@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.gesture;
+package com.nrknithin.tube.music.player.gesture;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -13,7 +13,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 import java.util.List;
 

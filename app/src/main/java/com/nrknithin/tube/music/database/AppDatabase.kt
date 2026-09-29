@@ -4,33 +4,33 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database
+package com.nrknithin.tube.music.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import org.schabi.newpipe.database.feed.dao.FeedDAO
-import org.schabi.newpipe.database.feed.dao.FeedGroupDAO
-import org.schabi.newpipe.database.feed.model.FeedEntity
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.feed.model.FeedGroupSubscriptionEntity
-import org.schabi.newpipe.database.feed.model.FeedLastUpdatedEntity
-import org.schabi.newpipe.database.history.dao.SearchHistoryDAO
-import org.schabi.newpipe.database.history.dao.StreamHistoryDAO
-import org.schabi.newpipe.database.history.model.SearchHistoryEntry
-import org.schabi.newpipe.database.history.model.StreamHistoryEntity
-import org.schabi.newpipe.database.playlist.dao.PlaylistDAO
-import org.schabi.newpipe.database.playlist.dao.PlaylistRemoteDAO
-import org.schabi.newpipe.database.playlist.dao.PlaylistStreamDAO
-import org.schabi.newpipe.database.playlist.model.PlaylistEntity
-import org.schabi.newpipe.database.playlist.model.PlaylistRemoteEntity
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity
-import org.schabi.newpipe.database.stream.dao.StreamDAO
-import org.schabi.newpipe.database.stream.dao.StreamStateDAO
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.stream.model.StreamStateEntity
-import org.schabi.newpipe.database.subscription.SubscriptionDAO
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.database.feed.dao.FeedDAO
+import com.nrknithin.tube.music.database.feed.dao.FeedGroupDAO
+import com.nrknithin.tube.music.database.feed.model.FeedEntity
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.feed.model.FeedGroupSubscriptionEntity
+import com.nrknithin.tube.music.database.feed.model.FeedLastUpdatedEntity
+import com.nrknithin.tube.music.database.history.dao.SearchHistoryDAO
+import com.nrknithin.tube.music.database.history.dao.StreamHistoryDAO
+import com.nrknithin.tube.music.database.history.model.SearchHistoryEntry
+import com.nrknithin.tube.music.database.history.model.StreamHistoryEntity
+import com.nrknithin.tube.music.database.playlist.dao.PlaylistDAO
+import com.nrknithin.tube.music.database.playlist.dao.PlaylistRemoteDAO
+import com.nrknithin.tube.music.database.playlist.dao.PlaylistStreamDAO
+import com.nrknithin.tube.music.database.playlist.model.PlaylistEntity
+import com.nrknithin.tube.music.database.playlist.model.PlaylistRemoteEntity
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity
+import com.nrknithin.tube.music.database.stream.dao.StreamDAO
+import com.nrknithin.tube.music.database.stream.dao.StreamStateDAO
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.stream.model.StreamStateEntity
+import com.nrknithin.tube.music.database.subscription.SubscriptionDAO
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
 
 @TypeConverters(Converters::class)
 @Database(

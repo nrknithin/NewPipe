@@ -1,8 +1,8 @@
-package org.schabi.newpipe.local.feed
+package com.nrknithin.tube.music.local.feed
 
 import androidx.annotation.StringRes
+import com.nrknithin.tube.music.local.feed.item.StreamItem
 import java.time.OffsetDateTime
-import org.schabi.newpipe.local.feed.item.StreamItem
 
 sealed class FeedState {
     data class ProgressState(

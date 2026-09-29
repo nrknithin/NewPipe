@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.seekbarpreview;
+package com.nrknithin.tube.music.player.seekbarpreview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,16 +13,16 @@ import androidx.core.graphics.BitmapCompat;
 import androidx.core.math.MathUtils;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.util.DeviceUtils;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.util.DeviceUtils;
 
 import java.lang.annotation.Retention;
 import java.util.function.IntSupplier;
 
 import static java.lang.annotation.RetentionPolicy.SOURCE;
-import static org.schabi.newpipe.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType.HIGH_QUALITY;
-import static org.schabi.newpipe.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType.LOW_QUALITY;
-import static org.schabi.newpipe.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType.NONE;
+import static com.nrknithin.tube.music.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType.HIGH_QUALITY;
+import static com.nrknithin.tube.music.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType.LOW_QUALITY;
+import static com.nrknithin.tube.music.player.seekbarpreview.SeekbarPreviewThumbnailHelper.SeekbarPreviewThumbnailType.NONE;
 
 /**
  * Helper for the seekbar preview.

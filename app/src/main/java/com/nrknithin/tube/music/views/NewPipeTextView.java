@@ -1,4 +1,4 @@
-package org.schabi.newpipe.views;
+package com.nrknithin.tube.music.views;
 
 import android.content.Context;
 import android.text.method.MovementMethod;
@@ -8,8 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import org.schabi.newpipe.util.NewPipeTextViewHelper;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
+import com.nrknithin.tube.music.util.NewPipeTextViewHelper;
+import com.nrknithin.tube.music.util.external_communication.ShareUtils;
 
 /**
  * An {@link AppCompatTextView} which uses {@link ShareUtils#shareText(Context, String, String)}

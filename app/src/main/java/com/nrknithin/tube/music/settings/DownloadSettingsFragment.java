@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -20,10 +20,10 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import com.nononsenseapps.filepicker.Utils;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.streams.io.NoFileManagerSafeGuard;
-import org.schabi.newpipe.streams.io.StoredDirectoryHelper;
-import org.schabi.newpipe.util.FilePickerActivityHelper;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.streams.io.NoFileManagerSafeGuard;
+import com.nrknithin.tube.music.streams.io.StoredDirectoryHelper;
+import com.nrknithin.tube.music.util.FilePickerActivityHelper;
 
 import java.io.File;
 import java.io.IOException;

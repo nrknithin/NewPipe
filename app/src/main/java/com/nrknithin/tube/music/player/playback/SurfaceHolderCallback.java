@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.playback;
+package com.nrknithin.tube.music.player.playback;
 
 import android.content.Context;
 import android.view.SurfaceHolder;

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error;
+package com.nrknithin.tube.music.error;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -20,12 +20,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NavUtils;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.DownloaderImpl;
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.ActivityRecaptchaBinding;
+import com.nrknithin.tube.music.DownloaderImpl;
+import com.nrknithin.tube.music.MainActivity;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.ActivityRecaptchaBinding;
 import org.schabi.newpipe.extractor.utils.Utils;
-import org.schabi.newpipe.util.ThemeHelper;
+import com.nrknithin.tube.music.util.ThemeHelper;
 
 /*
  * Created by beneth <bmauduit@beneth.fr> on 06.12.16.
@@ -162,7 +162,7 @@ public class ReCaptchaActivity extends AppCompatActivity {
         // Navigate to blank page (unloads youtube to prevent background playback)
         recaptchaBinding.reCaptchaWebView.loadUrl("about:blank");
 
-        final Intent intent = new Intent(this, org.schabi.newpipe.MainActivity.class);
+        final Intent intent = new Intent(this, com.nrknithin.tube.music.MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         NavUtils.navigateUpTo(this, intent);
     }

@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist
+package com.nrknithin.tube.music.database.playlist
 
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
-import org.schabi.newpipe.database.LocalItem
-import org.schabi.newpipe.database.playlist.model.PlaylistStreamEntity
-import org.schabi.newpipe.database.stream.model.StreamEntity
-import org.schabi.newpipe.database.stream.model.StreamStateEntity
+import com.nrknithin.tube.music.database.LocalItem
+import com.nrknithin.tube.music.database.playlist.model.PlaylistStreamEntity
+import com.nrknithin.tube.music.database.stream.model.StreamEntity
+import com.nrknithin.tube.music.database.stream.model.StreamStateEntity
+import com.nrknithin.tube.music.util.image.ImageStrategy
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.util.image.ImageStrategy
 
 data class PlaylistStreamEntry(
     @Embedded

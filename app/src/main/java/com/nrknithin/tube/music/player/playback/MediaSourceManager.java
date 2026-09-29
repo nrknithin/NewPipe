@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.playback;
+package com.nrknithin.tube.music.player.playback;
 
 import android.os.Handler;
 import android.util.Log;
@@ -10,17 +10,17 @@ import androidx.collection.ArraySet;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
-import org.schabi.newpipe.player.mediaitem.MediaItemTag;
-import org.schabi.newpipe.player.mediasource.FailedMediaSource;
-import org.schabi.newpipe.player.mediasource.LoadedMediaSource;
-import org.schabi.newpipe.player.mediasource.ManagedMediaSource;
-import org.schabi.newpipe.player.mediasource.ManagedMediaSourcePlaylist;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.MoveEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.RemoveEvent;
-import org.schabi.newpipe.player.playqueue.PlayQueueEvent.ReorderEvent;
+import com.nrknithin.tube.music.player.mediaitem.MediaItemTag;
+import com.nrknithin.tube.music.player.mediasource.FailedMediaSource;
+import com.nrknithin.tube.music.player.mediasource.LoadedMediaSource;
+import com.nrknithin.tube.music.player.mediasource.ManagedMediaSource;
+import com.nrknithin.tube.music.player.mediasource.ManagedMediaSourcePlaylist;
+import com.nrknithin.tube.music.player.playqueue.PlayQueue;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.MoveEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.RemoveEvent;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueEvent.ReorderEvent;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -38,10 +38,10 @@ import io.reactivex.rxjava3.internal.subscriptions.EmptySubscription;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import io.reactivex.rxjava3.subjects.PublishSubject;
 
-import static org.schabi.newpipe.player.mediasource.FailedMediaSource.MediaSourceResolutionException;
-import static org.schabi.newpipe.player.mediasource.FailedMediaSource.StreamInfoLoadException;
-import static org.schabi.newpipe.player.playqueue.PlayQueue.DEBUG;
-import static org.schabi.newpipe.util.ServiceHelper.getCacheExpirationMillis;
+import static com.nrknithin.tube.music.player.mediasource.FailedMediaSource.MediaSourceResolutionException;
+import static com.nrknithin.tube.music.player.mediasource.FailedMediaSource.StreamInfoLoadException;
+import static com.nrknithin.tube.music.player.playqueue.PlayQueue.DEBUG;
+import static com.nrknithin.tube.music.util.ServiceHelper.getCacheExpirationMillis;
 
 public class MediaSourceManager {
     @NonNull

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about
+package com.nrknithin.tube.music.shared.screen.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,12 +23,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.util.fastForEachIndexed
+import com.nrknithin.tube.music.shared.composable.TopAppBar
+import com.nrknithin.tube.music.shared.navigation.Navigator
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.screen.about.navigation.Page
+import com.nrknithin.tube.music.shared.theme.currentServiceScheme
 import kotlinx.coroutines.launch
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.screen.about.navigation.Page
-import net.newpipe.app.theme.currentServiceScheme
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.title_activity_about
 import org.jetbrains.compose.resources.stringResource

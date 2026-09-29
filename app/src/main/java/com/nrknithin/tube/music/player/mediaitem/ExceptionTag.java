@@ -1,9 +1,9 @@
-package org.schabi.newpipe.player.mediaitem;
+package com.nrknithin.tube.music.player.mediaitem;
 
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.schabi.newpipe.extractor.stream.StreamType;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.util.image.ImageStrategy;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.util.image.ImageStrategy;
 
 import java.util.List;
 import java.util.Optional;

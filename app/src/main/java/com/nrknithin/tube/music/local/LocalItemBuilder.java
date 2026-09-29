@@ -1,9 +1,9 @@
-package org.schabi.newpipe.local;
+package com.nrknithin.tube.music.local;
 
 import android.content.Context;
 
-import org.schabi.newpipe.database.LocalItem;
-import org.schabi.newpipe.util.OnClickGesture;
+import com.nrknithin.tube.music.database.LocalItem;
+import com.nrknithin.tube.music.util.OnClickGesture;
 
 /*
  * Created by Christian Schabesberger on 26.09.16.

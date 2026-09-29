@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription.dialog
+package com.nrknithin.tube.music.local.subscription.dialog
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,16 +13,16 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.evernote.android.state.State
 import com.livefront.bridge.Bridge
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.databinding.DialogFeedGroupReorderBinding
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupReorderDialogViewModel.DialogEvent.ProcessingEvent
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupReorderDialogViewModel.DialogEvent.SuccessEvent
+import com.nrknithin.tube.music.local.subscription.item.FeedGroupReorderItem
+import com.nrknithin.tube.music.util.ThemeHelper
 import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.TouchCallback
 import java.util.Collections
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.databinding.DialogFeedGroupReorderBinding
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupReorderDialogViewModel.DialogEvent.ProcessingEvent
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupReorderDialogViewModel.DialogEvent.SuccessEvent
-import org.schabi.newpipe.local.subscription.item.FeedGroupReorderItem
-import org.schabi.newpipe.util.ThemeHelper
 
 class FeedGroupReorderDialog : DialogFragment() {
     private var _binding: DialogFeedGroupReorderBinding? = null

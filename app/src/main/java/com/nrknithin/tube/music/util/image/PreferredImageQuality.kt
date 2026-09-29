@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util.image
+package com.nrknithin.tube.music.util.image
 
 import android.content.Context
-import org.schabi.newpipe.R
+import com.nrknithin.tube.music.R
 import org.schabi.newpipe.extractor.Image.ResolutionLevel
 
 enum class PreferredImageQuality {

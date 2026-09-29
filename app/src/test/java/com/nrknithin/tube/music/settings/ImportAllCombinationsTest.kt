@@ -1,6 +1,10 @@
-package org.schabi.newpipe.settings
+package com.nrknithin.tube.music.settings
 
 import android.content.SharedPreferences
+import com.nrknithin.tube.music.giga.io.FileStream
+import com.nrknithin.tube.music.settings.export.BackupFileLocator
+import com.nrknithin.tube.music.settings.export.ImportExportManager
+import com.nrknithin.tube.music.streams.io.StoredFileHelper
 import java.io.File
 import java.io.IOException
 import kotlin.io.path.createTempFile
@@ -9,10 +13,6 @@ import kotlin.io.path.fileSize
 import org.junit.Assert
 import org.junit.Test
 import org.mockito.Mockito
-import org.schabi.newpipe.settings.export.BackupFileLocator
-import org.schabi.newpipe.settings.export.ImportExportManager
-import org.schabi.newpipe.streams.io.StoredFileHelper
-import us.shandian.giga.io.FileStream
 
 class ImportAllCombinationsTest {
 

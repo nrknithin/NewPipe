@@ -1,8 +1,8 @@
-package org.schabi.newpipe.player.helper;
+package com.nrknithin.tube.music.player.helper;
 
-import static org.schabi.newpipe.ktx.ViewUtils.animateRotation;
-import static org.schabi.newpipe.player.Player.DEBUG;
-import static org.schabi.newpipe.util.ThemeHelper.resolveDrawable;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animateRotation;
+import static com.nrknithin.tube.music.player.Player.DEBUG;
+import static com.nrknithin.tube.music.util.ThemeHelper.resolveDrawable;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -26,11 +26,11 @@ import androidx.preference.PreferenceManager;
 import com.evernote.android.state.State;
 import com.livefront.bridge.Bridge;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.databinding.DialogPlaybackParameterBinding;
-import org.schabi.newpipe.player.ui.VideoPlayerUi;
-import org.schabi.newpipe.util.SimpleOnSeekBarChangeListener;
-import org.schabi.newpipe.util.SliderStrategy;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.databinding.DialogPlaybackParameterBinding;
+import com.nrknithin.tube.music.player.ui.VideoPlayerUi;
+import com.nrknithin.tube.music.util.SimpleOnSeekBarChangeListener;
+import com.nrknithin.tube.music.util.SliderStrategy;
 
 import java.util.Map;
 import java.util.Objects;

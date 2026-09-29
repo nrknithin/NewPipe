@@ -1,4 +1,4 @@
-package us.shandian.giga.get
+package com.nrknithin.tube.music.giga.get
 
 import android.os.Parcelable
 import java.io.Serializable

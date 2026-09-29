@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.util
+package com.nrknithin.tube.music.util
 
 import android.content.Context
 import androidx.annotation.StringRes
+import com.nrknithin.tube.music.R
 import java.util.concurrent.TimeUnit
-import org.schabi.newpipe.R
 import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.StreamingService
 

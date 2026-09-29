@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error;
+package com.nrknithin.tube.music.error;
 
 import android.content.Context;
 
@@ -9,7 +9,7 @@ import com.google.auto.service.AutoService;
 import org.acra.config.CoreConfiguration;
 import org.acra.sender.ReportSender;
 import org.acra.sender.ReportSenderFactory;
-import org.schabi.newpipe.App;
+import com.nrknithin.tube.music.App;
 
 /*
  * Created by Christian Schabesberger on 13.09.16.

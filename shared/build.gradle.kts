@@ -16,7 +16,7 @@ plugins {
 // Better than adding a third-party dependency for something as simple as this
 // https://stackoverflow.com/a/74771876/8446131
 val buildConfigGenerator by tasks.registering(Sync::class) {
-    val buildConfigPackage = NEWPIPE_APPLICATION_ID_NEW
+    val buildConfigPackage = SHARED_NAMESPACE
     val rawClass = """
         package $buildConfigPackage
 
@@ -47,7 +47,7 @@ kotlin {
     }
 
     android {
-        namespace = NEWPIPE_APPLICATION_ID_NEW
+        namespace = SHARED_NAMESPACE
         compileSdk {
             version = release(NEWPIPE_VERSION_SDK_COMPILE_MAJOR) {
                 minorApiLevel = NEWPIPE_VERSION_SDK_COMPILE_MINOR

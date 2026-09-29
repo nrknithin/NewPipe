@@ -1,4 +1,4 @@
-package us.shandian.giga.get.sqlite;
+package com.nrknithin.tube.music.giga.get.sqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -14,13 +14,13 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import us.shandian.giga.get.DownloadMission;
-import us.shandian.giga.get.FinishedMission;
-import us.shandian.giga.get.Mission;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
+import com.nrknithin.tube.music.giga.get.DownloadMission;
+import com.nrknithin.tube.music.giga.get.FinishedMission;
+import com.nrknithin.tube.music.giga.get.Mission;
+import com.nrknithin.tube.music.streams.io.StoredFileHelper;
 
 /**
- * SQLite helper to store finished {@link us.shandian.giga.get.FinishedMission}'s
+ * SQLite helper to store finished {@link com.nrknithin.tube.music.giga.get.FinishedMission}'s
  */
 public class FinishedMissionStore extends SQLiteOpenHelper {
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.model
+package com.nrknithin.tube.music.shared.model
 
 /**
  * Class to hold data for links shown to users

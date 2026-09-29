@@ -1,7 +1,7 @@
-package org.schabi.newpipe.fragments.list;
+package com.nrknithin.tube.music.fragments.list;
 
-import static org.schabi.newpipe.ktx.ViewUtils.animate;
-import static org.schabi.newpipe.ktx.ViewUtils.animateHideRecyclerViewAllowingScrolling;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animate;
+import static com.nrknithin.tube.music.ktx.ViewUtils.animateHideRecyclerViewAllowingScrolling;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -19,20 +19,20 @@ import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorUtil;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorUtil;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.fragments.BaseStateFragment;
-import org.schabi.newpipe.fragments.OnScrollBelowItemsListener;
-import org.schabi.newpipe.info_list.InfoListAdapter;
-import org.schabi.newpipe.info_list.ItemViewMode;
-import org.schabi.newpipe.info_list.dialog.InfoItemDialog;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.OnClickGesture;
-import org.schabi.newpipe.util.StateSaver;
-import org.schabi.newpipe.util.ThemeHelper;
-import org.schabi.newpipe.views.SuperScrollLayoutManager;
+import com.nrknithin.tube.music.fragments.BaseStateFragment;
+import com.nrknithin.tube.music.fragments.OnScrollBelowItemsListener;
+import com.nrknithin.tube.music.info_list.InfoListAdapter;
+import com.nrknithin.tube.music.info_list.ItemViewMode;
+import com.nrknithin.tube.music.info_list.dialog.InfoItemDialog;
+import com.nrknithin.tube.music.util.NavigationHelper;
+import com.nrknithin.tube.music.util.OnClickGesture;
+import com.nrknithin.tube.music.util.StateSaver;
+import com.nrknithin.tube.music.util.ThemeHelper;
+import com.nrknithin.tube.music.views.SuperScrollLayoutManager;
 
 import java.util.List;
 import java.util.Queue;
@@ -42,7 +42,7 @@ public abstract class BaseListFragment<I, N> extends BaseStateFragment<I>
         implements ListViewContract<I, N>, StateSaver.WriteRead,
         SharedPreferences.OnSharedPreferenceChangeListener {
     private static final int LIST_MODE_UPDATE_FLAG = 0x32;
-    protected org.schabi.newpipe.util.SavedState savedState;
+    protected com.nrknithin.tube.music.util.SavedState savedState;
 
     private boolean useDefaultStateSaving = true;
     private int updateFlags = 0;

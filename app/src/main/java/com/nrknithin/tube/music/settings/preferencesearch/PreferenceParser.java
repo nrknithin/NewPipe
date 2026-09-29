@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.preferencesearch;
+package com.nrknithin.tube.music.settings.preferencesearch;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.XmlRes;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.util.Localization;
+import com.nrknithin.tube.music.util.Localization;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;

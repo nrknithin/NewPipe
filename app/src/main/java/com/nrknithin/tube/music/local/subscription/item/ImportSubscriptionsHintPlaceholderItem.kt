@@ -1,9 +1,9 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.view.View
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.databinding.ListEmptyViewBinding
 import com.xwray.groupie.viewbinding.BindableItem
-import org.schabi.newpipe.R
-import org.schabi.newpipe.databinding.ListEmptyViewBinding
 
 /**
  * When there are no subscriptions, show a hint to the user about how to import subscriptions

@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.playlist.model
+package com.nrknithin.tube.music.database.playlist.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
-import org.schabi.newpipe.database.playlist.PlaylistMetadataEntry
+import com.nrknithin.tube.music.database.playlist.PlaylistMetadataEntry
 
 @Entity(tableName = PlaylistEntity.Companion.PLAYLIST_TABLE)
 data class PlaylistEntity @JvmOverloads constructor(

@@ -1,4 +1,4 @@
-package us.shandian.giga.ui.common;
+package com.nrknithin.tube.music.giga.ui.common;
 
 import android.graphics.Canvas;
 import android.graphics.ColorFilter;

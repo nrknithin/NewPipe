@@ -1,6 +1,6 @@
 @file:JvmName("TextViewUtils")
 
-package org.schabi.newpipe.ktx
+package com.nrknithin.tube.music.ktx
 
 import android.animation.ArgbEvaluator
 import android.animation.ValueAnimator
@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.annotation.ColorInt
 import androidx.core.animation.addListener
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator
-import org.schabi.newpipe.MainActivity
+import com.nrknithin.tube.music.MainActivity
 
 private const val TAG = "TextViewUtils"
 

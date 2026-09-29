@@ -1,6 +1,6 @@
-package org.schabi.newpipe.player.helper;
+package com.nrknithin.tube.music.player.helper;
 
-import static org.schabi.newpipe.MainActivity.DEBUG;
+import static com.nrknithin.tube.music.MainActivity.DEBUG;
 
 import android.content.Context;
 import android.util.Log;
@@ -23,12 +23,12 @@ import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.upstream.cache.LeastRecentlyUsedCacheEvictor;
 import com.google.android.exoplayer2.upstream.cache.SimpleCache;
 
-import org.schabi.newpipe.DownloaderImpl;
+import com.nrknithin.tube.music.DownloaderImpl;
 import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeOtfDashManifestCreator;
 import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubePostLiveStreamDvrDashManifestCreator;
 import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeProgressiveDashManifestCreator;
-import org.schabi.newpipe.player.datasource.NonUriHlsDataSourceFactory;
-import org.schabi.newpipe.player.datasource.YoutubeHttpDataSource;
+import com.nrknithin.tube.music.player.datasource.NonUriHlsDataSourceFactory;
+import com.nrknithin.tube.music.player.datasource.YoutubeHttpDataSource;
 
 import java.io.File;
 

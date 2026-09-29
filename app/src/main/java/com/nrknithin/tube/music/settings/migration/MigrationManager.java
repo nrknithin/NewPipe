@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.migration;
+package com.nrknithin.tube.music.settings.migration;
 
 import android.content.Context;
 
@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.util.Consumer;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorUtil;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.ErrorUtil;
 
 import java.util.ArrayList;
 import java.util.List;

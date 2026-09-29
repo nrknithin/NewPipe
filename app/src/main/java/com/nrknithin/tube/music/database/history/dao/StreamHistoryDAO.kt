@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.database.history.dao
+package com.nrknithin.tube.music.database.history.dao
 
 import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.RewriteQueriesToDropUnusedColumns
+import com.nrknithin.tube.music.database.BasicDAO
+import com.nrknithin.tube.music.database.history.model.StreamHistoryEntity
+import com.nrknithin.tube.music.database.history.model.StreamHistoryEntry
+import com.nrknithin.tube.music.database.stream.StreamStatisticsEntry
 import io.reactivex.rxjava3.core.Flowable
-import org.schabi.newpipe.database.BasicDAO
-import org.schabi.newpipe.database.history.model.StreamHistoryEntity
-import org.schabi.newpipe.database.history.model.StreamHistoryEntry
-import org.schabi.newpipe.database.stream.StreamStatisticsEntry
 
 @Dao
 abstract class StreamHistoryDAO : BasicDAO<StreamHistoryEntity> {

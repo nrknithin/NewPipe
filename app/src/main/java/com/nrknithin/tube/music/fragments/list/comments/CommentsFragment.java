@@ -1,4 +1,4 @@
-package org.schabi.newpipe.fragments.list.comments;
+package com.nrknithin.tube.music.fragments.list.comments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,15 +11,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.UserAction;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.error.UserAction;
 import org.schabi.newpipe.extractor.ListExtractor;
 import org.schabi.newpipe.extractor.comments.CommentsInfo;
 import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
-import org.schabi.newpipe.fragments.list.BaseListInfoFragment;
-import org.schabi.newpipe.info_list.ItemViewMode;
-import org.schabi.newpipe.ktx.ViewUtils;
-import org.schabi.newpipe.util.ExtractorHelper;
+import com.nrknithin.tube.music.fragments.list.BaseListInfoFragment;
+import com.nrknithin.tube.music.info_list.ItemViewMode;
+import com.nrknithin.tube.music.ktx.ViewUtils;
+import com.nrknithin.tube.music.util.ExtractorHelper;
 
 import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.disposables.CompositeDisposable;

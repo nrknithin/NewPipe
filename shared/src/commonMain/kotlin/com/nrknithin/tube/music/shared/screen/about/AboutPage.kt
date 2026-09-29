@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about
+package com.nrknithin.tube.music.shared.screen.about
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -30,17 +30,17 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
-import net.newpipe.app.BuildConfig
-import net.newpipe.app.Constants
-import net.newpipe.app.composable.about.LinkListItem
-import net.newpipe.app.model.Link
-import net.newpipe.app.platform.ShareHandler
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.theme.iconTVDPI
-import net.newpipe.app.theme.logoBackground
-import net.newpipe.app.theme.spaceLarge
-import net.newpipe.app.theme.spaceXSmall
-import net.newpipe.app.theme.spaceXXSmall
+import com.nrknithin.tube.music.shared.BuildConfig
+import com.nrknithin.tube.music.shared.Constants
+import com.nrknithin.tube.music.shared.composable.about.LinkListItem
+import com.nrknithin.tube.music.shared.model.Link
+import com.nrknithin.tube.music.shared.platform.ShareHandler
+import com.nrknithin.tube.music.shared.preview.ThemePreviewProvider
+import com.nrknithin.tube.music.shared.theme.iconTVDPI
+import com.nrknithin.tube.music.shared.theme.logoBackground
+import com.nrknithin.tube.music.shared.theme.spaceLarge
+import com.nrknithin.tube.music.shared.theme.spaceXSmall
+import com.nrknithin.tube.music.shared.theme.spaceXXSmall
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.app_description
 import newpipe.shared.generated.resources.contribution_encouragement

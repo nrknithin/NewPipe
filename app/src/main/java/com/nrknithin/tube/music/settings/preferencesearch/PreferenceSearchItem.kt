@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.settings.preferencesearch
+package com.nrknithin.tube.music.settings.preferencesearch
 
 import androidx.annotation.XmlRes
 

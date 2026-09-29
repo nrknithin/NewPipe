@@ -1,10 +1,10 @@
-package org.schabi.newpipe.util.image;
+package com.nrknithin.tube.music.util.image;
 
 import static org.junit.Assert.assertEquals;
 import static org.schabi.newpipe.extractor.Image.HEIGHT_UNKNOWN;
 import static org.schabi.newpipe.extractor.Image.WIDTH_UNKNOWN;
-import static org.schabi.newpipe.util.image.ImageStrategy.choosePreferredImage;
-import static org.schabi.newpipe.util.image.ImageStrategy.estimatePixelCount;
+import static com.nrknithin.tube.music.util.image.ImageStrategy.choosePreferredImage;
+import static com.nrknithin.tube.music.util.image.ImageStrategy.estimatePixelCount;
 
 import org.junit.Test;
 import org.schabi.newpipe.extractor.Image;

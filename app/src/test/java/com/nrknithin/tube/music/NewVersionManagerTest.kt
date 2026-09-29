@@ -1,5 +1,7 @@
-package org.schabi.newpipe
+package com.nrknithin.tube.music
 
+import com.nrknithin.tube.music.util.ReleaseVersionUtil.coerceUpdateCheckExpiry
+import com.nrknithin.tube.music.util.ReleaseVersionUtil.isLastUpdateCheckExpired
 import java.time.Instant
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -7,8 +9,6 @@ import kotlin.math.abs
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import org.schabi.newpipe.util.ReleaseVersionUtil.coerceUpdateCheckExpiry
-import org.schabi.newpipe.util.ReleaseVersionUtil.isLastUpdateCheckExpired
 
 class NewVersionManagerTest {
 

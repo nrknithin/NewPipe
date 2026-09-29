@@ -1,15 +1,15 @@
-package org.schabi.newpipe.local.subscription.item
+package com.nrknithin.tube.music.local.subscription.item
 
 import android.content.Context
 import android.widget.ImageView
 import android.widget.TextView
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.util.Localization
+import com.nrknithin.tube.music.util.OnClickGesture
+import com.nrknithin.tube.music.util.image.CoilHelper
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
-import org.schabi.newpipe.R
 import org.schabi.newpipe.extractor.channel.ChannelInfoItem
-import org.schabi.newpipe.util.Localization
-import org.schabi.newpipe.util.OnClickGesture
-import org.schabi.newpipe.util.image.CoilHelper
 
 class ChannelItem(
     private val infoItem: ChannelInfoItem,

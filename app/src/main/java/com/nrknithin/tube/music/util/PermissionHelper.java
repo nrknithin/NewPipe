@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util;
+package com.nrknithin.tube.music.util;
 
 import android.Manifest;
 import android.app.Activity;
@@ -16,9 +16,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import org.schabi.newpipe.App;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.settings.NewPipeSettings;
+import com.nrknithin.tube.music.App;
+import com.nrknithin.tube.music.R;
+import com.nrknithin.tube.music.settings.NewPipeSettings;
 
 public final class PermissionHelper {
     public static final int POST_NOTIFICATIONS_REQUEST_CODE = 779;

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.player.playqueue
+package com.nrknithin.tube.music.player.playqueue
 
 import java.io.Serializable
 

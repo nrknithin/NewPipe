@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.urlfinder
+package com.nrknithin.tube.music.util.urlfinder
 
 import java.util.regex.Pattern
 

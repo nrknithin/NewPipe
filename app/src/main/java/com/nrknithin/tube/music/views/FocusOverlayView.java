@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.schabi.newpipe.views;
+package com.nrknithin.tube.music.views;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -41,7 +41,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.R;
 
 import java.lang.ref.WeakReference;
 

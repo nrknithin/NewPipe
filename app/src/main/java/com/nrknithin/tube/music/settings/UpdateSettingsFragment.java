@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings;
+package com.nrknithin.tube.music.settings;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.widget.Toast;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.NewVersionWorker;
-import org.schabi.newpipe.R;
+import com.nrknithin.tube.music.NewVersionWorker;
+import com.nrknithin.tube.music.R;
 
 public class UpdateSettingsFragment extends BasePreferenceFragment {
     private final Preference.OnPreferenceChangeListener updatePreferenceChange = (p, nVal) -> {

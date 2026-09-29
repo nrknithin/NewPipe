@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package org.schabi.newpipe.info_list
+package com.nrknithin.tube.music.info_list
 
 import android.content.Context
+import com.nrknithin.tube.music.util.OnClickGesture
 import org.schabi.newpipe.extractor.channel.ChannelInfoItem
 import org.schabi.newpipe.extractor.comments.CommentsInfoItem
 import org.schabi.newpipe.extractor.playlist.PlaylistInfoItem
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
-import org.schabi.newpipe.util.OnClickGesture
 
 class InfoItemBuilder(val context: Context) {
     var onStreamSelectedListener: OnClickGesture<StreamInfoItem>? = null

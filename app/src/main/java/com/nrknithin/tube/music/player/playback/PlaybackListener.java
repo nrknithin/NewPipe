@@ -1,4 +1,4 @@
-package org.schabi.newpipe.player.playback;
+package com.nrknithin.tube.music.player.playback;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -6,7 +6,7 @@ import androidx.annotation.Nullable;
 import com.google.android.exoplayer2.source.MediaSource;
 
 import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
+import com.nrknithin.tube.music.player.playqueue.PlayQueueItem;
 
 public interface PlaybackListener {
     /**

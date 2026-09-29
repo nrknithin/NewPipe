@@ -135,7 +135,7 @@
             android:label="@string/app_name"
             android:launchMode="singleTask" />
 
-        <service android:name="us.shandian.giga.service.DownloadManagerService"
+        <service android:name="com.nrknithin.tube.music.giga.service.DownloadManagerService"
             android:foregroundServiceType="dataSync" />
 
         <activity

@@ -17,7 +17,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package org.schabi.newpipe.local.feed
+package com.nrknithin.tube.music.local.feed
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -45,6 +45,30 @@ import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.evernote.android.state.State
+import com.nrknithin.tube.music.NewPipeDatabase
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.database.subscription.SubscriptionEntity
+import com.nrknithin.tube.music.databinding.FragmentFeedBinding
+import com.nrknithin.tube.music.error.ErrorInfo
+import com.nrknithin.tube.music.error.ErrorUtil
+import com.nrknithin.tube.music.error.UserAction
+import com.nrknithin.tube.music.fragments.BaseStateFragment
+import com.nrknithin.tube.music.info_list.ItemViewMode
+import com.nrknithin.tube.music.info_list.dialog.InfoItemDialog
+import com.nrknithin.tube.music.ktx.animate
+import com.nrknithin.tube.music.ktx.animateHideRecyclerViewAllowingScrolling
+import com.nrknithin.tube.music.ktx.slideUp
+import com.nrknithin.tube.music.local.feed.item.StreamItem
+import com.nrknithin.tube.music.local.feed.service.FeedLoadService
+import com.nrknithin.tube.music.local.subscription.SubscriptionManager
+import com.nrknithin.tube.music.util.DeviceUtils
+import com.nrknithin.tube.music.util.Localization
+import com.nrknithin.tube.music.util.NavigationHelper
+import com.nrknithin.tube.music.util.ThemeHelper.getGridSpanCountStreams
+import com.nrknithin.tube.music.util.ThemeHelper.getItemViewMode
+import com.nrknithin.tube.music.util.ThemeHelper.resolveDrawable
+import com.nrknithin.tube.music.util.ThemeHelper.shouldUseGridLayout
 import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.OnItemClickListener
@@ -55,34 +79,10 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import java.time.OffsetDateTime
 import java.util.function.Consumer
-import org.schabi.newpipe.NewPipeDatabase
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.database.subscription.SubscriptionEntity
-import org.schabi.newpipe.databinding.FragmentFeedBinding
-import org.schabi.newpipe.error.ErrorInfo
-import org.schabi.newpipe.error.ErrorUtil
-import org.schabi.newpipe.error.UserAction
 import org.schabi.newpipe.extractor.exceptions.AccountTerminatedException
 import org.schabi.newpipe.extractor.exceptions.ContentNotAvailableException
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty
-import org.schabi.newpipe.fragments.BaseStateFragment
-import org.schabi.newpipe.info_list.ItemViewMode
-import org.schabi.newpipe.info_list.dialog.InfoItemDialog
-import org.schabi.newpipe.ktx.animate
-import org.schabi.newpipe.ktx.animateHideRecyclerViewAllowingScrolling
-import org.schabi.newpipe.ktx.slideUp
-import org.schabi.newpipe.local.feed.item.StreamItem
-import org.schabi.newpipe.local.feed.service.FeedLoadService
-import org.schabi.newpipe.local.subscription.SubscriptionManager
-import org.schabi.newpipe.util.DeviceUtils
-import org.schabi.newpipe.util.Localization
-import org.schabi.newpipe.util.NavigationHelper
-import org.schabi.newpipe.util.ThemeHelper.getGridSpanCountStreams
-import org.schabi.newpipe.util.ThemeHelper.getItemViewMode
-import org.schabi.newpipe.util.ThemeHelper.resolveDrawable
-import org.schabi.newpipe.util.ThemeHelper.shouldUseGridLayout
 
 class FeedFragment : BaseStateFragment<FeedState>() {
     private var _feedBinding: FragmentFeedBinding? = null

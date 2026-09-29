@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.subscription.dialog
+package com.nrknithin.tube.music.local.subscription.dialog
 
 import android.app.Dialog
 import android.os.Bundle
@@ -20,27 +20,27 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.evernote.android.state.State
 import com.livefront.bridge.Bridge
+import com.nrknithin.tube.music.R
+import com.nrknithin.tube.music.database.feed.model.FeedGroupEntity
+import com.nrknithin.tube.music.databinding.DialogFeedGroupCreateBinding
+import com.nrknithin.tube.music.databinding.ToolbarSearchLayoutBinding
+import com.nrknithin.tube.music.fragments.BackPressable
+import com.nrknithin.tube.music.local.subscription.FeedGroupIcon
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupDialog.ScreenState.DeleteScreen
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupDialog.ScreenState.IconPickerScreen
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupDialog.ScreenState.InitialScreen
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupDialog.ScreenState.SubscriptionsPickerScreen
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupDialogViewModel.DialogEvent.ProcessingEvent
+import com.nrknithin.tube.music.local.subscription.dialog.FeedGroupDialogViewModel.DialogEvent.SuccessEvent
+import com.nrknithin.tube.music.local.subscription.item.ImportSubscriptionsHintPlaceholderItem
+import com.nrknithin.tube.music.local.subscription.item.PickerIconItem
+import com.nrknithin.tube.music.local.subscription.item.PickerSubscriptionItem
+import com.nrknithin.tube.music.util.DeviceUtils
+import com.nrknithin.tube.music.util.ThemeHelper
 import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.OnItemClickListener
 import com.xwray.groupie.Section
 import java.io.Serializable
-import org.schabi.newpipe.R
-import org.schabi.newpipe.database.feed.model.FeedGroupEntity
-import org.schabi.newpipe.databinding.DialogFeedGroupCreateBinding
-import org.schabi.newpipe.databinding.ToolbarSearchLayoutBinding
-import org.schabi.newpipe.fragments.BackPressable
-import org.schabi.newpipe.local.subscription.FeedGroupIcon
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupDialog.ScreenState.DeleteScreen
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupDialog.ScreenState.IconPickerScreen
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupDialog.ScreenState.InitialScreen
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupDialog.ScreenState.SubscriptionsPickerScreen
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupDialogViewModel.DialogEvent.ProcessingEvent
-import org.schabi.newpipe.local.subscription.dialog.FeedGroupDialogViewModel.DialogEvent.SuccessEvent
-import org.schabi.newpipe.local.subscription.item.ImportSubscriptionsHintPlaceholderItem
-import org.schabi.newpipe.local.subscription.item.PickerIconItem
-import org.schabi.newpipe.local.subscription.item.PickerSubscriptionItem
-import org.schabi.newpipe.util.DeviceUtils
-import org.schabi.newpipe.util.ThemeHelper
 
 class FeedGroupDialog : DialogFragment(), BackPressable {
     private var _feedGroupCreateBinding: DialogFeedGroupCreateBinding? = null

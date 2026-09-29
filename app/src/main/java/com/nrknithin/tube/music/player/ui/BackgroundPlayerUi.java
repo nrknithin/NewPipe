@@ -1,8 +1,8 @@
-package org.schabi.newpipe.player.ui;
+package com.nrknithin.tube.music.player.ui;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.player.Player;
+import com.nrknithin.tube.music.player.Player;
 
 /**
  * This is not a "graphical" UI for the background player, but it is used to disable fetching video

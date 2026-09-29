@@ -1,13 +1,13 @@
-package org.schabi.newpipe.local.holder;
+package com.nrknithin.tube.music.local.holder;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.schabi.newpipe.database.LocalItem;
-import org.schabi.newpipe.local.LocalItemBuilder;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
+import com.nrknithin.tube.music.database.LocalItem;
+import com.nrknithin.tube.music.local.LocalItemBuilder;
+import com.nrknithin.tube.music.local.history.HistoryRecordManager;
 
 import java.time.format.DateTimeFormatter;
 
