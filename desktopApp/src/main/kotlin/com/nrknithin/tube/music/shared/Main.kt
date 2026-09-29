@@ -12,7 +12,7 @@ import androidx.compose.ui.window.application
  * Entry point for compose-related UI components on Desktop
  */
 fun main() = application {
-    Window(onCloseRequest = ::exitApplication, title = "NewPipe") {
+    Window(onCloseRequest = ::exitApplication, title = "YTPipe Music") {
         App(onCloseRequest = ::exitApplication)
     }
 }

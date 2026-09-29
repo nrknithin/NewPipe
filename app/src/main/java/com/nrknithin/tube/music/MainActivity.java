@@ -118,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
     private static final int ITEM_ID_ABOUT = 2;
 
     private static final int ORDER = 0;
+    /** Width the drawer header title was originally laid out for. */
+    private static final int BASELINE_APP_NAME_LENGTH = 7;
     public static final String KEY_IS_IN_BACKGROUND = "is_in_background";
 
     private SharedPreferences sharedPreferences;
@@ -356,9 +358,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupDrawerHeader() {
-        // If the current app name is bigger than the default "NewPipe" (7 chars),
+        // If the app name is longer than the 7-character baseline the header was sized for,
         // let the text view grow a little more as well.
-        if (getString(R.string.app_name).length() > "NewPipe".length()) {
+        if (getString(R.string.app_name).length() > BASELINE_APP_NAME_LENGTH) {
             final ViewGroup.LayoutParams layoutParams =
                     drawerHeaderBinding.drawerHeaderNewpipeTitle.getLayoutParams();
             layoutParams.width = ViewGroup.LayoutParams.WRAP_CONTENT;

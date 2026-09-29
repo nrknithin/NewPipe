@@ -31,7 +31,7 @@ configure<ApplicationExtension> {
 
     defaultConfig {
         applicationId = APPLICATION_ID
-        resValue("string", "app_name", "NewPipe")
+        resValue("string", "app_name", "YTPipe Music")
         minSdk {
             version = release(NEWPIPE_VERSION_SDK_MIN)
         }
