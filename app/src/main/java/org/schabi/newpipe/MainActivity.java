@@ -85,6 +85,7 @@ import org.schabi.newpipe.util.ReleaseVersionUtil;
 import org.schabi.newpipe.util.SerializedCache;
 import org.schabi.newpipe.util.StateSaver;
 import org.schabi.newpipe.util.ThemeHelper;
+import org.schabi.newpipe.util.YouTubeMusicHelper;
 import org.schabi.newpipe.util.external_communication.ShareUtils;
 import org.schabi.newpipe.views.FocusOverlayView;
 
@@ -266,7 +267,7 @@ public class MainActivity extends AppCompatActivity {
 
         int kioskMenuItemId = 0;
 
-        for (final String ks : service.getKioskList().getAvailableKiosks()) {
+        for (final String ks : YouTubeMusicHelper.getMusicKiosks(service)) {
             drawerLayoutBinding.navigation.getMenu()
                     .add(R.id.menu_kiosks_group, kioskMenuItemId, 0, KioskTranslator
                             .getTranslatedKioskName(ks, this))
@@ -330,7 +331,7 @@ public class MainActivity extends AppCompatActivity {
     private void kioskSelected(final MenuItem item) throws ExtractionException {
         final StreamingService currentService = ServiceList.YouTube;
         int kioskMenuItemId = 0;
-        for (final String kioskId : currentService.getKioskList().getAvailableKiosks()) {
+        for (final String kioskId : YouTubeMusicHelper.getMusicKiosks(currentService)) {
             if (kioskMenuItemId == item.getItemId()) {
                 NavigationHelper.openKioskFragment(getSupportFragmentManager(),
                         currentService.getServiceId(), kioskId);

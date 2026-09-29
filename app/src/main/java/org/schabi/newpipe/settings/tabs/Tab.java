@@ -30,6 +30,7 @@ import org.schabi.newpipe.local.history.StatisticsPlaylistFragment;
 import org.schabi.newpipe.local.playlist.LocalPlaylistFragment;
 import org.schabi.newpipe.local.subscription.SubscriptionFragment;
 import org.schabi.newpipe.util.KioskTranslator;
+import org.schabi.newpipe.util.YouTubeMusicHelper;
 
 import java.util.Objects;
 
@@ -513,7 +514,7 @@ public abstract class Tab {
             String kioskId = "";
             try {
                 final StreamingService service = NewPipe.getService(kioskServiceId);
-                kioskId = service.getKioskList().getDefaultKioskId();
+                kioskId = YouTubeMusicHelper.getDefaultKioskId(service);
             } catch (final ExtractionException e) {
                 ErrorUtil.showSnackbar(context, new ErrorInfo(e,
                         UserAction.REQUESTED_KIOSK, "Loading default kiosk for selected service"));

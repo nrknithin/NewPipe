@@ -25,6 +25,7 @@ import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.util.KioskTranslator;
 import org.schabi.newpipe.util.ThemeHelper;
+import org.schabi.newpipe.util.YouTubeMusicHelper;
 
 import java.util.List;
 import java.util.Vector;
@@ -89,7 +90,7 @@ public class SelectKioskFragment extends DialogFragment {
 
         SelectKioskAdapter() throws Exception {
             final StreamingService service = ServiceList.YouTube;
-            for (final String kioskId : service.getKioskList().getAvailableKiosks()) {
+            for (final String kioskId : YouTubeMusicHelper.getMusicKiosks(service)) {
                 final String name = String.format(getString(R.string.service_kiosk_string),
                         service.getServiceInfo().getName(),
                         KioskTranslator.getTranslatedKioskName(kioskId, getContext()));

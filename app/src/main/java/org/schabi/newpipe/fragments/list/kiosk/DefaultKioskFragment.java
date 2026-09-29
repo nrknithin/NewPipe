@@ -8,6 +8,7 @@ import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.schabi.newpipe.extractor.kiosk.KioskList;
 import org.schabi.newpipe.util.KioskTranslator;
+import org.schabi.newpipe.util.YouTubeMusicHelper;
 
 public class DefaultKioskFragment extends KioskFragment {
 
@@ -25,7 +26,7 @@ public class DefaultKioskFragment extends KioskFragment {
             serviceId = ServiceList.YouTube.getServiceId();
 
             final KioskList kioskList = ServiceList.YouTube.getKioskList();
-            kioskId = kioskList.getDefaultKioskId();
+            kioskId = YouTubeMusicHelper.getDefaultKioskId(ServiceList.YouTube);
             url = kioskList.getListLinkHandlerFactoryByType(kioskId).fromId(kioskId).getUrl();
 
             kioskTranslatedName = KioskTranslator.getTranslatedKioskName(kioskId, requireContext());

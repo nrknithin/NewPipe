@@ -65,7 +65,6 @@ import org.schabi.newpipe.extractor.StreamingService;
 import org.schabi.newpipe.extractor.exceptions.ParsingException;
 import org.schabi.newpipe.extractor.search.SearchExtractor;
 import org.schabi.newpipe.extractor.search.SearchInfo;
-import org.schabi.newpipe.extractor.services.youtube.linkHandler.YoutubeSearchQueryHandlerFactory;
 import org.schabi.newpipe.fragments.BackPressable;
 import org.schabi.newpipe.fragments.list.BaseListFragment;
 import org.schabi.newpipe.ktx.AnimationType;
@@ -77,6 +76,7 @@ import org.schabi.newpipe.util.DeviceUtils;
 import org.schabi.newpipe.util.ExtractorHelper;
 import org.schabi.newpipe.util.NavigationHelper;
 import org.schabi.newpipe.util.ServiceHelper;
+import org.schabi.newpipe.util.YouTubeMusicHelper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -128,7 +128,7 @@ public class SearchFragment extends BaseListFragment<SearchInfo, ListExtractor.I
      * be aware of this when implementing an extractor.
      */
     @State
-    String[] contentFilter = new String[0];
+    String[] contentFilter = {YouTubeMusicHelper.DEFAULT_SEARCH_FILTER};
 
     @State
     String sortFilter;
@@ -185,7 +185,8 @@ public class SearchFragment extends BaseListFragment<SearchInfo, ListExtractor.I
 
     public static SearchFragment getInstance(final int serviceId, final String searchString) {
         final SearchFragment searchFragment = new SearchFragment();
-        searchFragment.setQuery(serviceId, searchString, new String[0], "");
+        searchFragment.setQuery(serviceId, searchString,
+                new String[]{YouTubeMusicHelper.DEFAULT_SEARCH_FILTER}, "");
 
         if (!TextUtils.isEmpty(searchString)) {
             searchFragment.setSearchOnResume();
@@ -232,9 +233,9 @@ public class SearchFragment extends BaseListFragment<SearchInfo, ListExtractor.I
         // Add the service name to search string hint
         // to make it more obvious which platform is being searched.
         if (service != null) {
-            searchEditText.setHint(
-                    getString(R.string.search_with_service_name,
-                            service.getServiceInfo().getName()));
+            final String currentFilter = contentFilter.length > 0 ? contentFilter[0] : null;
+            updateSearchHint(currentFilter, currentFilter == null ? null
+                    : ServiceHelper.getTranslatedFilterString(currentFilter, requireContext()));
         }
         showSearchOnStart();
         initSearchListeners();
@@ -449,7 +450,6 @@ public class SearchFragment extends BaseListFragment<SearchInfo, ListExtractor.I
         }
 
         int itemId = 0;
-        boolean isFirstItem = true;
         final Context c = getContext();
 
         if (service == null) {
@@ -457,25 +457,26 @@ public class SearchFragment extends BaseListFragment<SearchInfo, ListExtractor.I
             updateService();
         }
 
-        for (final String filter : service.getSearchQHFactory().getAvailableContentFilter()) {
-            if (filter.equals(YoutubeSearchQueryHandlerFactory.MUSIC_SONGS)) {
-                menu.add(2,
-                        itemId++,
-                        0,
-                        getStyledHeader("YouTube"));
-                menu.add(2,
-                        itemId++,
-                        1,
-                        getStyledHeader("YouTube Music"));
+        // YouTube Music filters come first, since music is the focus of the app
+        final String currentFilter = contentFilter.length > 0 ? contentFilter[0] : null;
+        boolean musicHeaderAdded = false;
+        boolean youtubeHeaderAdded = false;
+        for (final String filter : YouTubeMusicHelper.getOrderedSearchFilters(service)) {
+            final boolean isMusicFilter = YouTubeMusicHelper.isMusicSearchFilter(filter);
+            if (isMusicFilter && !musicHeaderAdded) {
+                menu.add(2, itemId++, 0, getStyledHeader("YouTube Music"));
+                musicHeaderAdded = true;
+            } else if (!isMusicFilter && !youtubeHeaderAdded) {
+                menu.add(2, itemId++, 0, getStyledHeader("YouTube"));
+                youtubeHeaderAdded = true;
             }
             menuItemToFilterName.put(itemId, filter);
             final MenuItem item = menu.add(1,
                     itemId++,
-                    1,
+                    0,
                     ServiceHelper.getTranslatedFilterString(filter, c));
-            if (isFirstItem) {
+            if (filter.equals(currentFilter)) {
                 item.setChecked(true);
-                isFirstItem = false;
             }
         }
         menu.setGroupCheckable(1, true, true);
@@ -969,23 +970,32 @@ public class SearchFragment extends BaseListFragment<SearchInfo, ListExtractor.I
     // Utils
     //////////////////////////////////////////////////////////////////////////*/
 
+    /**
+     * Show which service and content filter will be searched in the search box hint.
+     *
+     * @param filter      the current content filter id, or null when there is none
+     * @param filterTitle the translated name of the filter, or null when there is none
+     */
+    private void updateSearchHint(@Nullable final String filter,
+                                  @Nullable final CharSequence filterTitle) {
+        if (service == null) {
+            return;
+        }
+        final String serviceName = service.getServiceInfo().getName();
+        if (filter == null || "all".equals(filter) || filterTitle == null) {
+            searchEditText.setHint(getString(R.string.search_with_service_name, serviceName));
+        } else {
+            searchEditText.setHint(getString(R.string.search_with_service_name_and_filter,
+                    serviceName, filterTitle));
+        }
+    }
+
     private void changeContentFilter(final MenuItem item, final List<String> theContentFilter) {
         filterItemCheckedId = item.getItemId();
         item.setChecked(true);
 
-        if (service != null) {
-            final boolean isNotFiltered = theContentFilter.isEmpty()
-                    || "all".equals(theContentFilter.get(0));
-            if (isNotFiltered) {
-                searchEditText.setHint(
-                        getString(R.string.search_with_service_name,
-                                service.getServiceInfo().getName()));
-            } else {
-                searchEditText.setHint(getString(R.string.search_with_service_name_and_filter,
-                        service.getServiceInfo().getName(),
-                        item.getTitle()));
-            }
-        }
+        updateSearchHint(theContentFilter.isEmpty() ? null : theContentFilter.get(0),
+                item.getTitle());
 
         contentFilter = theContentFilter.toArray(new String[0]);
 
