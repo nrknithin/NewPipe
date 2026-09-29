@@ -874,4 +874,87 @@
     <string name="api23_requirement_dialog_title">NewPipe is dropping support for Android 5</string>
     <string name="api23_requirement_dialog_message">Unfortunately NewPipe depends on a few libraries that dropped support for Android 5.0 and 5.1. The next NewPipe release will therefore only work on devices with Android 6 or higher, sadly. Read more in the blogpost.</string>
     <string name="api23_requirement_dialog_blogpost">Blogpost</string>
+    <!-- Music UI -->
+    <string name="music_tab_home">Home</string>
+    <string name="music_tab_explore">Explore</string>
+    <string name="music_tab_library">Library</string>
+    <string name="music_tab_placeholder">Nothing here yet</string>
+    <string name="music_home_empty">Could not load music right now. Check your connection and try again.</string>
+    <string name="music_more_options">More options</string>
+    <string name="music_play">Play</string>
+    <string name="music_pause">Pause</string>
+    <string name="music_now_playing">Now playing</string>
+    <string name="music_back">Back</string>
+    <string name="music_local_load_failed">Could not load this list.</string>
+    <string name="music_local_history_empty">Nothing you have listened to yet</string>
+    <string name="music_local_history_remove">Remove from history</string>
+    <string name="music_local_downloads_empty">No finished downloads yet</string>
+    <string name="music_search_hint">Songs, albums, artists</string>
+    <string name="music_search_clear">Clear search</string>
+    <string name="music_search_prompt">Search for songs, albums and artists</string>
+    <string name="music_search_failed">Could not search right now. Check your connection and try again.</string>
+    <!-- Full screen player -->
+    <string name="music_player_artwork">Album art</string>
+    <string name="music_player_shuffle">Shuffle</string>
+    <string name="music_player_repeat">Repeat</string>
+    <string name="music_player_up_next">Up next</string>
+    <string name="music_player_lyrics">Lyrics</string>
+    <string name="music_player_related">Related</string>
+    <string name="music_player_nothing_playing">Nothing is playing yet. Pick a song and it will show up here.</string>
+    <string name="music_player_shuffle_toggled">Shuffle toggled</string>
+    <string name="music_player_repeat_changed">Repeat mode changed</string>
+    <string name="music_player_lyrics_unavailable">Lyrics need a YouTube Music account, which this app does not use.</string>
+    <string name="music_player_related_unavailable">Related tracks are not available yet.</string>
+    <string name="music_player_queue_empty">The queue is empty.</string>
+    <string name="music_player_queue_unavailable">The player is not running, so there is nothing queued.</string>
+    <!-- Music library -->
+    <string name="music_library_no_playlists">No saved playlists yet. Playlists you create or bookmark show up here.</string>
+    <string name="music_library_playlist_empty">This playlist has no tracks yet</string>
+    <string name="music_library_shuffle">Shuffle</string>
+    <plurals name="music_library_track_count">
+        <item quantity="one">%1$d song</item>
+        <item quantity="other">%1$d songs</item>
+    </plurals>
+    <!-- Explore, remote playlists and artist pages -->
+    <string name="music_browse_charts">Charts</string>
+    <string name="music_browse_charts_unavailable">Charts are not available right now.</string>
+    <string name="music_browse_moods">Moods and genres</string>
+    <string name="music_browse_songs">Songs</string>
+    <string name="music_browse_releases">Albums and singles</string>
+    <string name="music_browse_shuffle">Shuffle</string>
+    <string name="music_browse_load_failed">Could not load this. Check your connection and try again.</string>
+    <string name="music_browse_no_tracks">No tracks here</string>
+    <string name="music_browse_genre_chill">Chill</string>
+    <string name="music_browse_genre_energy">Energy boosters</string>
+    <string name="music_browse_genre_workout">Workout</string>
+    <string name="music_browse_genre_focus">Focus</string>
+    <string name="music_browse_genre_sleep">Sleep</string>
+    <string name="music_browse_genre_party">Party</string>
+    <string name="music_browse_genre_romance">Romance</string>
+    <string name="music_browse_genre_feel_good">Feel good</string>
+    <string name="music_browse_genre_commute">Commute</string>
+    <string name="music_browse_genre_hip_hop">Hip hop</string>
+    <string name="music_browse_genre_pop">Pop</string>
+    <string name="music_browse_genre_rock">Rock</string>
+    <string name="music_browse_genre_electronic">Dance and electronic</string>
+    <string name="music_browse_genre_indie">Indie and alternative</string>
+    <plurals name="music_browse_song_count">
+        <item quantity="one">%d song</item>
+        <item quantity="other">%d songs</item>
+    </plurals>
+    <string name="music_settings_category_playback">Playback</string>
+    <string name="music_settings_category_about">About</string>
+    <string name="music_settings_version">Version %1$s</string>
+    <string name="music_settings_project_page">Project page</string>
+    <string name="music_settings_unavailable">Could not open settings right now.</string>
+    <string name="music_player_dismiss">Collapse player</string>
+    <string name="music_player_cast">Cast</string>
+    <string name="music_player_save">Save</string>
+    <string name="music_player_needs_account">That needs a Google account, which this app does not use</string>
+    <string name="music_player_queue_single">Nothing up next</string>
+    <string name="music_player_previous">Previous</string>
+    <string name="music_player_next">Next</string>
+    <string name="music_player_playing_from">Playing from</string>
+    <string name="music_player_more_unavailable">More options are not built yet</string>
+    <string name="music_player_queue_loading">Loading the queue…</string>
 </resources>

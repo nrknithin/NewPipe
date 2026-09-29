@@ -84,4 +84,5 @@
 
     <color name="black">#000</color>
 
+    <color name="music_canvas">#030303</color>
 </resources>

@@ -103,6 +103,35 @@ private val darkScheme = darkColorScheme(
 private val blackScheme = darkScheme.copy(surface = Color.Black)
 
 /**
+ * Resolves a colour scheme from the stored theme preferences.
+ *
+ * This is deliberately free of Koin and of Compose state so that callers which do not run inside a
+ * [org.koin.compose.KoinApplication] - such as the Android music UI, which reads the same
+ * preferences through its own SharedPreferences - can still get the right scheme.
+ *
+ * @param theme the stored [AppearancePreferences.KEY_THEME] value
+ * @param nightTheme the stored [AppearancePreferences.KEY_NIGHT_THEME] value
+ * @param useDarkTheme whether the system is currently in dark mode
+ */
+fun colorSchemeFor(
+    theme: String,
+    nightTheme: String,
+    useDarkTheme: Boolean
+): ColorScheme {
+    val nightScheme = when (nightTheme) {
+        AppearancePreferences.THEME_BLACK -> blackScheme
+        else -> darkScheme
+    }
+
+    return when (theme) {
+        AppearancePreferences.THEME_LIGHT -> lightScheme
+        AppearancePreferences.THEME_DARK -> darkScheme
+        AppearancePreferences.THEME_BLACK -> blackScheme
+        else -> if (!useDarkTheme) lightScheme else nightScheme
+    }
+}
+
+/**
  * Gets current color scheme chosen by the user
  */
 @Composable
@@ -117,17 +146,7 @@ fun currentColorScheme(
         settings, AppearancePreferences.KEY_NIGHT_THEME, AppearancePreferences.DEFAULT_NIGHT_THEME
     )
 
-    val nightScheme = when (nightTheme) {
-        AppearancePreferences.THEME_BLACK -> blackScheme
-        else -> darkScheme
-    }
-
-    return when (theme) {
-        AppearancePreferences.THEME_LIGHT -> lightScheme
-        AppearancePreferences.THEME_DARK -> darkScheme
-        AppearancePreferences.THEME_BLACK -> blackScheme
-        else -> if (!useDarkTheme) lightScheme else nightScheme
-    }
+    return colorSchemeFor(theme, nightTheme, useDarkTheme)
 }
 
 /**

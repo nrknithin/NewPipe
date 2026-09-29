@@ -16,12 +16,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalInspectionMode
 
 val youTubeLightScheme = lightColorScheme(
-    primaryContainer = Color(0xFFE53935),
-    onPrimaryContainer = Color(0xFFFFFFFF)
+    primaryContainer = Color(0xFFFFFFFF),
+    onPrimaryContainer = Color(0xFF0F0F0F)
 )
 
 val youTubeDarkScheme = darkColorScheme(
-    primaryContainer = Color(0xFF992722),
+    primaryContainer = Color(0xFF030303),
     onPrimaryContainer = Color(0xFFFFFFFF)
 )
 

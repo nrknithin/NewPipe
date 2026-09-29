@@ -10,6 +10,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.android.legacy.kapt)
     alias(libs.plugins.google.ksp)
+    alias(libs.plugins.jetbrains.kotlin.compose)
     alias(libs.plugins.jetbrains.kotlin.parcelize)
     alias(libs.plugins.jetbrains.kotlinx.serialization)
     alias(libs.plugins.sonarqube)
@@ -19,6 +20,14 @@ plugins {
 
 kotlin {
     jvmToolchain(21)
+
+    compilerOptions {
+        optIn.addAll(
+            "androidx.compose.material3.ExperimentalMaterial3Api",
+            "androidx.compose.material3.ExperimentalMaterial3ExpressiveApi",
+            "androidx.compose.foundation.layout.ExperimentalLayoutApi"
+        )
+    }
 }
 
 configure<ApplicationExtension> {
@@ -93,6 +102,7 @@ configure<ApplicationExtension> {
     }
 
     buildFeatures {
+        compose = true
         viewBinding = true
         buildConfig = true
         resValues = true
@@ -210,6 +220,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.localbroadcastmanager)
     implementation(libs.androidx.media)
+    implementation(libs.androidx.palette)
     implementation(libs.androidx.preference)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.room.runtime)
@@ -253,6 +264,16 @@ dependencies {
     // Manager for complex RecyclerView layouts
     implementation(libs.lisawray.groupie.core)
     implementation(libs.lisawray.groupie.viewbinding)
+
+    // Compose UI. The music UI lives in this module because the extractor, the Room
+    // database and the player service are all here; the shared module cannot see them.
+    implementation(libs.jetbrains.compose.runtime)
+    implementation(libs.jetbrains.compose.foundation)
+    implementation(libs.jetbrains.compose.material3)
+    implementation(libs.jetbrains.compose.ui)
+    implementation(libs.jetbrains.lifecycle.runtime.compose)
+    implementation(libs.jetbrains.lifecycle.viewmodel)
+    implementation(libs.androidx.activity)
 
     // Image loading
     implementation(libs.coil.compose)
